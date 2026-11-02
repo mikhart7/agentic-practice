@@ -1,0 +1,351 @@
+# Отбор фиксированного каталога навыков из официального реестра MCP
+# (https://registry.modelcontextprotocol.io, снимок 2026-11-02).
+#
+# Кластер — группа навыков, близких по смыслу (источник hard negatives).
+# keywords — регулярные выражения для подбора кандидатов (шаг `candidates`),
+# servers — отобранные вручную серверы с закреплёнными версиями (шаг `build`).
+# id навыка по умолчанию — последний сегмент имени; общий или конфликтующий задаётся явно.
+#
+# Критерии отбора: одна понятная основная функция; английское описание без обрезки;
+# внутри кластера навыки похожи, но различимы; несколько лексических ловушек
+# (cron-translator, mindmeister, words), где совпадение слов не означает совпадения смысла.
+# Кластер misc — одиночные навыки без близких соседей.
+
+[[cluster]]
+id = "web-search"
+keywords = ['web search', 'search the web', 'search engine', 'serp']
+servers = [
+  { name = "io.github.serpapi/serpapi-mcp", version = "2.0.0" },
+  { name = "io.github.A1-x-Tech/mcp-google-custom-search", version = "1.1.1" },
+  { name = "io.github.johnisanerd/yandex-search", version = "1.0.0" },
+  { name = "uk.miapi/miapi", version = "1.1.1" },
+  { name = "io.github.reinartz/gannet-mcp", version = "0.1.0" },
+  { name = "io.github.DataLeadsPRO/google-serp", version = "1.0.1" },
+  { name = "app.seolytics/seolytics", version = "1.0.0" },
+]
+
+[[cluster]]
+id = "pdf"
+keywords = ['\bpdfs?\b']
+servers = [
+  { name = "io.github.smrht/pdfsamenvoegen", version = "1.1.1" },
+  { name = "io.github.liuyan-wjy/pdf-to-md", version = "1.0.0" },
+  { name = "io.github.pipeworx-io/ocrspace", version = "0.2.0" },
+  { name = "cc.smoothsign/smoothsign", version = "1.0.0" },
+  { name = "com.marqpdf/marqpdf", version = "1.0.0" },
+  { name = "io.github.GuardBee/document-scanner", version = "0.4.1" },
+  { name = "com.tryisomor/isomor", version = "1.0.1" },
+]
+
+[[cluster]]
+id = "email"
+keywords = ['\bemails?\b', 'gmail', 'inbox', '\bsmtp\b', '\bimap\b']
+servers = [
+  { name = "io.github.codefuturist/email-mcp", version = "0.6.0" },
+  { name = "com.ahasend/mcp", version = "0.1.1", id = "ahasend" },
+  { name = "dev.mailkite/mail-receive", version = "0.12.0" },
+  { name = "dev.kanta/cli", version = "0.1.8", id = "kanta" },
+  { name = "io.github.Dawaxwx/dmarc-spf-audit", version = "0.1.0" },
+  { name = "fi.salamailer/salamailer", version = "1.0.0" },
+  { name = "io.github.pipeworx-io/trykitt", version = "0.2.0" },
+]
+
+[[cluster]]
+id = "calendar"
+keywords = ['calendar', 'scheduling', 'meeting booking']
+servers = [
+  { name = "io.github.domdomegg/google-cal-mcp", version = "1.1.3" },
+  { name = "io.github.Glob0x17/mcp-icloud-caldav", version = "0.2.1" },
+  { name = "io.github.aernouddekker/calendarmcp", version = "0.2.0" },
+  { name = "bot.meet/mcp", version = "1.0.0", id = "meet-bot" },
+  { name = "io.github.syncday-app/sync-day", version = "1.0.0" },
+  { name = "io.github.skypier-jp-works/mcp-jp-calendar", version = "1.1.0" },
+  { name = "com.modernmustardseed/holiday-calendar", version = "1.0.1" },
+  { name = "com.am-lich/vietnamese-calendar", version = "1.3.0" },
+]
+
+[[cluster]]
+id = "sql-database"
+keywords = ['postgres', 'mysql', 'sqlite', 'sql server', '\bsql\b']
+servers = [
+  { name = "io.github.CloudCorpRecords/pgport", version = "0.1.0" },
+  { name = "io.github.GT-dinuo/mysql-ops-mcp", version = "1.0.0" },
+  { name = "io.github.CloudCorpRecords/litebase", version = "0.1.0" },
+  { name = "io.github.cybeleri/database-admin", version = "1.0.1" },
+  { name = "com.dbtrail/dbtrail", version = "0.1.0" },
+  { name = "io.github.CloudCorpRecords/pgcloud", version = "0.1.0" },
+  { name = "io.github.orifisher2/sqlike-mcp", version = "0.2.3" },
+  { name = "com.vetosql/veto", version = "0.5.0" },
+]
+
+[[cluster]]
+id = "code-hosting"
+keywords = ['github', 'gitlab', 'bitbucket', 'pull requests?']
+servers = [
+  { name = "io.github.CloudCorpRecords/codehost-port", version = "0.1.0" },
+  { name = "io.github.mrfentmen/gitlab-mcp", version = "1.0.0" },
+  { name = "io.github.droplinkperformance/bitbucket-mcp-server", version = "1.2.0" },
+  { name = "io.github.ryudi84/github-stats", version = "1.0.0" },
+  { name = "io.github.sarim-aliii/github-issue-mcp", version = "1.1.2" },
+  { name = "com.runzumi.mcp/runzumi", version = "0.1.3" },
+  { name = "dev.agentdiet/github-audit", version = "7.0.17" },
+]
+
+[[cluster]]
+id = "browser-automation"
+keywords = ['browser automation', 'headless', 'playwright', 'puppeteer', 'web scrap']
+servers = [
+  { name = "io.github.mindstone/mcp-server-browser-automation", version = "0.2.4" },
+  { name = "io.github.alex-on-ai/webreaper", version = "11.3.2" },
+  { name = "io.github.hubertgajewski/playwright-report-mcp", version = "3.4.0" },
+  { name = "io.github.JustasMonkev/mcp-accessibility-scanner", version = "1.1.1" },
+  { name = "io.github.vola-trebla/playwright-trace-decoder-mcp", version = "0.2.3" },
+  { name = "io.github.Screenshot-API/screenshot-mcp", version = "1.0.2" },
+]
+
+[[cluster]]
+id = "weather"
+keywords = ['weather', 'forecast']
+servers = [
+  { name = "io.github.cyanheads/open-meteo-mcp-server", version = "0.5.0" },
+  { name = "io.weathersight/weathersight", version = "1.0.0" },
+  { name = "io.github.lostnumber07/shearline", version = "1.1.0" },
+  { name = "io.github.hoon1983/spaceweather-mcp", version = "0.1.0" },
+  { name = "io.github.mansurjisan/ww3-mcp", version = "0.1.1" },
+  { name = "io.github.mrfentmen/wttr-mcp", version = "1.0.0" },
+  { name = "io.github.gary2376/cwa-mcp-server", version = "0.1.1" },
+]
+
+[[cluster]]
+id = "video-transcripts"
+keywords = ['youtube', 'transcript']
+servers = [
+  { name = "io.github.gunnargray-dev/youtube-transcripts-mcp", version = "1.0.1" },
+  { name = "io.github.OrihuelaConde/local-whisper-mcp", version = "1.0.0" },
+  { name = "io.github.Rwb3n/instagram-transcripts", version = "1.0.0" },
+  { name = "io.github.XZXZZX-Ai/bilibili-mcp", version = "1.14.5" },
+  { name = "app.vidlet/vidlet", version = "1.2.2" },
+  { name = "io.github.SpaceSheepBoy/justcaptions", version = "1.5.1" },
+  { name = "io.github.michaelw-pr/presentr-analyze", version = "1.0.0" },
+]
+
+[[cluster]]
+id = "payments"
+keywords = ['stripe', 'payments?', 'invoic', 'checkout']
+servers = [
+  { name = "io.github.CloudCorpRecords/payport", version = "0.1.0" },
+  { name = "io.github.lordbasilaiassistant-sudo/stripe-analytics", version = "1.0.1" },
+  { name = "io.usefulapi/modern-treasury", version = "1.34.0" },
+  { name = "com.alderinvoices/invoice-generator", version = "1.0.0" },
+  { name = "ai.subpay/invoice-reader", version = "1.0.0" },
+  { name = "io.github.invoicepdfs/mcp", version = "0.1.2", id = "invoicepdfs" },
+  { name = "app.wishpool/mexico-invoice-mcp", version = "0.2.0" },
+  { name = "io.github.CoinVello/coinvello", version = "0.1.4" },
+]
+
+[[cluster]]
+id = "translation"
+keywords = ['translat', 'localiz']
+servers = [
+  { name = "com.langbly/translation", version = "1.0.0", id = "langbly" },
+  { name = "io.github.kaeris-io/kaeris-mcp", version = "0.2.18" },
+  { name = "io.github.tolgee/tolgee", version = "1.0.0" },
+  { name = "io.usefulapi/crowdin", version = "1.34.0" },
+  { name = "io.github.ewalid/rosetta-mcp", version = "0.1.1" },
+  { name = "tech.kyanitelabs/dialectos", version = "0.3.1" },
+  { name = "com.crontoenglish/cron-translator", version = "0.1.0" },
+]
+
+[[cluster]]
+id = "team-chat"
+keywords = ['slack', 'discord', 'microsoft teams', 'telegram']
+servers = [
+  { name = "io.github.mindstone/mcp-server-slack", version = "0.3.4" },
+  { name = "io.github.shibayu36/slack-explorer-mcp", version = "0.12.0" },
+  { name = "io.github.chrischall/microsoft-teams-mcp", version = "0.7.0" },
+  { name = "io.github.PaSympa/discord-mcp", version = "2.2.0" },
+  { name = "io.github.GeiserX/telegram-archive-mcp", version = "0.4.1" },
+  { name = "io.github.cyuanxv/telegram-bot-mcp-server", version = "1.0.1" },
+  { name = "tools.adminhub/telegram", version = "1.2.0", id = "telegram-channel-admin" },
+  { name = "com.yeetpost/mcp", version = "1.0.0", id = "yeetpost" },
+]
+
+[[cluster]]
+id = "notes-knowledge"
+keywords = ['notion', 'obsidian', 'notes?\b', 'knowledge base', 'wiki']
+servers = [
+  { name = "com.foreverworks/notion", version = "0.1.1" },
+  { name = "io.github.OleksandrKucherenko/mcp-obsidian-via-rest", version = "1.3.3" },
+  { name = "io.github.Automattic/simplenote-mcp", version = "2.0.1" },
+  { name = "io.github.ni-c/wikijs-mcp", version = "0.3.0" },
+  { name = "io.github.iwe-org/iwe", version = "0.29.3" },
+  { name = "ooo.tiro/tiro", version = "1.0.0" },
+  { name = "io.github.ElMagoCT/sidenote", version = "1.0.0" },
+  { name = "io.github.CloudCorpRecords/repowiki", version = "0.1.0" },
+]
+
+[[cluster]]
+id = "maps-geo"
+keywords = ['\bmaps?\b', 'geocod', 'routing', 'directions', 'places']
+servers = [
+  { name = "ai.wondel/google-maps", version = "1.0.0" },
+  { name = "io.github.domdomegg/google-maps-places-mcp", version = "1.1.2" },
+  { name = "io.github.NadaHo/google-maps-reviews", version = "1.0.0" },
+  { name = "app.onvaou/itineraires", version = "0.2.0" },
+  { name = "ai.mapmap/mapmap", version = "1.1.0" },
+  { name = "com.acuris-geo/acuris-mcp", version = "1.0.0" },
+  { name = "com.rewindmap/rewindmap", version = "1.2.0" },
+  { name = "com.mindmeister/mcp", version = "1.0.0", id = "mindmeister" },
+]
+
+[[cluster]]
+id = "market-data"
+keywords = ['stock', 'market data', 'financial data', 'equities', 'sec filings?']
+servers = [
+  { name = "io.github.TheNextGenNexus/yahoo-finance-mcp-server", version = "1.0.1" },
+  { name = "io.github.Rswcf/deepviews", version = "1.1.3" },
+  { name = "com.tickerinside/tickerinside-mcp", version = "1.14.0" },
+  { name = "com.marketnewsapi/market-news", version = "1.0.0" },
+  { name = "io.github.viniciuslazzari/bolsai-mcp", version = "0.1.4" },
+  { name = "io.github.runesleo/polymarket-toolkit", version = "0.7.1" },
+  { name = "com.munispot/municipal-data", version = "1.0.1" },
+]
+
+[[cluster]]
+id = "image-generation"
+keywords = ['image generation', 'generate images?', 'text-to-image', 'stable diffusion', 'dall-?e']
+servers = [
+  { name = "io.github.pvliesdonk/image-generation-mcp", version = "1.12.1" },
+  { name = "io.github.james-see/mcp-drawthings", version = "1.1.2" },
+  { name = "io.github.udhaykumarbala/gemini-image-studio", version = "1.0.2" },
+  { name = "com.snapog/snapog", version = "1.0.1" },
+  { name = "ai.gency/gency-mcp", version = "0.7.0" },
+  { name = "io.github.Evozim/prompt-refiner", version = "1.0.0" },
+]
+
+[[cluster]]
+id = "crypto"
+keywords = ['blockchain', 'crypto', 'ethereum', 'solana', 'wallet', 'defi']
+servers = [
+  { name = "org.celo/celo-mcp", version = "0.4.3" },
+  { name = "xyz.truedge/crypto-safety", version = "1.0.0" },
+  { name = "io.github.varvararatta/crypto_prices_mcp", version = "1.0.0" },
+  { name = "com.cryptohopper/mcp-data", version = "1.0.0", id = "cryptohopper-data" },
+  { name = "io.github.Timothymycompc/solana-pulse-gateway", version = "0.8.0" },
+  { name = "com.vaultrubric/vaultrubric", version = "1.0.1" },
+]
+
+[[cluster]]
+id = "devops"
+keywords = ['kubernetes', 'docker', 'terraform', 'ci/cd', 'deploy']
+servers = [
+  { name = "io.github.pipeworx-io/dockerhub", version = "0.2.1" },
+  { name = "io.github.CloudCorpRecords/clusterport", version = "0.1.0" },
+  { name = "io.github.mikhae1/kubeview", version = "2.3.0" },
+  { name = "io.github.nickw8/bash-mcp", version = "5.0.1" },
+  { name = "io.usefulapi/laravel-forge", version = "1.34.0" },
+  { name = "io.usefulapi/trigger-dev", version = "1.34.0" },
+  { name = "io.github.markusvankempen/code-engine-mcp-server", version = "1.4.2" },
+  { name = "io.github.ohad6k/viberaven", version = "1.7.1" },
+  { name = "io.github.weskerllc/cronicorn-mcp-server", version = "1.25.0" },
+]
+
+[[cluster]]
+id = "cloud-storage"
+keywords = ['google drive', 'dropbox', 'onedrive', '\bs3\b', 'file storage', 'cloud storage']
+servers = [
+  { name = "io.github.domdomegg/google-drive-mcp", version = "1.3.0" },
+  { name = "io.github.zayansalman/google-drive-comments-mcp", version = "0.1.0" },
+  { name = "io.github.0xka13b/ms-onedrive-mcp", version = "1.0.1" },
+  { name = "io.github.pipeworx-io/dropbox", version = "0.2.1" },
+  { name = "io.github.infoinlet-marketplace/mcp-s3", version = "0.1.1" },
+  { name = "io.github.backblaze-labs/b2-mcp", version = "0.2.2" },
+  { name = "com.pulsemcp/remote-filesystem", version = "0.1.5" },
+  { name = "app.arkame/backup", version = "2.106.5", id = "arkame-backup" },
+]
+
+[[cluster]]
+id = "news"
+keywords = ['\bnews\b', 'headlines', 'rss']
+servers = [
+  { name = "io.github.mrfentmen/hackernews-mcp", version = "1.0.0" },
+  { name = "io.github.mrfentmen/gdelt-mcp", version = "1.0.0" },
+  { name = "io.github.mrfentmen/rss-mcp", version = "1.0.0" },
+  { name = "io.github.therealMrFunGuy/feed-forge", version = "1.0.0" },
+  { name = "io.github.mrfentmen/spaceflight-news-mcp", version = "1.0.0" },
+  { name = "com.mcparmory/perigon", version = "1.0.3" },
+  { name = "ai.thinkpattern/news", version = "1.0.0", id = "thinkpattern-news" },
+  { name = "io.github.pipeworx-io/biotech-news", version = "0.2.1" },
+]
+
+[[cluster]]
+id = "spreadsheets"
+keywords = ['spreadsheet', 'excel', 'google sheets', '\bcsv\b', 'airtable']
+servers = [
+  { name = "io.github.A1-x-Tech/mcp-google-sheets", version = "1.1.1" },
+  { name = "io.github.PSU3D0/agent-spreadsheet", version = "0.16.0" },
+  { name = "com.mcparmory/airtable", version = "1.0.3" },
+  { name = "io.github.mrfentmen/csv-mcp", version = "1.0.1" },
+  { name = "io.github.aurelio-nakamura/dataloupe", version = "0.15.0" },
+  { name = "dev.rohnelt.api/csv-repair", version = "1.0.0" },
+  { name = "io.github.everyai-com/sheet-shift", version = "1.0.0" },
+  { name = "io.github.GillMacedo/chargescout", version = "0.2.0" },
+]
+
+[[cluster]]
+id = "research-papers"
+keywords = ['arxiv', 'pubmed', 'academic', 'scholar', 'research papers?']
+servers = [
+  { name = "io.github.cyanheads/arxiv-mcp-server", version = "1.8.1" },
+  { name = "io.github.SMABoundless/semanticscholar", version = "1.0.0" },
+  { name = "us.papernex/papernexus", version = "1.0.0" },
+  { name = "io.github.HzaCode/onecite", version = "0.0.11" },
+  { name = "io.github.RaulSimpetru/zotero-library-mcp", version = "0.5.0" },
+  { name = "io.github.computron/fulltext-article-downloader", version = "0.2.4" },
+  { name = "io.github.isagelswann/codeofpaper", version = "0.3.2" },
+  { name = "io.github.pkotecha-eng/aria-mcp-server", version = "0.2.1" },
+]
+
+[[cluster]]
+id = "project-management"
+keywords = ['jira', 'linear', 'asana', 'trello', 'issue track', 'project management']
+servers = [
+  { name = "io.github.freema/mcp-jira-stdio", version = "1.12.1" },
+  { name = "io.github.CloudCorpRecords/issueport", version = "0.1.0" },
+  { name = "com.mcparmory/asana", version = "1.0.5" },
+  { name = "io.github.avhn/trello-mcp", version = "1.0.6" },
+  { name = "io.github.markdown-pipeline/mdpipeline", version = "0.1.15" },
+  { name = "io.estimay/estimay", version = "1.1.0" },
+  { name = "io.github.sathvic-kollu/standup-mcp", version = "0.1.0" },
+]
+
+[[cluster]]
+id = "agent-memory"
+keywords = ['memory', 'knowledge graph', 'remember']
+servers = [
+  { name = "io.github.scrypster/memento", version = "0.1.0" },
+  { name = "io.github.komakeule57-maker/frugal-memory", version = "0.3.1" },
+  { name = "io.github.yantrikos/yantrikdb-mcp", version = "0.24.0" },
+  { name = "ai.usepromise/promise", version = "0.1.0" },
+  { name = "io.github.team-monet/monet", version = "1.11.0" },
+  { name = "io.github.usekika/kika", version = "0.2.4" },
+]
+
+[[cluster]]
+id = "misc"
+keywords = []
+servers = [
+  { name = "com.weatherwithattitude/words", version = "1.1.2" },
+  { name = "io.github.p4stoboy/benchboss", version = "0.3.1" },
+  { name = "io.github.theluckystrike/loan-schedule", version = "0.22.5" },
+  { name = "io.github.mrfentmen/bible-api-mcp", version = "1.0.0" },
+  { name = "io.github.mridang/chowdown", version = "0.1.0" },
+  { name = "io.github.ryudi84/gradient", version = "1.0.3" },
+  { name = "com.gumballtools/equation-steps", version = "0.1.0" },
+  { name = "io.github.revolutionarybukhari/opportunity-mcp", version = "0.1.1" },
+  { name = "io.github.Redseb/rpgmaker-mz-mcp", version = "1.4.0" },
+  { name = "com.altesim/esim", version = "0.41.2" },
+  { name = "com.aviasurf/mcp", version = "1.0.0", id = "aviasurf" },
+  { name = "io.github.nirholas/blender-mcp", version = "0.5.0" },
+  { name = "io.github.gabrielmahia/kilimo-mcp", version = "0.1.10" },
+]

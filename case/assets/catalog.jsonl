@@ -1,0 +1,189 @@
+{"id": "serpapi-mcp", "name": "SerpApi", "description": "Official SerpApi MCP server for Google, Bing, and other search engines."}
+{"id": "mcp-google-custom-search", "name": "Google Custom Search MCP", "description": "MCP server for Google Custom Search: web and image search via a Programmable Search Engine."}
+{"id": "yandex-search", "name": "yandex-search", "description": "Yandex search results, images, and SERP data via the Apify Yandex Search Scraper, hosted MCP."}
+{"id": "miapi", "name": "MIAPI — Grounded Web Answers", "description": "Web search and AI answers with real source citations and a confidence score."}
+{"id": "gannet-mcp", "name": "gannet-mcp", "description": "MCP server for web searching and webpage fetching"}
+{"id": "google-serp", "name": "google-serp", "description": "Structured Google search, news, and local results at scale - organic results, news, and local packs"}
+{"id": "seolytics", "name": "Seolytics", "description": "SEO & GEO data: keywords, live SERPs with AI Overviews, backlinks, site audits, rank tracking."}
+{"id": "pdfsamenvoegen", "name": "PDF Samenvoegen", "description": "Merge your own PDFs in a confirmed order and get one downloadable PDF."}
+{"id": "pdf-to-md", "name": "PDF to MD", "description": "Convert PDF documents to Markdown for AI agents through an authenticated remote MCP server."}
+{"id": "ocrspace", "name": "Ocrspace", "description": "OCR.space MCP — wraps the OCR.space API (ocr.space) for image/PDF → text OCR."}
+{"id": "smoothsign", "name": "SmoothSign", "description": "Send PDFs for e-signature by email and SMS code. Check signing status. No document storage."}
+{"id": "marqpdf", "name": "MarqPDF", "description": "PDF tools for agents: compress to a size, Arabic + English OCR, Office conversion, JSON extraction."}
+{"id": "document-scanner", "name": "document-scanner", "description": "Finds PII and credentials in PDFs, screenshots and scanned documents"}
+{"id": "isomor", "name": "iSomor PDF Translation", "description": "Translate text PDFs, keep the layout, get bilingual PDFs. MCP: EN/ZH. Website: 92 languages."}
+{"id": "email-mcp", "name": "email-mcp", "description": "IMAP/SMTP email MCP server — 52 tools, stdio + HTTP, IMAP IDLE push, multi-account, AI triage."}
+{"id": "ahasend", "name": "AhaSend", "description": "Send email, check deliverability, set up domains, and run templates, contacts and campaigns."}
+{"id": "mail-receive", "name": "mail-receive", "description": "Receive inbound email as clean JSON — manage domains, routes, and webhooks. MailKite."}
+{"id": "kanta", "name": "cli", "description": "Kanta Verify, Find, and Database: email verification, email finding, and B2B contact search."}
+{"id": "dmarc-spf-audit", "name": "Dmarc Spf Audit", "description": "Complete domain email-auth audit in one call: SPF with RFC 7208 lookup counting, DKIM selector pr..."}
+{"id": "salamailer", "name": "Salamailer", "description": "Send end-to-end encrypted email and files. Encryption happens on your machine, not our server."}
+{"id": "trykitt", "name": "Trykitt", "description": "TryKitt MCP — wraps the TryKitt.ai B2B email finder API (trykitt.ai)"}
+{"id": "google-cal-mcp", "name": "Google Calendar", "description": "Allow AI systems to list, create, update, and manage Google Calendar events."}
+{"id": "mcp-icloud-caldav", "name": "iCloud Calendar (CalDAV)", "description": "iCloud Calendar over CalDAV: list, create, update, move and delete events. Optional read-only mode."}
+{"id": "calendarmcp", "name": "calendarmcp", "description": "MCP server for macOS Calendar.app — calendar and event management via AppleScript"}
+{"id": "meet-bot", "name": "Meet.bot MCP", "description": "AI-native scheduling and booking: check availability, book meetings, share links."}
+{"id": "sync-day", "name": "sync-day", "description": "Free no-signup group scheduling; share a link and rank times by who's free."}
+{"id": "mcp-jp-calendar", "name": "mcp-jp-calendar", "description": "MCP server for Japanese business days, holidays, and fiscal-period calculations."}
+{"id": "holiday-calendar", "name": "Holiday Calendar", "description": "U.S. federal holidays with observed dates and business-day math. Example from an open-source kit."}
+{"id": "vietnamese-calendar", "name": "vietnamese-calendar", "description": "Vietnamese Lunar Calendar for date and calendar conversion, and cultural insights."}
+{"id": "pgport", "name": "pgport", "description": "Read-only SQL queries against a PostgreSQL database."}
+{"id": "mysql-ops-mcp", "name": "MySQL Ops MCP", "description": "MySQL MCP server: browse schema, query, CRUD. Delete/drop gated by user approval."}
+{"id": "litebase", "name": "litebase", "description": "SQLite database access for agents: query, write, create and describe tables, record insights."}
+{"id": "database-admin", "name": "database-admin", "description": "Database admin MCP: schema inspection, query optimization for PostgreSQL and MySQL"}
+{"id": "dbtrail", "name": "dbtrail", "description": "MySQL change tracking with instant row-level recovery and forensic attribution for compliance."}
+{"id": "pgcloud", "name": "pgcloud", "description": "Neon Postgres projects, branches, SQL, and migrations from your MCP client."}
+{"id": "sqlike-mcp", "name": "sqlike-mcp", "description": "Lints SQL and checks rewrites return the same rows. Postgres, MySQL, MariaDB, SQLite, MSSQL, DuckDB"}
+{"id": "veto", "name": "Veto — SQL Safety & Cost Oracle", "description": "Deterministic safety, correctness & cost gate that vets Postgres SQL before your AI agent runs it."}
+{"id": "codehost-port", "name": "codehost-port", "description": "GitHub repositories, issues and pull requests via the REST API, as MCP tools."}
+{"id": "gitlab-mcp", "name": "gitlab-mcp", "description": "Public GitLab projects and users. No key required."}
+{"id": "bitbucket-mcp-server", "name": "bitbucket-mcp-server", "description": "Provider-agnostic, AI-review-first MCP server for Bitbucket Cloud."}
+{"id": "github-stats", "name": "github-stats", "description": "MCP server for GitHub repo stats: stars, forks, contributors, activity."}
+{"id": "github-issue-mcp", "name": "GitHub Issue MCP", "description": "AI-powered MCP server for generating GitHub issues and detecting semantic duplicates."}
+{"id": "runzumi", "name": "Runzumi", "description": "Explore GitHub Actions job performance, compute costs and failures with Runzumi analytics."}
+{"id": "github-audit", "name": "AgentDiet Coding Agent GitHub Repo, Dependency & License Security Auditor", "description": "Evaluates any GitHub repository for license risk, maintenance velocity, stars/forks, and supply-c."}
+{"id": "mcp-server-browser-automation", "name": "Browser Automation", "description": "Browser automation MCP server: navigate, fill forms, click, screenshot, and manage tabs"}
+{"id": "webreaper", "name": "WebReaper", "description": "AI-native web scraper: scrape, crawl and map any site to clean markdown over stdio. MIT-licensed."}
+{"id": "playwright-report-mcp", "name": "playwright-report-mcp", "description": "Run Playwright tests and surface structured results for AI agents doing test failure analysis."}
+{"id": "mcp-accessibility-scanner", "name": "mcp-accessibility-scanner", "description": "MCP server for automated web accessibility scanning with Playwright and Axe-core."}
+{"id": "playwright-trace-decoder-mcp", "name": "playwright-trace-decoder-mcp", "description": "MCP server for unpacking and analyzing Playwright trace.zip archives"}
+{"id": "screenshot-mcp", "name": "ScreenshotAPI", "description": "Website screenshots, URL/HTML to PDF, scrolling videos, and web scraping via ScreenshotAPI."}
+{"id": "open-meteo-mcp-server", "name": "open-meteo-mcp-server", "description": "Global weather via Open-Meteo: forecast, historical, marine, air quality, geocoding, elevation."}
+{"id": "weathersight", "name": "weathersight", "description": "Historical weather and climate: 100+ years of station data, normals, extremes, and trends."}
+{"id": "shearline", "name": "SHEARLINE", "description": "Analyst-grade US severe weather: warnings, SPC outlooks, RAP environment, MRMS, GLM lightning"}
+{"id": "spaceweather-mcp", "name": "spaceweather-mcp", "description": "Space weather & geomagnetic conditions (NOAA SWPC, NASA DONKI, USGS, Kyoto) via MCP."}
+{"id": "ww3-mcp", "name": "NOAA WW3 MCP Server", "description": "GFS-Wave (WAVEWATCH III) forecasts and NDBC buoy wave observations"}
+{"id": "wttr-mcp", "name": "wttr-mcp", "description": "Weather text from wttr.in. No key required."}
+{"id": "cwa-mcp-server", "name": "cwa-mcp-server", "description": "MCP server for Taiwan CWA open data: weather forecast, earthquake, warnings, typhoon."}
+{"id": "youtube-transcripts-mcp", "name": "YouTube Transcripts, Search & Summaries", "description": "YouTube transcripts, video search, chapters and extractive summaries. No YouTube API key, no LLM."}
+{"id": "local-whisper-mcp", "name": "Local Whisper", "description": "Private audio and video transcription with Whisper on your own computer, on the GPU or CPU."}
+{"id": "instagram-transcripts", "name": "Instagram Reel Transcripts from audio (Apify)", "description": "Instagram reel transcripts from the audio, in the language spoken, via Apify. Silent reels free."}
+{"id": "bilibili-mcp", "name": "Bilibili MCP Server", "description": "Bilibili MCP tool for video metadata, transcripts, subtitles, and comment summarization"}
+{"id": "vidlet", "name": "VidLet", "description": "Edit video by asking: auto-captions, jump cuts, narrated Shorts, GIFs, voiceover, YouTube upload."}
+{"id": "justcaptions", "name": "justcaptions", "description": "Audio transcription, caption correction, translation and 16 video caption styles."}
+{"id": "presentr-analyze", "name": "Presentr Analyze", "description": "Podcast and media analysis: transcripts, captions, chapters, ad markers and show notes."}
+{"id": "payport", "name": "payport", "description": "Customers, products, prices, invoices, and payments through the Stripe API."}
+{"id": "stripe-analytics", "name": "stripe-analytics", "description": "Stripe analytics — revenue, customers, subscriptions, refunds, churn from Claude."}
+{"id": "modern-treasury", "name": "Modern Treasury MCP by usefulapi", "description": "MCP server for Modern Treasury — payment orders, transactions, counterparties and ledgers."}
+{"id": "invoice-generator", "name": "Alder Invoices", "description": "Free invoice drafts, templates and direct PDF generation for AI agents. No account needed."}
+{"id": "invoice-reader", "name": "Subpay Invoice Reader", "description": "Reads invoices and receipts from PDF to JSON and checks the math. $0.04/page via x402."}
+{"id": "invoicepdfs", "name": "mcp", "description": "Render invoices and credit notes as PDFs, and check them against EN 16931 e-invoicing rules."}
+{"id": "mexico-invoice-mcp", "name": "Mexico Invoices (CFDI 4.0 factura electrónica)", "description": "Mexico CFDI 4.0 invoices for AI agents - issue, query, cancel facturas via Facturapi."}
+{"id": "coinvello", "name": "CoinVello", "description": "Non-custodial crypto payments: checkout sessions, invoices, webhooks and test payments. No KYC."}
+{"id": "langbly", "name": "Langbly Translation", "description": "Translate text or HTML, detect languages, and list supported languages with Langbly."}
+{"id": "kaeris-mcp", "name": "KAERIS i18n", "description": "Translate app language files into 46 languages and check placeholders, plurals and missing keys."}
+{"id": "tolgee", "name": "Tolgee", "description": "Your app's translations in Tolgee: search keys, create translations, trigger machine translation"}
+{"id": "crowdin", "name": "Crowdin MCP by usefulapi", "description": "MCP server for Crowdin — projects, files, strings, translation progress, tasks, and members."}
+{"id": "rosetta-mcp", "name": "rosetta-mcp", "description": "AI-powered Excel translation preserving formatting, formulas, and data integrity."}
+{"id": "dialectos", "name": "DialectOS", "description": "Spanish dialect translation MCP server: 25 regional variants, glossary enforcement, quality gates."}
+{"id": "cron-translator", "name": "Cron Translator", "description": "Explain cron expressions in English, list next run times, and catch scheduling gotchas."}
+{"id": "mcp-server-slack", "name": "Slack", "description": "Slack MCP server: channels, messages, threads, reactions, users, files, and scheduled messages"}
+{"id": "slack-explorer-mcp", "name": "Slack Explorer MCP", "description": "MCP server specialized in retrieving information from Slack messages and threads"}
+{"id": "microsoft-teams-mcp", "name": "microsoft-teams-mcp", "description": "Microsoft Teams for Claude — read any chat or channel and its unread messages; send and react"}
+{"id": "discord-mcp", "name": "discord-mcp", "description": "A lightweight, multi-guild Discord MCP server with 95+ tools"}
+{"id": "telegram-archive-mcp", "name": "Telegram Archive", "description": "Search and read your archived Telegram chats and messages"}
+{"id": "telegram-bot-mcp-server", "name": "Telegram Bot MCP Server", "description": "Self-hosted Telegram Bot MCP server for rich text, media and interactive buttons."}
+{"id": "telegram-channel-admin", "name": "AdminHub for Telegram", "description": "Run a Telegram channel from your AI agent. Posts go out through your own bot, not your account."}
+{"id": "yeetpost", "name": "yeetpost", "description": "Post and schedule to LinkedIn, X, Bluesky, Discord, Telegram and Mastodon from AI agents."}
+{"id": "notion", "name": "Notion", "description": "Search, read and write your Notion workspaces, with pages as Markdown and typed database queries."}
+{"id": "mcp-obsidian-via-rest", "name": "Obsidian Vault MCP Server", "description": "Access Obsidian vaults via Local REST API - read, search, and interact with notes"}
+{"id": "simplenote-mcp", "name": "simplenote-mcp", "description": "MCP server for reading Simplenote notes across macOS, Linux, and Windows"}
+{"id": "wikijs-mcp", "name": "Wiki.js", "description": "Search, read and edit Wiki.js pages, and manage its assets, users, groups and comments"}
+{"id": "iwe", "name": "IWE (iwe.md)", "description": "Markdown knowledge base as agent memory. Runs against the notes directory it is started in."}
+{"id": "tiro", "name": "Tiro", "description": "Meeting notes and team wiki: search notes, transcripts, and wiki pages from your Tiro workspace."}
+{"id": "sidenote", "name": "Sidenote", "description": "Read, search and edit your Sidenote notepads (Chrome side-panel notes) with your sync key."}
+{"id": "repowiki", "name": "repowiki", "description": "Read DeepWiki repository wikis and ask questions about public GitHub repos."}
+{"id": "google-maps", "name": "Google Maps MCP", "description": "Google Maps places: local search, place details, reviews, and turn-by-turn directions."}
+{"id": "google-maps-places-mcp", "name": "Google Maps Places", "description": "Allow AI systems to search for places and get business info via Google Maps Places API."}
+{"id": "google-maps-reviews", "name": "Google Maps Reviews Scraper", "description": "Google Maps reviews of any place: stars, text, date, photos, owner reply. Links, place IDs or names."}
+{"id": "itineraires", "name": "On va où ? Routing API", "description": "Address geocoding and bike, scooter, motorcycle, wheelchair and walking routes across Europe."}
+{"id": "mapmap", "name": "MapMap", "description": "Maps for agents: truck/ADR routing, geocoding, places, matrices, isochrones, EV and fleet planning."}
+{"id": "acuris-mcp", "name": "acuris-mcp", "description": "Address validation & geocoding for AI agents: 240+ countries, UK PAF, free US/CA enrichment"}
+{"id": "rewindmap", "name": "RewindMap", "description": "Historical borders and dated map events with source attribution and coverage limits."}
+{"id": "mindmeister", "name": "MindMeister", "description": "Create, edit, and organize MindMeister mind maps from your AI assistant."}
+{"id": "yahoo-finance-mcp-server", "name": "yahoo-finance-mcp-server", "description": "Get real-time stock quotes, historical data, and compare stocks via Yahoo Finance"}
+{"id": "deepviews", "name": "deepviews", "description": "Free financial data: company analysis, DCF, comps, benchmarks, screening. No API key."}
+{"id": "tickerinside-mcp", "name": "TickerInside ETF Holdings", "description": "US ETF and mutual fund holdings, which ETFs hold a stock, overlap, look-through. Free, no API key."}
+{"id": "market-news", "name": "MarketNewsAPI", "description": "Real-time US stock news, press releases, and legal notices. Pro or trial key required."}
+{"id": "bolsai-mcp", "name": "bolsai-mcp", "description": "Brazilian stock market data (B3, CVM, BCB) for AI assistants: quotes, fundamentals, dividends, FIIs."}
+{"id": "polymarket-toolkit", "name": "polymarket-toolkit", "description": "Read-only Polymarket data tools for AI agents: profiles, PnL, market scans. No keys, no orders."}
+{"id": "municipal-data", "name": "municipal-data", "description": "Financial data, fiscal health scores, and economic indicators for 20,000+ U.S. municipalities."}
+{"id": "image-generation-mcp", "name": "Image Generation MCP Server", "description": "MCP server for AI image generation via OpenAI, Stable Diffusion (SD WebUI), or placeholders."}
+{"id": "mcp-drawthings", "name": "mcp-drawthings", "description": "MCP server for Draw Things - local AI image generation on Mac"}
+{"id": "gemini-image-studio", "name": "gemini-image-studio", "description": "AI image generation and editing with Google Gemini. Structured JSON editing."}
+{"id": "snapog", "name": "SnapOG OG Image Generator", "description": "Give agents instant OG image generation, social metadata audits, and rendering guidance."}
+{"id": "gency-mcp", "name": "gency-mcp", "description": "Gency AI product image generation - MCP server for Claude, Codex, Cursor, VS Code"}
+{"id": "prompt-refiner", "name": "PromptRefiner", "description": "Generative prompt optimizer for Midjourney, Sora, and DALL-E."}
+{"id": "celo-mcp", "name": "Celo MCP Server", "description": "Query Celo blockchain data: blocks, tokens, NFTs, contracts, governance and staking"}
+{"id": "crypto-safety", "name": "Truedge Crypto Safety", "description": "Free crypto scam checks: token and contract risk, scam or sanctioned addresses, phishing links."}
+{"id": "crypto_prices_mcp", "name": "Crypto Prices Mcp", "description": "Unlock the power of real-time cryptocurrency data with our Crypto Price Insights MCP server."}
+{"id": "cryptohopper-data", "name": "Cryptohopper Market Data", "description": "Real-time crypto market data: candles, tickers, orderbooks across 13+ exchanges via MCP."}
+{"id": "solana-pulse-gateway", "name": "Solana Pulse: agent safety layer", "description": "Dry-run Solana txs before agents sign: exact balance changes, intent match, token traps. 25 free/day"}
+{"id": "vaultrubric", "name": "VaultRubric", "description": "Sourced, scored comparisons of crypto exchanges, wallets, savings accounts and brokerages."}
+{"id": "dockerhub", "name": "Dockerhub", "description": "Docker Hub MCP — wraps the Docker Hub v2 API (free, no auth required for public data)"}
+{"id": "clusterport", "name": "clusterport", "description": "Core kubectl operations: get, describe, logs, apply, scale, patch, rollout and explain."}
+{"id": "kubeview", "name": "kubeview", "description": "Read-only Model Context Protocol MCP server enabling code-driven AI analysis of Kubernetes clusters."}
+{"id": "bash-mcp", "name": "bash-mcp", "description": "Structured JSON wrappers for git, kubectl, terraform, helm, argocd, gh, glab and other CLIs."}
+{"id": "laravel-forge", "name": "Laravel Forge MCP by usefulapi", "description": "Manage Laravel Forge servers, sites, and deployments from your AI assistant."}
+{"id": "trigger-dev", "name": "Trigger.dev MCP by usefulapi", "description": "Debug background jobs — runs, traces, spans, schedules, queues and deployments."}
+{"id": "code-engine-mcp-server", "name": "IBM Code Engine MCP Server", "description": "Deploy to IBM Code Engine from Cursor, Copilot, Claude & Cline. Build, push, deploy via MCP."}
+{"id": "viberaven", "name": "viberaven", "description": "Checks a Vercel + Supabase repo before deploy: RLS, grants, leaked keys, webhooks. Runs locally."}
+{"id": "cronicorn-mcp-server", "name": "Cronicorn", "description": "Manage adaptive cron jobs and HTTP endpoint scheduling via AI assistants."}
+{"id": "google-drive-mcp", "name": "Google Drive", "description": "Allow AI systems to list, search, upload, download, and manage files and folders in Google Drive."}
+{"id": "google-drive-comments-mcp", "name": "google-drive-comments-mcp", "description": "Minimal MCP server for reading comments on Google Drive files (Docs, Sheets, Slides). Read-only."}
+{"id": "ms-onedrive-mcp", "name": "ms-onedrive-mcp", "description": "Microsoft OneDrive MCP server — browse, read, and manage files and folders through Microsoft Graph."}
+{"id": "dropbox", "name": "Dropbox", "description": "Dropbox MCP Pack — wraps the Dropbox API v2"}
+{"id": "mcp-s3", "name": "mcp-s3", "description": "Read-only S3/MinIO/R2 object storage for AI agents — list buckets/objects, metadata, fetch."}
+{"id": "b2-mcp", "name": "Backblaze B2 MCP Server", "description": "Official Backblaze B2 MCP server for buckets, files, keys, Object Lock, and S3 storage."}
+{"id": "remote-filesystem", "name": "remote-filesystem", "description": "MCP server for remote filesystem operations on cloud storage (Google Cloud Storage)."}
+{"id": "arkame-backup", "name": "Arkame Backup", "description": "Backups of servers, Docker and Zimbra to your own S3. Restore by chat; changes need 2FA approval."}
+{"id": "hackernews-mcp", "name": "hackernews-mcp", "description": "Hacker News: front page, new and best feeds, item detail, user profiles, full-text search."}
+{"id": "gdelt-mcp", "name": "gdelt-mcp", "description": "Search the global news archive by keyword with recency and language filters. No key required."}
+{"id": "rss-mcp", "name": "rss-mcp", "description": "RSS in one place: direct feed parsing and rss2json conversion for any feed URL. No key required."}
+{"id": "feed-forge", "name": "feed-forge", "description": "Turn any website into an RSS, Atom, or JSON feed using CSS selectors and scheduled polling."}
+{"id": "spaceflight-news-mcp", "name": "spaceflight-news-mcp", "description": "Space industry news articles from Spaceflight News. No key required."}
+{"id": "perigon", "name": "perigon", "description": "Search real-time news articles, companies, journalists, and trending topics"}
+{"id": "thinkpattern-news", "name": "ThinkPattern", "description": "Grounded, attributed news: what happened, which outlets reported it, and how many covered it."}
+{"id": "biotech-news", "name": "Biotech News", "description": "Biotech News MCP — aggregated biotech & pharma industry news: FDA approvals, clinical readouts…"}
+{"id": "mcp-google-sheets", "name": "Google Sheets MCP", "description": "MCP server for the Google Sheets API: read and write ranges, sheets, formatting, charts, sharing."}
+{"id": "agent-spreadsheet", "name": "Agent Spreadsheet MCP", "description": "Agent-safe Excel workbook analysis, editing, recalc, and verification tools."}
+{"id": "airtable", "name": "airtable", "description": "Create, read, update, and delete records in Airtable bases and tables"}
+{"id": "csv-mcp", "name": "csv-mcp", "description": "Parse, filter, and inspect CSV data locally. No network and no key."}
+{"id": "dataloupe", "name": "Dataloupe", "description": "Offline MCP server to explore CSV/JSON/Parquet/Excel: preview, query, diff, render interactive HTML"}
+{"id": "csv-repair", "name": "CSV Repair", "description": "Free CSV validation and repair, up to 20 data lines, no storage. Annual browser licence available."}
+{"id": "sheet-shift", "name": "SheetShift", "description": "Convert and clean tables: CSV, JSON, dedupe, stats. Free."}
+{"id": "chargescout", "name": "chargescout", "description": "Find subscriptions, price increases and double charges in a bank statement CSV, on your machine."}
+{"id": "arxiv-mcp-server", "name": "arxiv-mcp-server", "description": "Search arXiv, fetch paper metadata, and read full-text content."}
+{"id": "semanticscholar", "name": "semanticscholar", "description": "Search 200M+ papers, authors, citations, and recommendations via Semantic Scholar"}
+{"id": "papernexus", "name": "Paper Nexus", "description": "Find related scientific papers through their citation network, from OpenAlex and Semantic Scholar."}
+{"id": "onecite", "name": "onecite", "description": "Generate academic citations from DOI, arXiv, titles, or URLs in BibTeX, APA, MLA formats."}
+{"id": "zotero-library-mcp", "name": "zotero-library-mcp", "description": "Add papers and books to Zotero by DOI, arXiv ID, or ISBN and manage your library"}
+{"id": "fulltext-article-downloader", "name": "fulltext-article-downloader", "description": "Full text of research papers by DOI, arXiv, PMC or OpenReview id, verified against the record"}
+{"id": "codeofpaper", "name": "Code of Paper", "description": "Find GitHub implementations of arXiv research papers — paper lookup, ranked code, search."}
+{"id": "aria-mcp-server", "name": "aria-mcp-server", "description": "Search 35M+ PubMed, 400K+ ClinicalTrials.gov & ISRCTN trials. Prompts included. No API key."}
+{"id": "mcp-jira-stdio", "name": "mcp-jira-stdio", "description": "MCP server for Jira Cloud — issues, search, comments, attachments, transitions."}
+{"id": "issueport", "name": "issueport", "description": "Linear teams, projects, issues and comments via GraphQL, as MCP tools."}
+{"id": "asana", "name": "asana", "description": "Manage tasks, projects, portfolios, and team workflows"}
+{"id": "trello-mcp", "name": "trello-mcp", "description": "Local Trello MCP with compact responses, workspace allowlists and read-only opt-in."}
+{"id": "mdpipeline", "name": "Markdown Pipeline", "description": "Your team's Jira as clean Markdown files, kept current for your AI agent. Local and read-only."}
+{"id": "estimay", "name": "Estimay", "description": "Planning poker rooms: import stories from Jira or GitHub, run rounds, write the estimates back."}
+{"id": "standup-mcp", "name": "Standup from your activity", "description": "Generate your daily standup from real GitHub, Jira, Linear, and Slack activity."}
+{"id": "memento", "name": "Memento", "description": "Persistent memory for AI tools. Local-first knowledge graph with hybrid search."}
+{"id": "frugal-memory", "name": "frugal-memory", "description": "Memory for AI assistants in one SQLite file: full-text search, no vectors, no embeddings."}
+{"id": "yantrikdb-mcp", "name": "yantrikdb-mcp", "description": "Cognitive memory for AI agents — semantic recall, knowledge graph, and contradiction detection"}
+{"id": "promise", "name": "Promise", "description": "Evidence-backed follow-through memory for what you owe, await, and need to remember."}
+{"id": "monet", "name": "Monet", "description": "Local-first, state-centric memory for coding agents. MCP server + CLI."}
+{"id": "kika", "name": "Kika", "description": "Shared memory for client engagements: decisions with reasons, blockers, promises, what was tried."}
+{"id": "words", "name": "Words With Attitude", "description": "A daily word puzzle: guess a cheeky British insult or a grim weather word in six tries. Free."}
+{"id": "benchboss", "name": "BenchBoss", "description": "Play Chess, RPS-N and Safehouse Protocol via MCP. Public replays; GitHub verification required."}
+{"id": "loan-schedule", "name": "loan-schedule", "description": "Amortization schedules for a loan: the level payment, the interest, and what settling early saves."}
+{"id": "bible-api-mcp", "name": "bible-api-mcp", "description": "Read Bible verses and passages in 30+ translations, with reference lookup and a random verse"}
+{"id": "chowdown", "name": "chowdown", "description": "Your recipes as plain files in your own Google Drive, searchable by your AI assistant."}
+{"id": "gradient", "name": "gradient", "description": "MCP server for CSS gradient generation — linear, radial, conic"}
+{"id": "equation-steps", "name": "Equation Steps", "description": "Step-by-step solver for linear/quadratic equations in one variable, signs and ± always right."}
+{"id": "opportunity-mcp", "name": "Opportunity MCP", "description": "Search youth opportunities (scholarships, fellowships, internships) from any AI assistant."}
+{"id": "rpgmaker-mz-mcp", "name": "rpgmaker-mz-mcp", "description": "MCP server for RPG Maker MZ: maps, tile painting, events, database editing, and validation."}
+{"id": "esim", "name": "ALT eSIM", "description": "Search & buy travel data eSIMs for 70+ destinations — pay by Stripe link, get the eSIM QR. USD."}
+{"id": "aviasurf", "name": "Aviasurf", "description": "Search and compare flight prices, calendars, airports, routes, and destinations with Aviasurf."}
+{"id": "blender-mcp", "name": "three.ws Blender", "description": "Drive a local Blender headlessly: inspect, convert, render and script 3D files."}
+{"id": "kilimo-mcp", "name": "kilimo-mcp", "description": "Kenya farming guides: crop calendar, fertilizer, pests, market timing, varieties, input costs."}
