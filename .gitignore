@@ -1,4 +1,8 @@
 __pycache__/
+.venv/
+.pytest_cache/
+# секреты — только локально
+.env
 # private и public держит оценщик, не коммитить
 *.private.jsonl
 *.public.jsonl

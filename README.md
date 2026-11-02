@@ -1,9 +1,9 @@
-# <Название>: навык, выращенный на арене
+# Подбор навыка по запросу: навык, выращенный на арене
 
 > Шаблон репозитория для задания B. ТЗ: [B-arena-skill.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/B-arena-skill.md), реестр тем: [arena-registry.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/arena-registry.md).
 > Замени всё в `<угловых скобках>`, удали этот блок.
 
-Тема: <AR-xx или своя (согласована с kudep, дата)>
+Тема: [AR-04. Подбор навыка по запросу (Н2-08)](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/arena-registry.md#ar-04-подбор-навыка-по-запросу-н2-08), вариант **AR-04а — улучшение алгоритма подбора навыков**: каталог и описания навыков фиксированы, эволюционирует алгоритм поиска (BM25, эмбеддинги, переранжирование, обучаемый ранжировщик). Baseline — BM25 по исходным описаниям. Общие требования: [projects/README.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/README.md).
 
 ## Итог в одной таблице
 
