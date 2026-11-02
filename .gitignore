@@ -6,3 +6,5 @@ __pycache__/
 # private и public держит оценщик, не коммитить
 *.private.jsonl
 *.public.jsonl
+# веса моделей скачиваются fetch_models.py по закреплённым ревизиям
+case/assets/models/

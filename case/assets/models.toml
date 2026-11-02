@@ -1,0 +1,45 @@
+# Предобученные модели, разрешённые кандидатам (ADR-0004).
+# Кандидат исполняется без сети, поэтому модели лежат в /assets/models/<name>
+# и закреплены коммитом репозитория Hugging Face. Загрузка: python case/assets/fetch_models.py
+
+[[model]]
+name = "all-MiniLM-L6-v2"
+repo = "sentence-transformers/all-MiniLM-L6-v2"
+revision = "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+kind = "bi-encoder"
+license = "apache-2.0"
+
+[[model]]
+name = "bge-small-en-v1.5"
+repo = "BAAI/bge-small-en-v1.5"
+revision = "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a"
+kind = "bi-encoder"
+license = "mit"
+
+[[model]]
+name = "e5-small-v2"
+repo = "intfloat/e5-small-v2"
+revision = "ffb93f3bd4047442299a41ebb6fa998a38507c52"
+kind = "bi-encoder"
+license = "mit"
+
+[[model]]
+name = "bge-base-en-v1.5"
+repo = "BAAI/bge-base-en-v1.5"
+revision = "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a"
+kind = "bi-encoder"
+license = "mit"
+
+[[model]]
+name = "ms-marco-MiniLM-L6-v2"
+repo = "cross-encoder/ms-marco-MiniLM-L6-v2"
+revision = "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+kind = "cross-encoder"
+license = "apache-2.0"
+
+[[model]]
+name = "bge-reranker-base"
+repo = "BAAI/bge-reranker-base"
+revision = "2cfc18c9415c912f9d8155881c133215df768a70"
+kind = "cross-encoder"
+license = "mit"
