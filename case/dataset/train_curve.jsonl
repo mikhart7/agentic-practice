@@ -1,0 +1,200 @@
+{"id": "train-8dc61311171c", "input": "can you get coordinates for these 300 customer addresses in 12 countries?", "reference": "{\"primary\": \"acuris-mcp\", \"acceptable\": []}"}
+{"id": "train-f9cd72ec4c67", "input": "turn this list of street addresses into lat/long for our map", "reference": "{\"primary\": \"acuris-mcp\", \"acceptable\": []}"}
+{"id": "train-33155af8c42b", "input": "lat long for these addresses pls", "reference": "{\"primary\": \"acuris-mcp\", \"acceptable\": []}"}
+{"id": "train-e1e7371d8bac", "input": "geocode address list", "reference": "{\"primary\": \"acuris-mcp\", \"acceptable\": []}"}
+{"id": "train-b92a21304a25", "input": "which records in our airtable content table are marked \"ready to publish\"?", "reference": "{\"primary\": \"airtable\", \"acceptable\": []}"}
+{"id": "train-3eee98ca2e5b", "input": "filter our no-code database for items assigned to me", "reference": "{\"primary\": \"airtable\", \"acceptable\": []}"}
+{"id": "train-2461a987de37", "input": "whats ready in airtable", "reference": "{\"primary\": \"airtable\", \"acceptable\": []}"}
+{"id": "train-46277662a095", "input": "list airtable records filter", "reference": "{\"primary\": \"airtable\", \"acceptable\": []}"}
+{"id": "train-8c4115538eab", "input": "are there clinical trials recruiting for long covid in europe?", "reference": "{\"primary\": \"aria-mcp-server\", \"acceptable\": []}"}
+{"id": "train-81f6a1a394ab", "input": "is anyone testing new treatments for my condition I could join?", "reference": "{\"primary\": \"aria-mcp-server\", \"acceptable\": []}"}
+{"id": "train-00741b73aaf8", "input": "trials for migraine?", "reference": "{\"primary\": \"aria-mcp-server\", \"acceptable\": []}"}
+{"id": "train-25dbf621c423", "input": "clinicaltrials search", "reference": "{\"primary\": \"aria-mcp-server\", \"acceptable\": []}"}
+{"id": "train-70baf5784932", "input": "can you give me a random verse in the world english bible?", "reference": "{\"primary\": \"bible-api-mcp\", \"acceptable\": []}"}
+{"id": "train-7a94e6b86108", "input": "share a random line from scripture for my morning", "reference": "{\"primary\": \"bible-api-mcp\", \"acceptable\": []}"}
+{"id": "train-578cf6661280", "input": "random verse pls", "reference": "{\"primary\": \"bible-api-mcp\", \"acceptable\": []}"}
+{"id": "train-0994fd7e6f5b", "input": "random bible verse", "reference": "{\"primary\": \"bible-api-mcp\", \"acceptable\": []}"}
+{"id": "train-79c26ac8d964", "input": "what are people saying in the comments of this bilibili video?", "reference": "{\"primary\": \"bilibili-mcp\", \"acceptable\": []}"}
+{"id": "train-971d60057493", "input": "summarize the audience reaction under this clip on the chinese anime-heavy video platform", "reference": "{\"primary\": \"bilibili-mcp\", \"acceptable\": []}"}
+{"id": "train-8b52ea670254", "input": "sum up bilibili comments for me", "reference": "{\"primary\": \"bilibili-mcp\", \"acceptable\": []}"}
+{"id": "train-b411eee9de9d", "input": "bilibili comment summary", "reference": "{\"primary\": \"bilibili-mcp\", \"acceptable\": []}"}
+{"id": "train-1c8288a7436b", "input": "what governance proposals are open on celo and how much is staked?", "reference": "{\"primary\": \"celo-mcp\", \"acceptable\": []}"}
+{"id": "train-d5e3c6cb0077", "input": "show the current votes and validator staking on the chain where cUSD lives", "reference": "{\"primary\": \"celo-mcp\", \"acceptable\": []}"}
+{"id": "train-e660fdb3b787", "input": "celo staking + gov proposals?", "reference": "{\"primary\": \"celo-mcp\", \"acceptable\": []}"}
+{"id": "train-0370783f8946", "input": "celo governance staking", "reference": "{\"primary\": \"celo-mcp\", \"acceptable\": []}"}
+{"id": "train-ddbde9b6f00b", "input": "list open pull requests in acme/api", "reference": "{\"primary\": \"codehost-port\", \"acceptable\": []}"}
+{"id": "train-1ca3e84226b6", "input": "Please open an issue in our GitHub repo octo/widgets describing the login bug and link it to the related pull request.", "reference": "{\"primary\": \"codehost-port\", \"acceptable\": []}"}
+{"id": "train-f8acb519c879", "input": "create a ticket in the repo on the octocat site and tag the reviewer", "reference": "{\"primary\": \"codehost-port\", \"acceptable\": []}"}
+{"id": "train-34acb7af68fb", "input": "comment on github pul request #42", "reference": "{\"primary\": \"codehost-port\", \"acceptable\": []}"}
+{"id": "train-4ada2890b83e", "input": "explain cron 0 */6 * * 1-5", "reference": "{\"primary\": \"cron-translator\", \"acceptable\": []}"}
+{"id": "train-5b7e988fcf04", "input": "what does \"30 2 * * 0\" mean in plain english?", "reference": "{\"primary\": \"cron-translator\", \"acceptable\": []}"}
+{"id": "train-b98df12c8e9d", "input": "when exactly does this schedule string from our crontab fire?", "reference": "{\"primary\": \"cron-translator\", \"acceptable\": []}"}
+{"id": "train-99006d4b5130", "input": "explan this cron expresion", "reference": "{\"primary\": \"cron-translator\", \"acceptable\": []}"}
+{"id": "train-cb424894583b", "input": "call my endpoint every 10 minutes", "reference": "{\"primary\": \"cronicorn-mcp-server\", \"acceptable\": []}"}
+{"id": "train-9ea0a42c8a6d", "input": "Our scraper is triggered by an HTTP endpoint; set up a job that calls it every hour and backs off when it errors.", "reference": "{\"primary\": \"cronicorn-mcp-server\", \"acceptable\": []}"}
+{"id": "train-dfa53dd7ef4b", "input": "ping this url regularly so the sync runs, and slow down if it starts failing", "reference": "{\"primary\": \"cronicorn-mcp-server\", \"acceptable\": []}"}
+{"id": "train-11b665ed00df", "input": "schedule http endpoint cron job", "reference": "{\"primary\": \"cronicorn-mcp-server\", \"acceptable\": []}"}
+{"id": "train-fb79632e33f1", "input": "what's the price spread of btc between coinbase, binance and kraken right now?", "reference": "{\"primary\": \"cryptohopper-data\", \"acceptable\": []}"}
+{"id": "train-7b067f5f0689", "input": "where is this coin cheapest to buy among the big trading venues at the moment?", "reference": "{\"primary\": \"cryptohopper-data\", \"acceptable\": []}"}
+{"id": "train-81bc33b4a522", "input": "arb spread btc across exchanges?", "reference": "{\"primary\": \"cryptohopper-data\", \"acceptable\": []}"}
+{"id": "train-72fc35b7c0b2", "input": "compare tickers exchanges", "reference": "{\"primary\": \"cryptohopper-data\", \"acceptable\": []}"}
+{"id": "train-195af277db26", "input": "can you render this dataset as an interactive html table I can sort?", "reference": "{\"primary\": \"dataloupe\", \"acceptable\": []}"}
+{"id": "train-90c3b9b2cb79", "input": "make a browsable view of this data file I can open in the browser", "reference": "{\"primary\": \"dataloupe\", \"acceptable\": []}"}
+{"id": "train-ea6eb347e872", "input": "make an html view of my data", "reference": "{\"primary\": \"dataloupe\", \"acceptable\": []}"}
+{"id": "train-6a4afcfa931e", "input": "interactive html data preview", "reference": "{\"primary\": \"dataloupe\", \"acceptable\": []}"}
+{"id": "train-6e16b85b2f64", "input": "who changed the salary column in our mysql hr database last month?", "reference": "{\"primary\": \"dbtrail\", \"acceptable\": []}"}
+{"id": "train-260b8da37ccc", "input": "for the auditors, show a trail of every modification to the payroll records and who made it", "reference": "{\"primary\": \"dbtrail\", \"acceptable\": []}"}
+{"id": "train-8f662b01a409", "input": "who messed with this table? need forensic trail", "reference": "{\"primary\": \"dbtrail\", \"acceptable\": []}"}
+{"id": "train-7b347efa360f", "input": "mysql change history audit", "reference": "{\"primary\": \"dbtrail\", \"acceptable\": []}"}
+{"id": "train-59c38fdcdaf7", "input": "does my spf record exceed the 10 dns lookup limit?", "reference": "{\"primary\": \"dmarc-spf-audit\", \"acceptable\": []}"}
+{"id": "train-df350385dd8f", "input": "we added another sending service and now I worry the txt record has too many includes", "reference": "{\"primary\": \"dmarc-spf-audit\", \"acceptable\": []}"}
+{"id": "train-72d0215b8dd9", "input": "too many includes in spf? check it", "reference": "{\"primary\": \"dmarc-spf-audit\", \"acceptable\": []}"}
+{"id": "train-3a0541472551", "input": "spf lookup count for example.org", "reference": "{\"primary\": \"dmarc-spf-audit\", \"acceptable\": []}"}
+{"id": "train-747289703843", "input": "list my dropbox folder photos", "reference": "{\"primary\": \"dropbox\", \"acceptable\": []}"}
+{"id": "train-77c2d0939376", "input": "Our agency shares assets with clients via Dropbox; list what's in the \"Client X\" folder and download the logo files.", "reference": "{\"primary\": \"dropbox\", \"acceptable\": []}"}
+{"id": "train-c4f1aa3ba18d", "input": "grab the files from the shared box folder the photographer sent me", "reference": "{\"primary\": \"dropbox\", \"acceptable\": []}"}
+{"id": "train-970604708891", "input": "dropbx download folder", "reference": "{\"primary\": \"dropbox\", \"acceptable\": []}"}
+{"id": "train-4a9412575a09", "input": "what data plans are available for an esim in the usa?", "reference": "{\"primary\": \"esim\", \"acceptable\": []}"}
+{"id": "train-0d648bf173b6", "input": "compare the internet packages I can use on my phone in mexico", "reference": "{\"primary\": \"esim\", \"acceptable\": []}"}
+{"id": "train-5553a2198895", "input": "esim options for brazil?", "reference": "{\"primary\": \"esim\", \"acceptable\": []}"}
+{"id": "train-6517602bdc64", "input": "compare esim plans", "reference": "{\"primary\": \"esim\", \"acceptable\": []}"}
+{"id": "train-3dd093042161", "input": "after estimating, can you write the story points back to github issues?", "reference": "{\"primary\": \"estimay\", \"acceptable\": []}"}
+{"id": "train-baa4f1f2bd79", "input": "save the agreed estimates on each ticket automatically", "reference": "{\"primary\": \"estimay\", \"acceptable\": []}"}
+{"id": "train-4bc40a33647d", "input": "push estimates to jira", "reference": "{\"primary\": \"estimay\", \"acceptable\": []}"}
+{"id": "train-06cb70c8769a", "input": "write estimates back", "reference": "{\"primary\": \"estimay\", \"acceptable\": []}"}
+{"id": "train-77697e5a7ef1", "input": "can you full-text search what my assistant remembered about \"invoices\"?", "reference": "{\"primary\": \"frugal-memory\", \"acceptable\": []}"}
+{"id": "train-f361e66529df", "input": "find the saved fact containing the word invoice in my local memory file", "reference": "{\"primary\": \"frugal-memory\", \"acceptable\": []}"}
+{"id": "train-1f68649b374a", "input": "search my memories for invoices", "reference": "{\"primary\": \"frugal-memory\", \"acceptable\": []}"}
+{"id": "train-1da52f431083", "input": "memory full text search", "reference": "{\"primary\": \"frugal-memory\", \"acceptable\": []}"}
+{"id": "train-39c8b5965e4c", "input": "edit photo replace sky with sunset", "reference": "{\"primary\": \"gemini-image-studio\", \"acceptable\": []}"}
+{"id": "train-eab36d5e6b56", "input": "Take this product photo and change the background to a marble countertop, keeping the bottle unchanged.", "reference": "{\"primary\": \"gemini-image-studio\", \"acceptable\": []}"}
+{"id": "train-1fa37ad43db8", "input": "change the background of my picture but keep the person exactly as is", "reference": "{\"primary\": \"gemini-image-studio\", \"acceptable\": []}"}
+{"id": "train-d8c5a7516273", "input": "edit image remove backround", "reference": "{\"primary\": \"gemini-image-studio\", \"acceptable\": []}"}
+{"id": "train-a5e366e40137", "input": "license risk audit for github repo", "reference": "{\"primary\": \"github-audit\", \"acceptable\": []}"}
+{"id": "train-773d130d921d", "input": "Legal wants to know if we can use this GitHub project commercially; evaluate its license risk and its dependencies' licenses.", "reference": "{\"primary\": \"github-audit\", \"acceptable\": []}"}
+{"id": "train-5caa4c5cfa7f", "input": "can we safely ship this open source code in a paid product, license-wise?", "reference": "{\"primary\": \"github-audit\", \"acceptable\": []}"}
+{"id": "train-92c2f652ee7b", "input": "audit licence risks of repo dependencies", "reference": "{\"primary\": \"github-audit\", \"acceptable\": []}"}
+{"id": "train-99b229b5f241", "input": "what's on my calendar for the rest of the week?", "reference": "{\"primary\": \"google-cal-mcp\", \"acceptable\": [\"mcp-icloud-caldav\", \"calendarmcp\"]}"}
+{"id": "train-4f1c32a0b2b2", "input": "whats on my schedule tmrw", "reference": "{\"primary\": \"google-cal-mcp\", \"acceptable\": [\"mcp-icloud-caldav\", \"calendarmcp\"]}"}
+{"id": "train-7355f0d15a0b", "input": "am I free on Monday afternoon or do I have stuff booked?", "reference": "{\"primary\": \"google-cal-mcp\", \"acceptable\": [\"mcp-icloud-caldav\", \"calendarmcp\"]}"}
+{"id": "train-b9615d42485a", "input": "list my events this week", "reference": "{\"primary\": \"google-cal-mcp\", \"acceptable\": [\"mcp-icloud-caldav\", \"calendarmcp\"]}"}
+{"id": "train-fd98776e0ed9", "input": "us federal holidays 2027 observed dates", "reference": "{\"primary\": \"holiday-calendar\", \"acceptable\": []}"}
+{"id": "train-d05ee7ce047f", "input": "when is juneteenth observed if it falls on a saturday?", "reference": "{\"primary\": \"holiday-calendar\", \"acceptable\": []}"}
+{"id": "train-4e2715735d2a", "input": "which days are government offices closed in the states next year?", "reference": "{\"primary\": \"holiday-calendar\", \"acceptable\": []}"}
+{"id": "train-307e83740d94", "input": "list federal holidyas usa 2026", "reference": "{\"primary\": \"holiday-calendar\", \"acceptable\": []}"}
+{"id": "train-dcd025d3ba75", "input": "create linear issue for login bug", "reference": "{\"primary\": \"issueport\", \"acceptable\": []}"}
+{"id": "train-9d3038ec38da", "input": "Our team tracks work in Linear; create an issue in the Web team project about the broken password reset with high priority.", "reference": "{\"primary\": \"issueport\", \"acceptable\": []}"}
+{"id": "train-1fbb69d45ad5", "input": "add a ticket in our sleek dev issue tracker for the crash on save", "reference": "{\"primary\": \"issueport\", \"acceptable\": []}"}
+{"id": "train-14bb637f85dd", "input": "new issue in lienar", "reference": "{\"primary\": \"issueport\", \"acceptable\": []}"}
+{"id": "train-8e9e1ed65bb3", "input": "do my translated locale files have broken placeholders or missing plural forms?", "reference": "{\"primary\": \"kaeris-mcp\", \"acceptable\": []}"}
+{"id": "train-3328952f24bd", "input": "make sure the translated strings still contain the {name} variables and handle counts properly", "reference": "{\"primary\": \"kaeris-mcp\", \"acceptable\": []}"}
+{"id": "train-7ac03f98e02a", "input": "check my i18n files for broken stuff", "reference": "{\"primary\": \"kaeris-mcp\", \"acceptable\": []}"}
+{"id": "train-adcbc7180c8f", "input": "validate placeholders plurals missing keys", "reference": "{\"primary\": \"kaeris-mcp\", \"acceptable\": []}"}
+{"id": "train-d658ec18cb16", "input": "Before importing this list of 3,000 leads into the CRM I want to check which addresses actually exist so we don't bounce.", "reference": "{\"primary\": \"kanta\", \"acceptable\": []}"}
+{"id": "train-95f6c4af5712", "input": "which of these addresses are dead or fake before we send anything?", "reference": "{\"primary\": \"kanta\", \"acceptable\": []}"}
+{"id": "train-aa103765b5f0", "input": "verify email list validity", "reference": "{\"primary\": \"kanta\", \"acceptable\": []}"}
+{"id": "train-c211c6deb2c7", "input": "check if these emails are real", "reference": "{\"primary\": \"kanta\", \"acceptable\": []}"}
+{"id": "train-44088f6e9a28", "input": "which pods in our cluster request way more cpu than they use?", "reference": "{\"primary\": \"kubeview\", \"acceptable\": []}"}
+{"id": "train-7bca7677cfc8", "input": "where are we wasting compute in the orchestration cluster?", "reference": "{\"primary\": \"kubeview\", \"acceptable\": []}"}
+{"id": "train-c4ce4df8b737", "input": "what's overprovisioned in k8s?", "reference": "{\"primary\": \"kubeview\", \"acceptable\": []}"}
+{"id": "train-9ec49aeea7ac", "input": "k8s resource requests vs usage", "reference": "{\"primary\": \"kubeview\", \"acceptable\": []}"}
+{"id": "train-efcf5ae2afc1", "input": "find images of art deco lobby interiors", "reference": "{\"primary\": \"mcp-google-custom-search\", \"acceptable\": [\"serpapi-mcp\"]}"}
+{"id": "train-81360349bee2", "input": "grab me some pics of red pandas from google images lol", "reference": "{\"primary\": \"mcp-google-custom-search\", \"acceptable\": [\"serpapi-mcp\"]}"}
+{"id": "train-92d42a173214", "input": "I want pictures, not pages — show me photos of brutalist libraries", "reference": "{\"primary\": \"mcp-google-custom-search\", \"acceptable\": [\"serpapi-mcp\"]}"}
+{"id": "train-b1bf5d69f53a", "input": "image serch for vintage typewritter ads", "reference": "{\"primary\": \"mcp-google-custom-search\", \"acceptable\": [\"serpapi-mcp\"]}"}
+{"id": "train-775b5a0dd91b", "input": "how do I cancel a factura I issued by mistake in mexico?", "reference": "{\"primary\": \"mexico-invoice-mcp\", \"acceptable\": []}"}
+{"id": "train-5bc8c4dd9a78", "input": "void the tax invoice I sent to the guadalajara client yesterday", "reference": "{\"primary\": \"mexico-invoice-mcp\", \"acceptable\": []}"}
+{"id": "train-3f3703bdc19d", "input": "cancel that cfdi pls", "reference": "{\"primary\": \"mexico-invoice-mcp\", \"acceptable\": []}"}
+{"id": "train-625864b95363", "input": "cancel cfdi invoice", "reference": "{\"primary\": \"mexico-invoice-mcp\", \"acceptable\": []}"}
+{"id": "train-b1a72af595cc", "input": "unread messages in microsoft teams", "reference": "{\"primary\": \"microsoft-teams-mcp\", \"acceptable\": []}"}
+{"id": "train-2de99dfbf527", "input": "I was out all day; go through my Microsoft Teams chats and channels and tell me what unread messages need my attention.", "reference": "{\"primary\": \"microsoft-teams-mcp\", \"acceptable\": []}"}
+{"id": "train-b3e30a8fddd4", "input": "what did I miss in the corporate chat app from redmond today?", "reference": "{\"primary\": \"microsoft-teams-mcp\", \"acceptable\": []}"}
+{"id": "train-140bdb80037a", "input": "read my teams unred chats", "reference": "{\"primary\": \"microsoft-teams-mcp\", \"acceptable\": []}"}
+{"id": "train-877d474b9ebd", "input": "how do the economic indicators of austin and nashville compare?", "reference": "{\"primary\": \"municipal-data\", \"acceptable\": []}"}
+{"id": "train-ca059904c673", "input": "compare debt, revenue and unemployment for these two counties", "reference": "{\"primary\": \"municipal-data\", \"acceptable\": []}"}
+{"id": "train-b9c5e5a9016d", "input": "compare city finances austin vs denver", "reference": "{\"primary\": \"municipal-data\", \"acceptable\": []}"}
+{"id": "train-4664650e18d0", "input": "municipal indicators comparison", "reference": "{\"primary\": \"municipal-data\", \"acceptable\": []}"}
+{"id": "train-5a070580ceb0", "input": "find the onboarding page in notion", "reference": "{\"primary\": \"notion\", \"acceptable\": []}"}
+{"id": "train-ad6919a32c84", "input": "Our team handbook lives in Notion; find the page about the vacation policy and give me its contents as Markdown.", "reference": "{\"primary\": \"notion\", \"acceptable\": []}"}
+{"id": "train-f1390bbab1c3", "input": "look up the hiring process doc in our all-in-one workspace app with the blocks and databases", "reference": "{\"primary\": \"notion\", \"acceptable\": []}"}
+{"id": "train-033019e26325", "input": "serch notion for meeting notes from monday", "reference": "{\"primary\": \"notion\", \"acceptable\": []}"}
+{"id": "train-11413bf7418f", "input": "are there summer internships or fellowships for undergrads in climate policy?", "reference": "{\"primary\": \"opportunity-mcp\", \"acceptable\": []}"}
+{"id": "train-b1c9584583cb", "input": "I'm 20 and want a paid summer program in public health", "reference": "{\"primary\": \"opportunity-mcp\", \"acceptable\": []}"}
+{"id": "train-4b6e4bdd7734", "input": "internships for students?", "reference": "{\"primary\": \"opportunity-mcp\", \"acceptable\": []}"}
+{"id": "train-12d7af46ec66", "input": "youth fellowships internships", "reference": "{\"primary\": \"opportunity-mcp\", \"acceptable\": []}"}
+{"id": "train-aa3b1f299d39", "input": "create stripe invoice for customer acme", "reference": "{\"primary\": \"payport\", \"acceptable\": []}"}
+{"id": "train-8f89cde0eb37", "input": "A new client signed up; create them as a customer in Stripe and send an invoice for the setup fee of $1,200.", "reference": "{\"primary\": \"payport\", \"acceptable\": []}"}
+{"id": "train-ca98038de244", "input": "bill this new client through our card processor — set them up and send the invoice", "reference": "{\"primary\": \"payport\", \"acceptable\": []}"}
+{"id": "train-645e5a0b1a9c", "input": "make a new customer in stripe and invoce them", "reference": "{\"primary\": \"payport\", \"acceptable\": []}"}
+{"id": "train-3f8f3c87eaf8", "input": "convert whitepaper.pdf to markdown", "reference": "{\"primary\": \"pdf-to-md\", \"acceptable\": [\"marqpdf\"]}"}
+{"id": "train-523af065e84a", "input": "I want this report as plain text with headings and lists I can paste into my notes repo", "reference": "{\"primary\": \"pdf-to-md\", \"acceptable\": [\"marqpdf\"]}"}
+{"id": "train-ce4d67fe7644", "input": "is there a way to turn a pdf manual into a .md file for my docs site?", "reference": "{\"primary\": \"pdf-to-md\", \"acceptable\": [\"marqpdf\"]}"}
+{"id": "train-695456a58a01", "input": "pdf to markdwon conversion for the attached paper", "reference": "{\"primary\": \"pdf-to-md\", \"acceptable\": [\"marqpdf\"]}"}
+{"id": "train-7c27bb497d51", "input": "real-time news on openai", "reference": "{\"primary\": \"perigon\", \"acceptable\": [\"gdelt-mcp\"]}"}
+{"id": "train-8c3abe9a9b2f", "input": "Track breaking news about our competitor Acme Corp and show articles published in the last hour.", "reference": "{\"primary\": \"perigon\", \"acceptable\": [\"gdelt-mcp\"]}"}
+{"id": "train-019598bbb9a3", "input": "what's being reported right now about the bank collapse?", "reference": "{\"primary\": \"perigon\", \"acceptable\": [\"gdelt-mcp\"]}"}
+{"id": "train-4f15d6ca3048", "input": "realtime news search on tesla", "reference": "{\"primary\": \"perigon\", \"acceptable\": [\"gdelt-mcp\"]}"}
+{"id": "train-0e63cb28283a", "input": "why did the checkout spec fail in the last e2e run?", "reference": "{\"primary\": \"playwright-report-mcp\", \"acceptable\": []}"}
+{"id": "train-31d959c6a48c", "input": "dig into the failed end-to-end test results and explain the cause", "reference": "{\"primary\": \"playwright-report-mcp\", \"acceptable\": []}"}
+{"id": "train-e59eb7dad9c5", "input": "what broke in the e2e run", "reference": "{\"primary\": \"playwright-report-mcp\", \"acceptable\": []}"}
+{"id": "train-89898459ee99", "input": "playwright test failure analysis", "reference": "{\"primary\": \"playwright-report-mcp\", \"acceptable\": []}"}
+{"id": "train-b9a60a3b3a0a", "input": "what's the profit and loss of this polymarket trader profile?", "reference": "{\"primary\": \"polymarket-toolkit\", \"acceptable\": []}"}
+{"id": "train-5be655415e24", "input": "how much has this prediction-market bettor won or lost overall?", "reference": "{\"primary\": \"polymarket-toolkit\", \"acceptable\": []}"}
+{"id": "train-11db638cb6a2", "input": "how's this guy's pnl on polymarket", "reference": "{\"primary\": \"polymarket-toolkit\", \"acceptable\": []}"}
+{"id": "train-a3894c4fd263", "input": "polymarket profile pnl", "reference": "{\"primary\": \"polymarket-toolkit\", \"acceptable\": []}"}
+{"id": "train-15aac81e6be9", "input": "what am I still waiting on from other people?", "reference": "{\"primary\": \"promise\", \"acceptable\": []}"}
+{"id": "train-a891f1f9de88", "input": "show me everything I committed to that isn't done yet", "reference": "{\"primary\": \"promise\", \"acceptable\": []}"}
+{"id": "train-4d5cb245ba3a", "input": "what do i owe ppl?", "reference": "{\"primary\": \"promise\", \"acceptable\": []}"}
+{"id": "train-ad4258d6db94", "input": "open commitments list", "reference": "{\"primary\": \"promise\", \"acceptable\": []}"}
+{"id": "train-d4aad7c14ad8", "input": "can you copy these csv files into another folder in our gcs bucket?", "reference": "{\"primary\": \"remote-filesystem\", \"acceptable\": []}"}
+{"id": "train-1efb8000d828", "input": "rename and move the exported files inside our google cloud bucket", "reference": "{\"primary\": \"remote-filesystem\", \"acceptable\": []}"}
+{"id": "train-c80f6bcdfe15", "input": "move files around in gcs", "reference": "{\"primary\": \"remote-filesystem\", \"acceptable\": []}"}
+{"id": "train-e808c7f93c7e", "input": "gcs write move files", "reference": "{\"primary\": \"remote-filesystem\", \"acceptable\": []}"}
+{"id": "train-70785a78c97f", "input": "borders of europe in 1914", "reference": "{\"primary\": \"rewindmap\", \"acceptable\": []}"}
+{"id": "train-22e595c12fe3", "input": "For my history class I need to show what the borders of Poland looked like in 1795 and 1921, with sources.", "reference": "{\"primary\": \"rewindmap\", \"acceptable\": []}"}
+{"id": "train-bf9c9f47085f", "input": "what countries existed in central europe right after world war one?", "reference": "{\"primary\": \"rewindmap\", \"acceptable\": []}"}
+{"id": "train-ebcaafe8301d", "input": "historical border map 1800", "reference": "{\"primary\": \"rewindmap\", \"acceptable\": []}"}
+{"id": "train-4e4bef70ac04", "input": "Our blog traffic dropped, can you run a site audit on example-shop.com and list its backlinks so we can see what changed?", "reference": "{\"primary\": \"seolytics\", \"acceptable\": []}"}
+{"id": "train-f70cf5069915", "input": "who links to my domain and what technical problems would hurt my ranking?", "reference": "{\"primary\": \"seolytics\", \"acceptable\": []}"}
+{"id": "train-99cf5407841f", "input": "backlink profile for competitor.io", "reference": "{\"primary\": \"seolytics\", \"acceptable\": []}"}
+{"id": "train-99f423fbbeb3", "input": "run seo audit on my site and check backlnks", "reference": "{\"primary\": \"seolytics\", \"acceptable\": []}"}
+{"id": "train-7d230fbd099c", "input": "where is lightning striking right now in florida?", "reference": "{\"primary\": \"shearline\", \"acceptable\": []}"}
+{"id": "train-415a7aea0756", "input": "show me where the thunderstorm cells are and their strikes over the gulf coast", "reference": "{\"primary\": \"shearline\", \"acceptable\": []}"}
+{"id": "train-450d8ca6b5cf", "input": "lightning map near tampa?", "reference": "{\"primary\": \"shearline\", \"acceptable\": []}"}
+{"id": "train-8f8f68adb5e2", "input": "glm lightning and mrms radar data", "reference": "{\"primary\": \"shearline\", \"acceptable\": []}"}
+{"id": "train-1c428fcb7e04", "input": "read my simplenote notes about recipes", "reference": "{\"primary\": \"simplenote-mcp\", \"acceptable\": []}"}
+{"id": "train-46bda92d0239", "input": "I've used Simplenote on my phone for years; pull up the note where I wrote down my bike lock code.", "reference": "{\"primary\": \"simplenote-mcp\", \"acceptable\": []}"}
+{"id": "train-c2d8dd616f54", "input": "open the plain notes app from automattic and find my packing list", "reference": "{\"primary\": \"simplenote-mcp\", \"acceptable\": []}"}
+{"id": "train-8b0201a97bd4", "input": "simplenot notes search grocery", "reference": "{\"primary\": \"simplenote-mcp\", \"acceptable\": []}"}
+{"id": "train-a68d9be27d67", "input": "what was concluded in the slack thread about the database migration?", "reference": "{\"primary\": \"slack-explorer-mcp\", \"acceptable\": []}"}
+{"id": "train-5d33a87bb48b", "input": "read that long conversation in the infra channel and tell me the conclusion", "reference": "{\"primary\": \"slack-explorer-mcp\", \"acceptable\": []}"}
+{"id": "train-8f0e9f76a424", "input": "tldr that slack thread", "reference": "{\"primary\": \"slack-explorer-mcp\", \"acceptable\": []}"}
+{"id": "train-91117f053649", "input": "summarize slack thread", "reference": "{\"primary\": \"slack-explorer-mcp\", \"acceptable\": []}"}
+{"id": "train-133be846245b", "input": "send nda.pdf for signature to jane@acme.com", "reference": "{\"primary\": \"smoothsign\", \"acceptable\": []}"}
+{"id": "train-65297f969189", "input": "The freelancer contract is ready as a PDF; please send it to the contractor for an electronic signature with an SMS code check.", "reference": "{\"primary\": \"smoothsign\", \"acceptable\": []}"}
+{"id": "train-b54992b94ec8", "input": "get this agreement signed by the landlord remotely, he can confirm with a code on his phone", "reference": "{\"primary\": \"smoothsign\", \"acceptable\": []}"}
+{"id": "train-de2696f1322e", "input": "send this pdf to sign by email to my client", "reference": "{\"primary\": \"smoothsign\", \"acceptable\": []}"}
+{"id": "train-baa706936451", "input": "are the social sharing meta tags on our landing page set up correctly?", "reference": "{\"primary\": \"snapog\", \"acceptable\": []}"}
+{"id": "train-4d0e30b5cb21", "input": "why does the link preview look broken on facebook? check the page's tags", "reference": "{\"primary\": \"snapog\", \"acceptable\": []}"}
+{"id": "train-ca1780351075", "input": "check my og tags", "reference": "{\"primary\": \"snapog\", \"acceptable\": []}"}
+{"id": "train-79c8a9eb7e61", "input": "social metadata audit", "reference": "{\"primary\": \"snapog\", \"acceptable\": []}"}
+{"id": "train-fd947773b8dd", "input": "any recent articles about the artemis mission?", "reference": "{\"primary\": \"spaceflight-news-mcp\", \"acceptable\": []}"}
+{"id": "train-d3c0d6179a40", "input": "what's the latest coverage of the moon landing program?", "reference": "{\"primary\": \"spaceflight-news-mcp\", \"acceptable\": []}"}
+{"id": "train-c593510b2c29", "input": "news on starship launch?", "reference": "{\"primary\": \"spaceflight-news-mcp\", \"acceptable\": []}"}
+{"id": "train-8e1decbb1333", "input": "articles about artemis", "reference": "{\"primary\": \"spaceflight-news-mcp\", \"acceptable\": []}"}
+{"id": "train-8628c0f37f10", "input": "geomagnetic storm kp index now", "reference": "{\"primary\": \"spaceweather-mcp\", \"acceptable\": []}"}
+{"id": "train-997688d755c8", "input": "is there a chance to see the northern lights tonight in scotland?", "reference": "{\"primary\": \"spaceweather-mcp\", \"acceptable\": []}"}
+{"id": "train-b8b1c24ffbd8", "input": "will the sun's activity mess with gps and radio this week?", "reference": "{\"primary\": \"spaceweather-mcp\", \"acceptable\": []}"}
+{"id": "train-593c7cc74689", "input": "solar storm forcast kp index", "reference": "{\"primary\": \"spaceweather-mcp\", \"acceptable\": []}"}
+{"id": "train-e39c42ee2292", "input": "how expensive would this query be on our postgres before we run it?", "reference": "{\"primary\": \"veto\", \"acceptable\": []}"}
+{"id": "train-c3cbb6e109c3", "input": "is this statement going to scan the whole table? decide before it hits prod", "reference": "{\"primary\": \"veto\", \"acceptable\": []}"}
+{"id": "train-1968d2cfdeb0", "input": "is this query gonna be costly?", "reference": "{\"primary\": \"veto\", \"acceptable\": []}"}
+{"id": "train-89dfccd9d744", "input": "postgres query cost check", "reference": "{\"primary\": \"veto\", \"acceptable\": []}"}
+{"id": "train-fb2a6c6ae21f", "input": "transcript of youtube video dQw4w9WgXcQ", "reference": "{\"primary\": \"youtube-transcripts-mcp\", \"acceptable\": []}"}
+{"id": "train-7700e366e220", "input": "There's a 2-hour conference talk on YouTube I don't have time to watch; get me its full transcript so I can skim it.", "reference": "{\"primary\": \"youtube-transcripts-mcp\", \"acceptable\": []}"}
+{"id": "train-cb9a257a33af", "input": "I want the spoken words of this talk from the big video site as text, here's the link", "reference": "{\"primary\": \"youtube-transcripts-mcp\", \"acceptable\": []}"}
+{"id": "train-a9453ceeafdc", "input": "get youtube transcrpt for this lecture link", "reference": "{\"primary\": \"youtube-transcripts-mcp\", \"acceptable\": []}"}
+{"id": "train-cabd8401c029", "input": "add doi to zotero", "reference": "{\"primary\": \"zotero-library-mcp\", \"acceptable\": []}"}
+{"id": "train-66074adf116a", "input": "Add these three papers to my Zotero library by DOI and put them in the \"Thesis\" collection.", "reference": "{\"primary\": \"zotero-library-mcp\", \"acceptable\": []}"}
+{"id": "train-b9332d271dff", "input": "save this paper into my reference manager so I can cite it later", "reference": "{\"primary\": \"zotero-library-mcp\", \"acceptable\": []}"}
+{"id": "train-5eb076ea6eb8", "input": "add paper to zoteor by isbn", "reference": "{\"primary\": \"zotero-library-mcp\", \"acceptable\": []}"}
