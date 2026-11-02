@@ -1,7 +1,7 @@
 {
   "kind": "command",
   "direction": "maximize",
-  "version": "<case>-metric-v1",
+  "version": "ar04a-skill-select-metric-v1",
   "command": {
     "argv": ["python", "score.py"],
     "uses_model": false,
