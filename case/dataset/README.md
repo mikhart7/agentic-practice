@@ -31,6 +31,7 @@
 python case/dataset/generate.py check                       # формат, id, стили, дубликаты
 python case/dataset/generate.py split --seed 1              # train сюда, public/private в ~/arena-private
 python case/dataset/check_bm25.py . ~/arena-private         # ориентир BM25 по split и стилям
+python case/dataset/review_accept.py                         # лист ручной проверки разметки train
 ```
 
 ## Одно распределение
