@@ -51,10 +51,10 @@ python case/eval_local.py --way case/ways/baseline --split case/dataset/train.js
 
 | Роль | Модель | Версия | AA Intelligence Index | Дата проверки |
 |---|---|---|---|---|
-| Исследователи, ревьюер, подготовка (Claude Code 2.1.280) | Claude Opus 5.5 | `claude-opus-5-5`, выпуск сентябрь 2026 | 58 (v5.0, effort max) | 2026-11-03 |
+| Исследователи, ревьюер, подготовка (Claude Code 2.1.280) | Claude Sonnet 5.5, effort high | `claude-sonnet-5-5` | 47 (effort high) | 2026-11-03 |
 | Решатель | без LLM: BM25 и локальные модели из [models.toml](case/assets/models.toml) | ревизии HF закреплены | — | — |
 | Метрика | без модели | — | — | — |
 
-Порог правила 0-1 — индекс DeepSeek Flash. На странице Artificial Analysis у DeepSeek V4.1 Flash (max) значение индекса v5.0 не указано: модель помечена как deprecated, «No publicly available API». Opus 5.5 занимает 2-е место из 60 по индексу v5.0. Источники: [Claude Opus 5.5](https://artificialanalysis.ai/models/claude-opus-5-5), [DeepSeek V4.1 Flash](https://artificialanalysis.ai/models/deepseek-v4-1-flash).
+Порог правила 0-1 — индекс DeepSeek Flash. На странице Artificial Analysis у DeepSeek V4.1 Flash (max) значение индекса v5.0 не указано: модель помечена как deprecated, «No publicly available API». В сравнениях прежней версии индекса у неё 39, у DeepSeek V4 Flash (max) — 47. Sonnet 5.5 high (47) не ниже ни одного из этих значений. Источники: [Claude Sonnet 5.5 (High)](https://artificialanalysis.ai/models/claude-sonnet-5-5-high), [DeepSeek V4.1 Flash](https://artificialanalysis.ai/models/deepseek-v4-1-flash).
 
-Индекс зависит от уровня effort: 58 — для max, для low — 35 ([сравнение](https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-low-vs-deepseek-v4-1-flash)). В таблице указан тот уровень, с которым запускается кампания. Модель и уровень effort фиксируются на всю кампанию ([ADR-0001](docs/adr/0001-methodology.md)).
+Индекс зависит от уровня effort: у Sonnet 5.5 max — 56, xhigh — 52, high — 47, low — 36. High выбран как компромисс между порогом правила 0-1 и расходом лимитов подписки: на max Sonnet 5.5 тратит больше токенов на задачу, чем Opus 5.5. Модель и уровень effort фиксируются на всю кампанию ([ADR-0001](docs/adr/0001-methodology.md)).
