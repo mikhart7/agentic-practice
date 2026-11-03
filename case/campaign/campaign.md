@@ -11,7 +11,7 @@
   - public — 380 запросов, `3c91b815…` (у оператора);
   - private — 376 запросов, `c2d40116…` (у оператора);
   - подробности — [dataset/generation_report.md](../dataset/generation_report.md).
-- **Модель исследователей:** Claude Sonnet 5.5 (`claude-sonnet-5-5`), effort high, в Claude Code 2.1.280. AA Intelligence Index — 47, проверено 2026-11-03 (README, «Модели»). Решатель и метрика LLM не используют.
+- **Модель исследователей:** Claude Sonnet 5.5 (`claude-sonnet-5-5`), effort high, в Claude Code 2.1.280. AA Intelligence Index — 41, проверено 2026-11-03 (README, «Модели»). Решатель и метрика LLM не используют.
 - **Разрешённые изменения:** [ADR-0004](../../docs/adr/0004-allowed-changes-and-models.md):
   - код решателя, модели из `assets/models.toml`, предвычисленные артефакты ≤ 5 МБ со скриптом воспроизведения;
   - каталог, описания, сеть, LLM и таблицы запросов из train трогать нельзя.
