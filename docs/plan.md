@@ -14,6 +14,25 @@
 
 ---
 
+## Статус ЧП1 (2026-11-03)
+
+Ориентир ТЗ для ЧП1: «Тема согласована; обзор домена; baseline; smoke арены пройден; кейс оформлен; метрика с тестами; split обоснован».
+
+| Пункт | Где | Статус |
+|---|---|---|
+| Тема согласована | README | ✅ |
+| Обзор домена | [domain.md](domain.md) | ✅ |
+| Baseline | [case/ways/baseline](../case/ways/baseline/README.md), [results/baseline](../results/baseline/train.txt) — train 0.508 | ✅ |
+| Smoke арены | [results/smoke](../results/smoke/2026-11-02.md), изоляция — [21/21](../results/smoke/isolation-2026-11-03.md) | ✅ |
+| Кейс оформлен | [case/](../case/README.md), [campaign.md](../case/campaign/campaign.md) — черновик до подготовки | ✅ |
+| Метрика с тестами | [case/metric](../case/metric/README.md) — 27 тестов, включая «жульнические» | ✅ |
+| Split обоснован | [case/dataset/README.md](../case/dataset/README.md), [ADR-0002](adr/0002-catalog-data-split.md) | ✅ |
+| ADR 0001–0006 | [docs/adr](adr/) | ✅ |
+| Модель и индекс AA | README, «Модели» | ✅ (проверить уровень effort перед кампанией) |
+| `docs/arena.md` своими словами | пишет студент по [study/arena-explained.md](study/arena-explained.md) | ⏳ |
+
+Не обязательно к ЧП1, но до заморозки метрики: выборочная ручная проверка `acceptable` (30–50 семейств train) и закрытие `~/arena-private` от учётки оператора.
+
 ## Фаза 0. Инфраструктура (сразу)
 
 1. Склонировать арену рядом с проектом в `~/arena`, закрепить коммит в README. Проверить, что Docker работает в WSL. Запустить `uv run pytest` и `uv run python -m evaluator.smoke`: это smoke для B-3.

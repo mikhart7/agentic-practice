@@ -1,9 +1,6 @@
 # Подбор навыка по запросу: навык, выращенный на арене
 
-> Шаблон репозитория для задания B. ТЗ: [B-arena-skill.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/B-arena-skill.md), реестр тем: [arena-registry.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/arena-registry.md).
-> Замени всё в `<угловых скобках>`, удали этот блок.
-
-Тема (согласована при регистрации): [AR-04. Подбор навыка по запросу (Н2-08)](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/arena-registry.md#ar-04-подбор-навыка-по-запросу-н2-08), вариант **AR-04а — улучшение алгоритма подбора навыков**: каталог и описания навыков фиксированы, эволюционирует алгоритм поиска (BM25, эмбеддинги, переранжирование, обучаемый ранжировщик). Baseline — BM25 по исходным описаниям. Общие требования: [projects/README.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/README.md).
+Тема (согласована при регистрации): [AR-04. Подбор навыка по запросу (Н2-08)](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/arena-registry.md#ar-04-подбор-навыка-по-запросу-н2-08), вариант **AR-04а — улучшение алгоритма подбора навыков**: каталог и описания навыков фиксированы, эволюционирует алгоритм поиска (BM25, эмбеддинги, переранжирование, обучаемый ранжировщик). Baseline — BM25 по исходным описаниям. ТЗ трека: [B-arena-skill.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/B-arena-skill.md), общие требования: [projects/README.md](https://github.com/deeppavlov/agentic-course-itmo/blob/main/projects/README.md).
 
 ## Итог в одной таблице
 
@@ -11,9 +8,8 @@
 |---|---|---|---|
 | Baseline (BM25) | 0.508 | | |
 | Выращенное решение | | | |
-| <классический подход, если реализован> | | | |
 
-Лимит предложенных решений: <N>. Кандидатов в журнале: <M>. AUC кривой: <...>.
+Лимит предложенных решений: 60 ([ADR-0005](docs/adr/0005-campaign-limit.md)). Кандидатов в журнале и AUC кривой — после кампании.
 
 ## Структура
 
@@ -53,4 +49,12 @@ python case/eval_local.py --way case/ways/baseline --split case/dataset/train.js
 
 ## Модели
 
-<Модель исследователей и (если есть) решателя/судьи, версии, AA Intelligence Index, дата.>
+| Роль | Модель | Версия | AA Intelligence Index | Дата проверки |
+|---|---|---|---|---|
+| Исследователи, ревьюер, подготовка (Claude Code 2.1.280) | Claude Opus 5.5 | `claude-opus-5-5`, выпуск сентябрь 2026 | 58 (v5.0, effort max) | 2026-11-03 |
+| Решатель | без LLM: BM25 и локальные модели из [models.toml](case/assets/models.toml) | ревизии HF закреплены | — | — |
+| Метрика | без модели | — | — | — |
+
+Порог правила 0-1 — индекс DeepSeek Flash. На странице Artificial Analysis у DeepSeek V4.1 Flash (max) значение индекса v5.0 не указано: модель помечена как deprecated, «No publicly available API». Opus 5.5 занимает 2-е место из 60 по индексу v5.0. Источники: [Claude Opus 5.5](https://artificialanalysis.ai/models/claude-opus-5-5), [DeepSeek V4.1 Flash](https://artificialanalysis.ai/models/deepseek-v4-1-flash).
+
+Индекс зависит от уровня effort: 58 — для max, для low — 35 ([сравнение](https://artificialanalysis.ai/models/comparisons/claude-opus-5-5-low-vs-deepseek-v4-1-flash)). В таблице указан тот уровень, с которым запускается кампания. Модель и уровень effort фиксируются на всю кампанию ([ADR-0001](docs/adr/0001-methodology.md)).
