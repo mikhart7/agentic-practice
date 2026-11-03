@@ -11,7 +11,9 @@ COPY pyproject.toml uv.lock /opt/ar04a/
 # те же версии, что в uv.lock проекта; torch — CPU-сборка
 RUN cd /opt/ar04a \
     && uv export --frozen --no-dev --no-emit-project -o requirements.txt \
-    && uv pip install --system --no-cache --require-hashes \
+    # байткод компилируем при сборке: в read-only контейнере .pyc не сохраняются,
+    # и без этого каждый запуск заново компилирует torch/transformers (импорт 16 с вместо ~5 с)
+    && uv pip install --system --no-cache --require-hashes --compile-bytecode \
        --extra-index-url https://download.pytorch.org/whl/cpu --index-strategy unsafe-best-match \
        -r requirements.txt \
     && rm -rf /root/.cache

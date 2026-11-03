@@ -31,3 +31,24 @@ done
 | `from sentence_transformers import SentenceTransformer` | 6.79 |
 
 Вывод: время запроса определяют импорт и кодирование каталога, а не модель. Отсюда решения в [ADR-0004](../../docs/adr/0004-allowed-changes-and-models.md): предвычисленные эмбеддинги каталога в пакете кандидата, кросс-энкодер — только на коротком списке.
+
+## В контейнере runner — 2026-11-03
+
+Образ `ar04a-runner:local` ([runner.Dockerfile](../../case/deploy/runner.Dockerfile)), запуск как у оценщика: `--network none --cpus 2 --memory 2g --read-only`, UID 10001, `/assets` только чтение, `python -E -s`. Медиана из 5 запусков по монотонным часам: часы WSL прыгают, `date` для замеров не годится.
+
+```bash
+python results/models/time_runs.py $(realpath case/ways/baseline) $(realpath results/models/dense-probe)
+```
+
+```
+container only (python -c pass)                      median   0.4s  min   0.4s  max   0.4s
+import torch                                         median   2.7s  min   2.6s  max   2.7s
+import torch+transformers                            median   4.0s  min   4.0s  max   4.1s
+import sentence_transformers                         median   8.1s  min   7.9s  max   8.2s
+baseline BM25 via runner                             median   0.7s  min   0.6s  max   0.7s
+dense MiniLM via runner (catalog encoded per query)  median   9.3s  min   9.2s  max   9.4s
+```
+
+Две находки:
+- **Модели грузятся из `/assets/models` без сети**, хотя `-E` игнорирует `HF_HUB_OFFLINE`: при локальном пути обращений к хабу нет.
+- **Без компиляции байткода при сборке** импорт `sentence_transformers` занимал 16 с. В read-only контейнере `.pyc` не сохраняются, и каждый запуск компилировал torch и transformers заново. Исправлено флагом `--compile-bytecode` в runner.Dockerfile: стало 8.1 с.

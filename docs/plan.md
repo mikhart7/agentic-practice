@@ -18,7 +18,7 @@
 
 1. Склонировать арену рядом с проектом в `~/arena`, закрепить коммит в README. Проверить, что Docker работает в WSL. Запустить `uv run pytest` и `uv run python -m evaluator.smoke`: это smoke для B-3.
 2. В проекте завести `pyproject.toml` и `uv.lock` с закреплёнными `rank-bm25`, `sentence-transformers` (torch CPU), `scikit-learn`/`lightgbm`, `pytest`. Добавить `.env` в `.gitignore` (уже есть, проверить).
-3. **Изоляция (ADR).** Claude Code имеет широкий локальный доступ. Поэтому public/private и оценщик работают под отдельным пользователем Linux (например, `arena-op`). Исследовательский Claude Code работает под `mikhart` без прав на эти каталоги.
+3. **Изоляция (ADR-0006).** Штатная схема арены: исследователь (Claude Code) — в контейнере `researcher` из `compose.yaml` арены, public и private — два экземпляра `evaluator`, данные в `/srv/arena` по таблице прав из `deploy/README.md`. Файлы — [case/deploy/](../case/deploy/README.md). Изначальный вариант с отдельными пользователями Linux отклонён: у арены есть штатный путь.
 4. Записать в README модель Claude Code, её версию, AA Intelligence Index и дату проверки (правило 0-1).
 
 ## Фаза 1. Домен и данные → ЧП1
