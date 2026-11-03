@@ -6,6 +6,8 @@ services:
     environment:
       # постоянный HOME исследователя: логин Claude Code и транскрипты сессий (для экспорта трейсов агентов)
       HOME: /home/researcher
+      # версия харнеса закреплена в образе и не должна меняться посреди кампании
+      DISABLE_AUTOUPDATER: "1"
       ARENA_PUBLIC_URL: ${ARENA_PUBLIC_URL:-http://host.docker.internal:8090}
       ARENA_TRAIN_URL: ${ARENA_TRAIN_URL:-http://host.docker.internal:8070}
       ARENA_PRIVATE_URL: ${ARENA_PRIVATE_URL:-http://host.docker.internal:8080}
