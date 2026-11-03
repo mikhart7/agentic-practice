@@ -31,12 +31,24 @@ results/            выгрузки журнала, замеры, график�
 
 ## Как воспроизвести
 
+Арена используется из GitLab без изменений, закреплена на коммите `a28eee3`. Код арены в этот репозиторий не копируется: кейс подключается к ней ссылкой `cases/ar04a-skill-select → case/`.
+
 ```bash
-<клонировать арену и подключить кейс>
-<сгенерировать данные: python case/dataset/generate.py --split train --seed ...>
-<проверить метрику: pytest case/metric/tests>
-<подготовка и запуск кампании — по prompts/prepare.md и prompts/start.md арены>
-<построить кривую и родословную: ...>
+# зависимости, модели, арена
+uv sync --frozen && uv run python case/assets/fetch_models.py
+bash scripts/setup_arena.sh                                    # ~/arena @ a28eee3 + ссылка на кейс
+
+# каталог и данные (каталог закоммичен; public/private — только у оператора)
+python case/dataset/build_catalog.py build                      # тот же каталог побайтово
+python case/dataset/generate.py split --seed 1                  # нужен пул у оператора
+python case/dataset/curve_subset.py                             # train_curve
+
+# метрика и baseline
+uv run --no-project --with pytest==8.4.2 python -m pytest case/metric/tests
+python case/eval_local.py --way case/ways/baseline --split case/dataset/train.jsonl
+
+# развёртывание, подготовка и поиск — case/deploy/README.md (prompts/prepare.md и prompts/start.md арены)
+# <построить кривую и родословную: после кампании>
 ```
 
 ## Модели
