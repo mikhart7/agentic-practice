@@ -34,7 +34,7 @@
    uv run python case/assets/fetch_models.py           # если моделей ещё нет
    sudo bash case/deploy/stage_srv.sh
    ```
-2. **Подготовка кампании** — отдельный запуск Claude Code с `prompts/prepare.md` арены, кейс `cases/ar04a-skill-select`, условия — [campaign.md](../campaign/campaign.md). Результат:
+2. **Подготовка кампании** — отдельный запуск Claude Code с `prompts/prepare.md` арены, кейс `cases/ar04a-skill-select`, условия — [campaign.md](../campaign/campaign.md). Запускается в том же контейнере `researcher`, что и поиск (команда — шаг 7), а не на хосте: под учёткой оператора агенту доступны транскрипты сессии, генерировавшей данные (`~/.claude`), а в них есть запросы private. В контейнере арена лежит в `/opt/arena`, кейс — `/workspace/case`, каталог кампании — `/workspace/case/campaigns/c1`. Перед запуском `sudo bash case/deploy/stage_srv.sh` обновляет `/srv/arena/train` до текущего `main`; после — коммиты подготовки забираются в репозиторий оператора: `git -c safe.directory=/srv/arena/train pull /srv/arena/train main`. Результат:
    - замороженный пакет метрики → `sudo cp -a <campaign_dir>/metric/. /srv/arena/metric/`;
    - его digest → `ARENA_RELEASE_ID`;
    - запись `preparation.md`.

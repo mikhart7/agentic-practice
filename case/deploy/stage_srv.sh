@@ -49,8 +49,11 @@ install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/researcher-home"
 # чистая исследовательская копия: клон закоммиченного состояния репозитория (public/private в git нет)
 if [ ! -d "$SRV/train/.git" ]; then
   git clone --quiet "$REPO" "$SRV/train"
-  chown -R "$UID_ARENA:$UID_ARENA" "$SRV/train"
+else
+  # обновить до закоммиченного main; локальные коммиты исследователя не затираются (только fast-forward)
+  git -c safe.directory='*' -C "$SRV/train" pull --quiet --ff-only origin main
 fi
+chown -R "$UID_ARENA:$UID_ARENA" "$SRV/train"
 
 # замороженный пакет метрики кладёт оператор после подготовки:
 #   cp -a <campaign_dir>/metric/. /srv/arena/metric/
