@@ -55,6 +55,4 @@ python case/eval_local.py --way case/ways/baseline --split case/dataset/train.js
 | Решатель | без LLM: BM25 и локальные модели из [models.toml](case/assets/models.toml) | ревизии HF закреплены | — | — |
 | Метрика | без модели | — | — | — |
 
-Порог правила 0-1 — индекс DeepSeek Flash. На странице Artificial Analysis у DeepSeek V4.1 Flash (max) значение индекса v5.0 не указано: модель помечена как deprecated, «No publicly available API». В сравнениях прежней версии индекса у неё 39 — Sonnet 5.5 high (41) не ниже. У предыдущей DeepSeek V4 Flash (max) в статье AA — 47, это выше; какую из моделей курс считает порогом, уточняется у преподавателя. Источники: [Claude Sonnet 5.5 (High)](https://artificialanalysis.ai/models/claude-sonnet-5-5-high), [DeepSeek V4.1 Flash](https://artificialanalysis.ai/models/deepseek-v4-1-flash).
-
-Индекс зависит от уровня effort; у Sonnet 5.5 на max — 56 (по публикациям о выпуске). High выбран как компромисс между порогом правила 0-1 и расходом лимитов подписки: на max Sonnet 5.5 тратит больше токенов на задачу, чем Opus 5.5. Модель и уровень effort фиксируются на всю кампанию ([ADR-0001](docs/adr/0001-methodology.md)).
+Порог правила 0-1 — индекс DeepSeek Flash: у DeepSeek V4.1 Flash 1017 (Max) — 32, у Sonnet 5.5 (High) — 41 ([Artificial Analysis](https://artificialanalysis.ai/models/claude-sonnet-5-5-high), проверено 2026-11-03). Модель и уровень effort фиксируются на всю кампанию ([ADR-0001](docs/adr/0001-methodology.md)).

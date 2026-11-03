@@ -28,7 +28,7 @@
 | Метрика с тестами | [case/metric](../case/metric/README.md) — 27 тестов, включая «жульнические» | ✅ |
 | Split обоснован | [case/dataset/README.md](../case/dataset/README.md), [ADR-0002](adr/0002-catalog-data-split.md) | ✅ |
 | ADR 0001–0006 | [docs/adr](adr/) | ✅ |
-| Модель и индекс AA | README, «Модели» | ⏳ Sonnet 5.5 high, 41: уточнить порог (39 или 47) у преподавателя |
+| Модель и индекс AA | README, «Модели» | ✅ Sonnet 5.5 high, 41 (порог DeepSeek V4.1 Flash 1017 — 32) |
 | `docs/arena.md` своими словами | пишет студент по [study/arena-explained.md](study/arena-explained.md) | ⏳ |
 
 Не обязательно к ЧП1, но до заморозки метрики: выборочная ручная проверка `acceptable` (30–50 семейств train) и закрытие `~/arena-private` от учётки оператора.
