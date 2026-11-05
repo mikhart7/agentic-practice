@@ -52,7 +52,14 @@ def main() -> int:
     if not a.no_build:
         build = run("evaluator.build", "submit", "--journal", a.journal, "--candidate", a.candidate,
                     "--url", a.url, "--token-file", TOKEN, "--output", str(runs / f"{a.measurement}.build.json"))
-        print("build:", json.dumps(build)[:400], flush=True)
+        print("build submitted:", build.get("status"), flush=True)
+        while build.get("status") == "RUNNING":  # build идёт асинхронно: ждём процессом, не моделью
+            time.sleep(a.poll)
+            build = run("evaluator.build", "status", "--digest", build["candidate_digest"], "--url", a.url,
+                        "--token-file", TOKEN, "--output", str(runs / f"{a.measurement}.build.json"))
+        print("build:", build.get("status"), json.dumps(build.get("error")), flush=True)
+        if build.get("status") != "FINISHED":
+            return 1
     args = ["submit", "--candidate", a.candidate, "--measurement", a.measurement, "--dataset", DATASET,
             "--conditions", CONDITIONS, "--train-data", str(data), "--url", a.url, "--token-file", TOKEN,
             "--journal", a.journal]
