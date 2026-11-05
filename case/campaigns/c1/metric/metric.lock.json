@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "files": {
+    "README.md": {
+      "executable": false
+    },
+    "catalog_ids.txt": {
+      "executable": false
+    },
+    "metric.json": {
+      "executable": false
+    },
+    "score.py": {
+      "executable": false
+    },
+    "tests/test_score.py": {
+      "executable": false
+    }
+  }
+}

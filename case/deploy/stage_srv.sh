@@ -39,6 +39,15 @@ install -d -m 0755 "$SRV/assets"
 install -m 0644 "$REPO/case/assets/catalog.jsonl" "$SRV/assets/catalog.jsonl"
 rsync -a --delete --chmod=D0755,F0644 "$REPO/case/assets/models/" "$SRV/assets/models/"
 
+# train-сервис: свой неизменяемый экземпляр train (не рабочая копия исследователя), состояние и учёт
+install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/trainsvc" "$SRV/trainsvc/state" "$SRV/trainsvc/usage"
+install -m 0400 -o "$UID_ARENA" -g "$UID_ARENA" "$REPO/case/dataset/train.jsonl" "$SRV/trainsvc/dataset.jsonl"
+
+# квитанции build, опубликованные материалы, слоты исполнения: пишет только оценщик (UID 10001);
+# staging пишет исследователь (материалы для evaluator.assets publish), оценщик читает
+install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/builds" "$SRV/slots"
+install -d -m 0755 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/derived" "$SRV/staging"
+
 # журнал кампании и операторский каталог остановки
 install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/search"
 install -d -m 0700 "$SRV/search-control"

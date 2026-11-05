@@ -1,0 +1,163 @@
+# Доверенный контур кампании AR-04а: train-сервис, public- и private-оценщики одним проектом Compose.
+# Общий compose.yaml арены не подходит: его сеть workers носит имя ARENA_RUNNER_NETWORK, а решатель без модели
+# обязан работать с network=none. Здесь gateway и сети runner нет вовсе (образец — cases/sc35/.../deploy/compose.yaml арены).
+#   docker compose -p arena-ar04a -f case/deploy/compose.campaign.yaml --env-file /etc/arena/campaign.env up -d
+# Пути хоста и контейнера совпадают (${ARENA_ROOT}/...): оценщик запускает runner через docker.sock и монтирует их по хостовым путям.
+name: arena-ar04a
+
+x-runtime: &runtime
+  init: true
+  user: "10001:10001"
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  pids_limit: 128
+  mem_limit: 2g
+  cpus: 2
+  tmpfs:
+    - /tmp:rw,noexec,nosuid,size=128m,mode=1777
+  restart: unless-stopped
+
+x-evaluator: &evaluator
+  <<: *runtime
+  image: ${ARENA_EVALUATOR_IMAGE:-arena-evaluator:local}
+  command: [python, -m, evaluator]
+  group_add: ["${ARENA_DOCKER_GID:?}"]
+  environment: &evaluator-environment
+    ARENA_CASE_ID: ar04a-skill-select
+    ARENA_CAMPAIGN_ID: ar04a-c1
+    ARENA_DATASET_ID: ar04a-skill-select-v1
+    ARENA_CONDITIONS_ID: ${AR04A_CONDITIONS_ID:?}
+    ARENA_RELEASE_ID: ${AR04A_RELEASE_ID:?}
+    ARENA_METRIC_PATH: /private/metric
+    ARENA_RUNNER_IMAGE: ar04a-runner:local
+    ARENA_RUNNER_NETWORK: none
+    ARENA_USES_MODEL: "false"
+    ARENA_HARNESSES: "{}"
+    ARENA_PARAMETERS: "{}"
+    ARENA_RUNNER_TIMEOUT: "600"
+    ARENA_RUNNER_MEMORY: 2g
+    ARENA_RUNNER_CPUS: "2"
+    ARENA_PREPARE_TIMEOUT: "172800"
+    ARENA_RETRY_DELAY: "30"
+    ARENA_MAX_BODY_BYTES: "73400320"
+    ARENA_ASSETS_DIR: ${ARENA_ROOT:?}/assets
+    ARENA_PUBLISHED_ASSETS_DIR: ${ARENA_ROOT}/derived
+    ARENA_BUILD_DIR: ${ARENA_ROOT}/builds
+    ARENA_SLOT_DIR: ${ARENA_ROOT}/slots
+    ARENA_EXECUTION_SLOTS: "2"
+    ARENA_RUNNER_SUPPORTS_BUILD: "true"
+    ARENA_RUNNER_SUPPORTS_ASSET_SELECTION: "true"
+    ARENA_INPUT_ASSETS_DIGEST: ${AR04A_INPUT_ASSETS_DIGEST:?}
+    ARENA_FINALISTS: "5"
+    ARENA_OUTPUT_COUNT: "2"
+  healthcheck:
+    test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/healthz', timeout=3)"]
+    interval: 30s
+    timeout: 5s
+    retries: 3
+
+services:
+  train:
+    <<: *evaluator
+    command: [python, -m, evaluator.train, serve, --host, 0.0.0.0, --port, "8080"]
+    environment:
+      <<: *evaluator-environment
+      ARENA_SPLIT: public
+      ARENA_TRAIN_TRACKING: "false"
+      ARENA_DATASET_PATH: /private/dataset.jsonl
+      ARENA_STATE_DIR: ${ARENA_ROOT}/trainsvc/state
+      ARENA_USAGE_DIR: ${ARENA_ROOT}/trainsvc/usage
+      ARENA_TOKEN_FILE: /run/secrets/train-submit-token
+      ARENA_ASSET_STAGING_DIR: /staging
+      ARENA_ASSET_STORE_DIR: ${ARENA_ROOT}/derived
+    volumes:
+      - ${ARENA_ROOT}/metric:/private/metric:ro
+      - ${ARENA_ROOT}/assets:${ARENA_ROOT}/assets:ro
+      - ${ARENA_ROOT}/builds:${ARENA_ROOT}/builds
+      - ${ARENA_ROOT}/slots:${ARENA_ROOT}/slots
+      - ${ARENA_ROOT}/secrets:/run/secrets:ro
+      - ${ARENA_DOCKER_SOCKET:-/var/run/docker.sock}:/var/run/docker.sock
+      - ${ARENA_ROOT}/trainsvc/dataset.jsonl:/private/dataset.jsonl:ro
+      - ${ARENA_ROOT}/trainsvc/state:${ARENA_ROOT}/trainsvc/state
+      - ${ARENA_ROOT}/trainsvc/usage:${ARENA_ROOT}/trainsvc/usage
+      - ${ARENA_ROOT}/staging:/staging:ro
+      - ${ARENA_ROOT}/derived:${ARENA_ROOT}/derived
+    ports: ["127.0.0.1:8070:8080"]
+  public:
+    <<: *evaluator
+    depends_on:
+      train: {condition: service_healthy}
+    environment:
+      <<: *evaluator-environment
+      ARENA_SPLIT: public
+      ARENA_DATASET_PATH: /private/dataset.jsonl
+      ARENA_STATE_DIR: ${ARENA_ROOT}/public/state
+      ARENA_USAGE_DIR: ${ARENA_ROOT}/public/usage
+      ARENA_TOKEN_FILE: /run/secrets/public-submit-token
+    volumes:
+      - ${ARENA_ROOT}/metric:/private/metric:ro
+      - ${ARENA_ROOT}/assets:${ARENA_ROOT}/assets:ro
+      - ${ARENA_ROOT}/builds:${ARENA_ROOT}/builds
+      - ${ARENA_ROOT}/slots:${ARENA_ROOT}/slots
+      - ${ARENA_ROOT}/secrets:/run/secrets:ro
+      - ${ARENA_DOCKER_SOCKET:-/var/run/docker.sock}:/var/run/docker.sock
+      - ${ARENA_ROOT}/public/dataset.jsonl:/private/dataset.jsonl:ro
+      - ${ARENA_ROOT}/public/state:${ARENA_ROOT}/public/state
+      - ${ARENA_ROOT}/public/usage:${ARENA_ROOT}/public/usage
+      - ${ARENA_ROOT}/derived:${ARENA_ROOT}/derived:ro
+    ports: ["127.0.0.1:8090:8080"]
+  private:
+    <<: *evaluator
+    depends_on:
+      train: {condition: service_healthy}
+    environment:
+      <<: *evaluator-environment
+      ARENA_SPLIT: private
+      ARENA_DATASET_PATH: /private/dataset.jsonl
+      ARENA_STATE_DIR: ${ARENA_ROOT}/private/state
+      ARENA_USAGE_DIR: ${ARENA_ROOT}/private/usage
+      ARENA_TOKEN_FILE: /run/secrets/private-submit-token
+      ARENA_SEARCH_MODE: campaign
+      ARENA_SEARCH_JOURNAL: /search/search.sqlite3
+      ARENA_SEARCH_MAX_SOLUTIONS: "30"
+      ARENA_SEARCH_STOP_PATH: /search-control/stop.json
+    volumes:
+      - ${ARENA_ROOT}/metric:/private/metric:ro
+      - ${ARENA_ROOT}/assets:${ARENA_ROOT}/assets:ro
+      - ${ARENA_ROOT}/builds:${ARENA_ROOT}/builds
+      - ${ARENA_ROOT}/slots:${ARENA_ROOT}/slots
+      - ${ARENA_ROOT}/secrets:/run/secrets:ro
+      - ${ARENA_DOCKER_SOCKET:-/var/run/docker.sock}:/var/run/docker.sock
+      - ${ARENA_ROOT}/private/dataset.jsonl:/private/dataset.jsonl:ro
+      - ${ARENA_ROOT}/private/state:${ARENA_ROOT}/private/state
+      - ${ARENA_ROOT}/private/usage:${ARENA_ROOT}/private/usage
+      - ${ARENA_ROOT}/derived:${ARENA_ROOT}/derived:ro
+      - ${ARENA_ROOT}/search:/search:ro
+      - ${ARENA_ROOT}/search-control:/search-control:ro
+    ports: ["127.0.0.1:8080:8080"]
+
+  researcher:
+    <<: *runtime
+    profiles: [research]
+    image: ar04a-researcher:local
+    stdin_open: true
+    tty: true
+    restart: "no"
+    environment:
+      HOME: /home/researcher
+      DISABLE_AUTOUPDATER: "1"
+      ARENA_SEARCH_JOURNAL: /search/search.sqlite3
+      ARENA_TRAIN_URL: http://host.docker.internal:8070
+      ARENA_PUBLIC_URL: http://host.docker.internal:8090
+      ARENA_PRIVATE_URL: http://host.docker.internal:8080
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ${ARENA_ROOT}/train:/workspace
+      - ${ARENA_ROOT}/search:/search
+      - ${ARENA_ROOT}/researcher-home:/home/researcher
+      - ${ARENA_ROOT}/researcher-tokens:/run/secrets/arena:ro
+      - ${ARENA_ROOT}/assets:/assets:ro
+      - ${ARENA_ROOT}/derived:/derived:ro
+      - ${ARENA_ROOT}/staging:/staging

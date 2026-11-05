@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Проверка границы закрытых данных ИЗНУТРИ контейнера исследователя (common/isolation.md арены).
 # Запуск оператором:
-#   docker compose -f compose.yaml -f <repo>/case/deploy/compose.override.yaml \
-#     --env-file /etc/arena/private.env --profile train run --rm researcher \
+#   docker compose -p arena-ar04a -f <repo>/case/deploy/compose.campaign.yaml \
+#     --env-file /etc/arena/campaign.env --profile research run --rm researcher \
 #     bash /workspace/case/deploy/check_isolation.sh
 # Каждая строка должна быть OK; вывод сохраняется в <campaign_dir>/preparation.md.
 set -u
@@ -40,5 +40,14 @@ env | grep -qE '^ARENA_(DATASET_PATH|STATE_DIR|USAGE_DIR|MODEL_API_KEY_FILE|SUBM
 [ -w /search ] && ok "журнал /search доступен на запись" || bad "/search недоступен"
 ls /run/secrets/arena/ >/dev/null 2>&1 && ok "submit-токены доступны: $(ls /run/secrets/arena | tr '\n' ' ')" \
   || bad "нет submit-токенов"
+
+# материалы: каталог и модели, опубликованные результаты build — только чтение; staging — запись
+for p in /assets /derived; do
+  if [ ! -d "$p" ]; then bad "не смонтирован: $p"; elif [ -w "$p" ]; then bad "доступен на запись: $p"; else ok "только чтение: $p"; fi
+done
+[ -d /staging ] && [ -w /staging ] && ok "staging доступен на запись" || bad "staging не смонтирован или недоступен на запись"
+for name in model-api-key; do absent "/run/secrets/arena/$name"; done
+bad_tokens=$(ls /run/secrets/arena 2>/dev/null | grep -v -E '^(public|private|train)-submit-token$' | wc -l)
+[ "$bad_tokens" = 0 ] && ok "в /run/secrets/arena только submit-токены" || bad "лишние файлы в /run/secrets/arena"
 
 exit $fail
