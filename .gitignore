@@ -3,8 +3,13 @@ __pycache__/
 .pytest_cache/
 # секреты — только локально
 .env
-# private и public держит оценщик, не коммитить
+# private и public держит оценщик, не коммитить (generate.py split пишет их в ~/arena-private)
 *.private.jsonl
 *.public.jsonl
+public.jsonl
+private.jsonl
+public.meta.jsonl
+private.meta.jsonl
+pool/
 # веса моделей скачиваются fetch_models.py по закреплённым ревизиям
 case/assets/models/
