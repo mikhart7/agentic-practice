@@ -1,0 +1,20 @@
+{
+ "candidate": "t-base",
+ "measurement": "t-m1",
+ "subset": "curve",
+ "evaluation_id": "5c0ca8368331f5698cab4b223d57e2d7f7a2b4a03da1c217f38d0958ad43fcf5",
+ "status": "FINISHED",
+ "wall_seconds": 35.1,
+ "metrics": {
+  "solver_tokens": 0,
+  "solver_seconds": 3.7409599399943545,
+  "solver_unreported_attempts": 0,
+  "solver_resources_complete": true,
+  "judge_tokens": 0,
+  "judge_seconds": 0.896913504,
+  "judge_unreported_attempts": 0,
+  "judge_resources_complete": true,
+  "wall_seconds": 4.773636815,
+  "score": 0.46
+ }
+}
