@@ -1,0 +1,20 @@
+{
+ "candidate": "r4-02",
+ "measurement": "r4-02-exp1",
+ "subset": "train",
+ "evaluation_id": "748419391050b98683393c5cb02cfcbb2f8e77ee421838faae63421fb215afac",
+ "status": "FINISHED",
+ "wall_seconds": 307.0,
+ "metrics": {
+  "solver_tokens": 0,
+  "solver_seconds": 256.77115324299666,
+  "solver_unreported_attempts": 0,
+  "solver_resources_complete": true,
+  "judge_tokens": 0,
+  "judge_seconds": 0.902827871,
+  "judge_unreported_attempts": 0,
+  "judge_resources_complete": true,
+  "wall_seconds": 17.600211398,
+  "score": 1.0
+ }
+}
