@@ -16,7 +16,7 @@
   - код решателя, модели из `assets/models.toml`, подготовка в `build.py` через train-сервис (эмбеддинги, индексы, обучение на train);
   - каталог, описания, сеть, LLM и таблицы запросов из train трогать нельзя.
 - **Среда исполнения:** runner-образ с библиотеками из `uv.lock`; `/assets` — каталог и модели, `/assets/prepared` — результат build кандидата; контейнер 2 CPU, 2 ГБ, `network=none`.
-- **Train-сервис:** с build (`supports_build: true`) для харнеса `ar04a-runner:local`; TODO подготовки: конфигурация по `deploy/README.md` арены и образцу `cases/sc35`.
+- **Train-сервис:** с build и выбором опубликованных материалов (`supports_build: true`, `supports_asset_selection: true`) для харнеса `ar04a-runner:local`; TODO подготовки: конфигурация по `deploy/README.md` арены и образцу `cases/sc35`.
 - **Таймауты:**
   - 60 с на пример;
   - оценка одного кандидата — ориентир ≤ 30 мин на `train_curve` и ≤ 60 мин на public;

@@ -57,7 +57,7 @@
      --token-file /srv/arena/secrets/private-submit-token --require-campaign \
      --max-solutions 60 --finalists 5 --output-count 2 --release-id <ARENA_RELEASE_ID>
    ```
-   Train-сервис (`python -m evaluator.train serve`, порт 8070) нужен для замеров `train_curve` и для build. В общем Compose его нет, он поднимается отдельным сервисом. Его конфигурацию готовит агент подготовки по разделу «Необязательный train-сервис и подготовка материалов» `deploy/README.md` арены, образец — `cases/sc35/campaigns/sc35-first-20261028/deploy/compose.yaml`. Нужно: харнес `ar04a-runner:local` с `supports_build: true`, `ARENA_BUILD_DIR`, `ARENA_PUBLISHED_ASSETS_DIR`, `ARENA_INPUT_ASSETS_DIGEST`; тот же харнес и каталог квитанций у public и private ([ADR-0004](../../docs/adr/0004-allowed-changes-and-models.md)).
+   Train-сервис (`python -m evaluator.train serve`, порт 8070) нужен для замеров `train_curve` и для build. В общем Compose его нет, он поднимается отдельным сервисом. Его конфигурацию готовит агент подготовки по разделу «Необязательный train-сервис и подготовка материалов» `deploy/README.md` арены, образец — `cases/sc35/campaigns/sc35-first-20261028/deploy/compose.yaml`. Нужно: харнес `ar04a-runner:local` с `supports_build: true` и `supports_asset_selection: true` (переиспользование результата build родителя), `ARENA_BUILD_DIR`, `ARENA_PUBLISHED_ASSETS_DIR`, `ARENA_INPUT_ASSETS_DIGEST`; тот же харнес и каталог квитанций у public и private ([ADR-0004](../../docs/adr/0004-allowed-changes-and-models.md)).
 6. **Проверка изоляции** — результат записать в `preparation.md`:
    ```bash
    docker compose -f compose.yaml -f $REPO/case/deploy/compose.override.yaml \
