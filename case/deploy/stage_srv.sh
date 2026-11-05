@@ -46,12 +46,20 @@ install -d -m 0700 "$SRV/search-control"
 # HOME исследователя (логин Claude Code, транскрипты) — отдельно от HOME оператора
 install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/researcher-home"
 
-# чистая исследовательская копия: клон закоммиченного состояния репозитория (public/private в git нет)
+# чистая исследовательская копия: клон закоммиченного main (public/private в git нет).
+# Перед тем как отдать историю исследователю — проверка утечек по всей истории main:
+# данные читает root, скрипт работает под оператором.
+(cd "$REPO" && cat "$PRIVATE_SRC/public.jsonl" "$PRIVATE_SRC/private.jsonl" \
+  | sudo -u "${SUDO_USER:?запускайте через sudo}" python3 scripts/leak_check.py main) \
+  || { echo "в истории main найден текст public/private — исследовательская копия не обновлена" >&2; exit 1; }
+main_sha="$(git -c safe.directory='*' -C "$REPO" rev-parse main)"
 if [ ! -d "$SRV/train/.git" ]; then
-  git clone --quiet "$REPO" "$SRV/train"
-else
-  # обновить до закоммиченного main; локальные коммиты исследователя не затираются (только fast-forward)
-  git -c safe.directory='*' -C "$SRV/train" pull --quiet --ff-only origin main
+  # --no-local: в клон попадают только объекты, достижимые из main, а не весь .git/objects
+  git -c safe.directory='*' clone --quiet --no-local --branch main "$REPO" "$SRV/train"
+elif ! git -c safe.directory='*' -C "$SRV/train" merge-base --is-ancestor "$main_sha" HEAD 2>/dev/null; then
+  # обновить до main; локальные коммиты исследователя не затираются (только fast-forward)
+  git -c safe.directory='*' -C "$SRV/train" pull --quiet --ff-only origin main || {
+    echo "история $SRV/train расходится с main (переписана?): удалите каталог и запустите снова" >&2; exit 1; }
 fi
 chown -R "$UID_ARENA:$UID_ARENA" "$SRV/train"
 
