@@ -51,7 +51,10 @@ res = json.loads(res_path.read_text()) if res_path.exists() else {}
 print("final:", json.dumps(res)[:600], flush=True)
 score = None
 if res.get("status") == "complete":
+    sc = res.get("scores")
+    if isinstance(sc, list) and len(sc) == 1 and isinstance(sc[0].get("score"), (int, float)): score = sc[0]["score"]
     for k in ("score", "mean_score", "aggregate_score"):
+        if score is not None: break
         if isinstance(res.get(k), (int, float)): score = res[k]; break
 if score is not None:
     sh("evaluator.search", "--journal", JOURNAL, "finish", "--id", mid, "--score", repr(float(score)))

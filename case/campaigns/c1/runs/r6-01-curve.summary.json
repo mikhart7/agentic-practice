@@ -1,0 +1,20 @@
+{
+ "candidate": "r6-01",
+ "measurement": "r6-01-curve",
+ "subset": "curve",
+ "evaluation_id": "be4e1dc2221169d917fef65ccc2d576c33f065a95eb90f93b3f87f3f742b99ee",
+ "status": "FINISHED",
+ "wall_seconds": 1140.0,
+ "metrics": {
+  "solver_tokens": 0,
+  "solver_seconds": 1219.6693260320171,
+  "solver_unreported_attempts": 0,
+  "solver_resources_complete": true,
+  "judge_tokens": 0,
+  "judge_seconds": 43.355524525,
+  "judge_unreported_attempts": 0,
+  "judge_resources_complete": true,
+  "wall_seconds": 1129.624857215,
+  "score": 0.79725
+ }
+}

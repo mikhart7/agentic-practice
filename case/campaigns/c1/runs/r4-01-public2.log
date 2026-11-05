@@ -1,0 +1,2 @@
+final: {"status": "complete", "evaluation_id": "de600c57b975516ee6794b8da1ec1805920b5ade3184a71fa9237d3f2ac34597", "scores": [{"candidate_id": "r4-01", "score": 0.7813157894736842}]}
+complete, но score не найден в ответе — измерение оставлено running, разобрать вручную: /workspace/case/campaigns/c1/runs/r4-01-public2.json
