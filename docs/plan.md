@@ -37,7 +37,7 @@
 
 1. Склонировать арену рядом с проектом в `~/arena`, закрепить коммит в README. Проверить, что Docker работает в WSL. Запустить `uv run pytest` и `uv run python -m evaluator.smoke`: это smoke для B-3.
 2. В проекте завести `pyproject.toml` и `uv.lock` с закреплёнными `rank-bm25`, `sentence-transformers` (torch CPU), `scikit-learn`/`lightgbm`, `pytest`. Добавить `.env` в `.gitignore` (уже есть, проверить).
-3. **Изоляция (ADR-0006).** Штатная схема арены: исследователь (Claude Code) — в контейнере `researcher` из `compose.yaml` арены, public и private — два экземпляра `evaluator`, данные в `/srv/arena` по таблице прав из `deploy/README.md`. Файлы — [case/deploy/](../case/deploy/README.md). Изначальный вариант с отдельными пользователями Linux отклонён: у арены есть штатный путь.
+3. **Изоляция (ADR-0006).** Схема арены в виде compose кейса, как в `sc35`: исследователь (Claude Code) — в контейнере `researcher`, train-сервис, public и private — три сервиса оценщика, данные в `/srv/arena` по таблице прав из `deploy/README.md`. Файлы — [case/deploy/](../case/deploy/README.md). Изначальный вариант с отдельными пользователями Linux отклонён: у арены есть штатный путь.
 4. Записать в README модель Claude Code, её версию, AA Intelligence Index и дату проверки (правило 0-1).
 
 ## Фаза 1. Домен и данные → ЧП1
@@ -95,7 +95,7 @@
   - лимит **30 решений** (сначала было 60, сокращено 2026-11-05 из-за машинного времени и окон подписки, ADR-0005);
   - K=5 финалистов, N=2;
   - 2–3 параллельных исследователя;
-  - таймаут 60 с на пример.
+  - таймаут 600 с на пример и на build (сначала было 60 с; поднят 2026-11-05, ADR-0004).
 - Подготовка по `prompts/prepare.md` арены — отдельный запуск в контейнере `researcher`: freeze и verify пакета метрики, конфигурация train-сервиса с build (`supports_build`, `supports_asset_selection`), `preparation.md` со свидетельствами, запуск оценщиков public и private (`search-readiness`).
 - **ADR в `docs/adr/`:**
   - 0001 методология (арена как есть плюс Claude Code);

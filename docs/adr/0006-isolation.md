@@ -1,16 +1,16 @@
 # ADR-0006: Изоляция и развёртывание — штатная схема арены
 
 - Статус: proposed (подтверждается проверкой изоляции в `preparation.md`)
-- Дата: 2026-11-03
+- Дата: 2026-11-03, пересмотрено 2026-11-05: compose кейса вместо `compose.yaml` арены с override
 
 ## Контекст
 Исследователь не должен видеть public и private. Арена требует, чтобы граница держалась на правах доступа к файлам и сети, а не на тексте промпта (`common/isolation.md`). На машине оператора (WSL2, пользователь в группах `sudo` и `docker`, данные в `~/arena-private`, транскрипт подготовки с запросами private в `~/.claude`) агент, запущенный под учёткой оператора, видел бы всё.
 
 ## Решение
-Используем штатную контейнерную схему арены (`compose.yaml`, `deploy/README.md`, коммит `a28eee3`) без собственных механизмов:
+Используем контейнерную схему арены (`deploy/README.md`, `common/isolation.md`, коммит `a28eee3`) в виде compose кейса, как в эталонном кейсе `sc35` арены: [case/deploy/compose.campaign.yaml](../../case/deploy/compose.campaign.yaml). Общий `compose.yaml` арены не подходит: его сеть runner задаётся `ARENA_RUNNER_NETWORK`, а немодельный кандидат по коду арены обязан работать с `network=none` (`evaluator/runner.py`: «model-free runner requires network none»).
 
-- **Исследователь** (оркестратор, исследователи-субагенты, ревьюер) — один запуск Claude Code внутри контейнера `researcher` (profile `train`). Ему смонтированы только `/workspace` (чистый клон репозитория с train), `/search` (журнал) и submit-токены. Нет Docker socket, sudo, домашнего каталога оператора, операторского env и закрытых данных.
-- **Public и private** — два экземпляра `evaluator` (profile `private`, разные `ARENA_SPLIT`, состояние, токены, порты 8090 и 8080). Данные лежат в `/srv/arena/{public,private}` с режимом 0700 и владельцем UID 10001. Наружу: public отдаёт общий score, private — статус.
+- **Исследователь** (подготовка, затем оркестратор, исследователи-субагенты, ревьюер) — Claude Code в контейнере `researcher` (profile `research`, образ `ar04a-researcher:local`, UID 10001, без Docker socket и sudo). Смонтированы `/workspace` (чистый клон репозитория с train), `/search` (журнал), submit-токены, HOME исследователя, `/assets` и `/derived` только для чтения и `/staging` для публикации весов — как у исследователя в `sc35`. Нет домашнего каталога оператора, операторского env и закрытых данных.
+- **Train, public и private** — три сервиса оценщика в том же проекте Compose (порты 8070, 8090, 8080): train-сервис с build и публикацией материалов, public и private с общим журналом квитанций. Данные лежат в `/srv/arena/{trainsvc,public,private}` с режимом 0700 и владельцем UID 10001. Наружу: train отдаёт всё, public — общий score, private — статус. Режим `campaign` и журнал (только чтение) — только у private.
 - **Кандидаты** исполняются оценщиком в одноразовых контейнерах `ar04a-runner:local` с `network=none`.
 - Раскладка путей и прав — по таблице «Данные и права» арены: [case/deploy/stage_srv.sh](../../case/deploy/stage_srv.sh).
 - Готовность подтверждается проверкой изнутри контейнера исследователя: [check_isolation.sh](../../case/deploy/check_isolation.sh). Результат записывается в `preparation.md`.
@@ -19,7 +19,7 @@
 
 ## Отличия от арены
 Только то, что арена оставляет оператору:
-1. **Харнес в образе исследователя** — Claude Code 2.1.280, закреплённая версия ([researcher.Dockerfile](../../case/deploy/researcher.Dockerfile)). Арена: «необходимый CLI-харнес оператор добавляет в свой image».
+1. **Харнес в образе исследователя** — Claude Code 2.1.318, закреплённая версия ([researcher.Dockerfile](../../case/deploy/researcher.Dockerfile)). Арена: «необходимый CLI-харнес оператор добавляет в свой image».
 2. **Постоянный HOME исследователя** (`/srv/arena/researcher-home` вместо `HOME=/tmp`). Нужен для логина Claude Code и для сохранения транскриптов сессий, их потом экспортируем как трейсы агентов. HOME отделён от HOME оператора.
 3. **Библиотеки кейса в runner** — из `uv.lock` проекта ([runner.Dockerfile](../../case/deploy/runner.Dockerfile)). Арена: теги и состав образа — выбор оператора.
 4. **Хост — WSL2 + Docker Desktop**, а не отдельный узел. Обходы через хост (`wsl.exe`, `/mnt/c`, docker socket) недоступны изнутри контейнера, это проверяет `check_isolation.sh`. Оператор (администратор хоста) входит в доверенный контур, как и в арене.

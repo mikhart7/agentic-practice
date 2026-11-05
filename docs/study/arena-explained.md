@@ -29,7 +29,8 @@ github.com/mikhart7/agentic-practice  ──────────► этот
 |---|---|---|
 | Оценщики, журнал поиска, заморозка метрики, клиент отправки | арена | `~/arena/evaluator/` |
 | Запуск кандидата в контейнере (runner) | арена | `~/arena/runner/` |
-| Docker-образы и compose | арена | `~/arena/Dockerfile`, `compose.yaml` |
+| Docker-образы | арена | `~/arena/Dockerfile` |
+| Compose кампании (train, public, private, researcher) | мы, по образцу `cases/sc35` арены | `case/deploy/compose.campaign.yaml` |
 | Промпты ролей и протокол | арена | `~/arena/prompts/`, `~/arena/common/` |
 | **Задача, данные, метрика, baseline, условия кампании** | **мы** | `case/` |
 | Надстройки над образами арены (библиотеки, Claude Code) | мы | `case/deploy/` |

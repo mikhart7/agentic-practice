@@ -51,7 +51,7 @@ python case/eval_local.py --way case/ways/baseline --split case/dataset/train.js
 
 | Роль | Модель | Версия | AA Intelligence Index | Дата проверки |
 |---|---|---|---|---|
-| Исследователи, ревьюер, подготовка (Claude Code 2.1.280) | Claude Sonnet 5.5, effort high | `claude-sonnet-5-5` | 41 (effort high, проверено на странице AA) | 2026-11-03 |
+| Исследователи, ревьюер, подготовка (Claude Code 2.1.318) | Claude Sonnet 5.5, effort high | `claude-sonnet-5-5` | 41 (effort high, проверено на странице AA) | 2026-11-03 |
 | Решатель | без LLM: BM25 и локальные модели из [models.toml](case/assets/models.toml) | ревизии HF закреплены | — | — |
 | Метрика | без модели | — | — | — |
 

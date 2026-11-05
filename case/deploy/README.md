@@ -56,7 +56,11 @@
    - замороженный пакет метрики `<campaign_dir>/metric`, его digest → `AR04A_RELEASE_ID` (`ar04a-c1-metric-<12 символов>`);
    - `compose.campaign.yaml`, `campaign.env.example`, `campaigns/c1/campaign.md`, `campaigns/c1/preparation.md`, инициализированный журнал `/search/search.sqlite3`.
 
-   Коммиты подготовки забираются в репозиторий оператора: `git -c safe.directory=/srv/arena/train pull /srv/arena/train main` (подготовка ничего не коммитит: её файлы лежат в `/srv/arena/train` незакоммиченными, их нужно закоммитить там перед `pull`).
+   Агент коммитит результаты подготовки в `/workspace`. Оператор забирает коммиты в свой репозиторий (у копии другой владелец, UID 10001, поэтому разрешение передаётся `upload-pack`):
+   ```bash
+   cd $REPO
+   git fetch --upload-pack="git -c safe.directory='*' upload-pack" /srv/arena/train main && git merge --ff-only FETCH_HEAD
+   ```
 5. **Установка метрики** оператором: проверить код пакета, установить и сверить.
    ```bash
    sudo cp -a $REPO/case/campaigns/c1/metric/. /srv/arena/metric/
