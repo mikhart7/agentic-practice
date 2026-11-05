@@ -17,6 +17,7 @@
   - каталог, описания, сеть, LLM и таблицы запросов из train трогать нельзя.
 - **Среда исполнения:** runner-образ с библиотеками из `uv.lock`; `/assets` — каталог и модели, `/assets/prepared` — результат build кандидата; контейнер 2 CPU, 2 ГБ, `network=none`.
 - **Train-сервис:** с build и выбором опубликованных материалов (`supports_build: true`, `supports_asset_selection: true`) для харнеса `ar04a-runner:local`; TODO подготовки: конфигурация по [`deploy/README.md`](https://gitlab.deeppavlov.ai/deeppavlov/arena/-/blob/a28eee3abd72d5af3445e718b0253ff7147b8d45/deploy/README.md) арены и образцу [`cases/sc35/.../deploy/compose.yaml`](https://gitlab.deeppavlov.ai/deeppavlov/arena/-/blob/a28eee3abd72d5af3445e718b0253ff7147b8d45/cases/sc35/campaigns/sc35-first-20261028/deploy/compose.yaml).
+- **MLflow:** не используется (`ARENA_TRAIN_TRACKING=false`). Train-сервис возвращает ответы и score по каждому примеру и без него. Трейсы агентов — транскрипты Claude Code в `/srv/arena/researcher-home`.
 - **Таймауты:**
   - 60 с на пример;
   - оценка одного кандидата — ориентир ≤ 30 мин на `train_curve` и ≤ 60 мин на public;
