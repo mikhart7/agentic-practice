@@ -38,6 +38,10 @@ done
 install -d -m 0755 "$SRV/assets"
 install -m 0644 "$REPO/case/assets/catalog.jsonl" "$SRV/assets/catalog.jsonl"
 rsync -a --delete --chmod=D0755,F0644 "$REPO/case/assets/models/" "$SRV/assets/models/"
+# точки монтирования расширений runner (результат build, опубликованные материалы): runner требует
+# существующий каталог assets/prepared (evaluator/runner.py, validate_preparation); пустые каталоги
+# в digest входных материалов не входят
+install -d -m 0755 "$SRV/assets/prepared" "$SRV/assets/derived"
 
 # train-сервис: свой неизменяемый экземпляр train (не рабочая копия исследователя), состояние и учёт
 install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/trainsvc" "$SRV/trainsvc/state" "$SRV/trainsvc/usage"

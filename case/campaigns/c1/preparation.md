@@ -4,13 +4,13 @@
 
 ## Статус: поиск запускать нельзя
 
-Подготовка не завершена: без Docker не проверены сервисы, `search-readiness` и изоляция в целевой конфигурации. Остальное готово. Что осталось сделать оператору — в разделе «Шаги оператора»; после них нужно записать сюда ответ `search-readiness` и результат проверки изоляции. Только после этого `prompts/start.md` можно запускать отдельным сеансом.
+Подготовка не завершена. Сервисы запущены, `search-readiness` private и изоляция проверены (2026-11-05, см. «Готовность сервисов»), пробный build прошёл за 26 с из 600. Но **пробный `train submit` отклонён сервером (HTTP 422 «candidate preparation is unavailable»)**: вероятная причина — на хосте нет каталога `/srv/arena/assets/prepared`. Пока `train submit` для кандидата с `build.py` не пройдёт, поиск запускать нельзя. Что сделать оператору — в разделе «Шаги оператора».
 
 ## Условия и версии
 
 - Условия: [campaign.md](campaign.md), зафиксированы до поиска. Источник — [черновик](../../campaign/campaign.md) в репозитории; в нём заполнены digest метрики и каталога, конфигурация train-сервиса и ограничения.
 - Арена: коммит `a28eee3`, `deploy/README.md` и образец `cases/sc35` прочитаны на GitLab по ссылкам закреплённого коммита. Каталог `/opt/arena` не является git-репозиторием, совпадение с коммитом подтверждено на предыдущем этапе подготовки.
-- Харнес исследователей: Claude Code 2.1.280, модель `claude-sonnet-5-5`, effort high (для запуска `claude` внутри контейнера оператор проверяет `/status`). Решатель и метрика LLM не используют.
+- Харнес исследователей: Claude Code 2.1.318 (`claude --version` в контейнере исследователя, 2026-11-05; 2.1.280 не знал `claude-sonnet-5-5`), модель `claude-sonnet-5-5`, effort high (для запуска `claude` внутри контейнера оператор проверяет `/status`). Решатель и метрика LLM не используют.
 - Окружение подготовки: Python 3.12.16 из `/opt/arena/.venv`; PyYAML и pytest ставились временно через `uv` вне репозитория.
 
 ## Метрика
@@ -51,31 +51,36 @@
 - public: `http://host.docker.internal:8090`
 - private: `http://host.docker.internal:8080`
 
-Доступность из контейнера исследователя не проверена.
+Из контейнера исследователя доступны train (build submit и train submit дошли до сервиса) и private (`search-readiness`). Public из контейнера отдельно не вызывался.
+
+## Условия окружения запуска (запись 2026-11-05)
+
+- `AR04A_CONDITIONS_ID=ar04a-metric-v1-runner-d4e3f8799ccc`, `AR04A_INPUT_ASSETS_DIGEST=4bf532e2119dc0298051f23df86fdd6a0ba53ff4ee6d7611317fa235435f2ee2` (со слов оператора; digest входных материалов в квитанции build совпал). Отпечаток окружения build: `7bd36f7f24718bdd29578a6e4bc147a7819ccf1d18a0524d3d45abb4f6b4c06a`.
+- Метрика установлена оператором в `/srv/arena/metric`, digest `bc8760a07ae5…` совпал, `evaluator.prepare verify` успешно (со слов оператора; из контейнера исследователя не проверялось).
+- Контейнер исследователя запущен по `compose.campaign.yaml` (профиль `research`), uid 10001.
 
 ## Готовность сервисов
 
-Не проверена: сервисы не запущены, Docker в среде подготовки нет.
-
-- `GET /v1/search-readiness` private: не выполнялся.
-- Изоляция: `check_isolation.sh` запущен в контейнере подготовки (до перехода на новый compose): 23 проверки OK (не root; нет `/srv/arena`, `/private`, `/state`, `/usage`, `/search-control`, ключа модели, `/etc/arena`, docker.sock, docker CLI, sudo, wsl.exe, `/mnt/c`; нет `public.jsonl` и `private.jsonl`; нет операторских `ARENA_*`; train читается, `/search` пишется, в `/run/secrets/arena` только три submit-токена) и 3 FAIL: `/assets`, `/derived`, `/staging` не смонтированы — контейнер запущен по старой конфигурации. После запуска по `compose.campaign.yaml` проверку нужно повторить и записать результат.
-- Build и `evaluator.build submit` из контейнера исследователя, публикация и монтирование в `/assets/prepared`: не проверялись.
-- Логин Claude Code в контейнере и доступ через `host.docker.internal` в Docker Desktop + WSL2: не проверялись.
+- **`search-readiness` private** (2026-11-05T17:06:26Z, из контейнера исследователя, токен private-submit-token не приводится):
+  ```
+  python -m evaluator.client search-readiness --url "$ARENA_PRIVATE_URL" --token-file /run/secrets/arena/private-submit-token --require-campaign --max-solutions 30 --finalists 5 --output-count 2 --release-id ar04a-c1-metric-bc8760a07ae5
+  {"mode": "campaign", "gate_enabled": true, "journal_ready": true, "max_solutions": 30, "finalists": 5, "output_count": 2, "evaluation_enabled": true, "release_id": "ar04a-c1-metric-bc8760a07ae5"}
+  ```
+  Код выхода 0; режим, защита, `evaluation_enabled`, лимит, K, N и release ID совпадают с условиями.
+- **Изоляция** (`case/deploy/check_isolation.sh`, из контейнера исследователя, 2026-11-05): 26 проверок OK, 0 FAIL, код выхода 0 (uid 10001; нет `/srv/arena`, `/private`, `/state`, `/usage`, `/search-control`, ключа модели, `/etc/arena`, docker.sock, docker CLI, sudo, wsl.exe, `/mnt/c`; нет `public.jsonl` и `private.jsonl`; нет операторских `ARENA_*`; train читается, `/search` пишется; `/assets` и `/derived` только чтение, `/staging` пишется; в `/run/secrets/arena` только три submit-токена). Прежние 3 FAIL по `/assets`, `/derived`, `/staging` устранены запуском по новому compose.
+- **Пробный build** (кандидат `smoke-dense`, плотный поиск `bge-base-en-v1.5` — самая тяжёлая из разрешённых bi-encoder моделей; журнал `/tmp/smoke.sqlite3`, `--max-solutions 1`; канонический журнал не тронут): `evaluator.build submit` принят, статус `FINISHED`, **26.3 с** при таймауте 600 с (запас ≈ 23×), без ошибок, публикация `21d248cc523d1ce2a7f44c86285b02032cb58671ed64d48cc4b21e50bc703754` (2 файла, 583 818 байт) видна в `/derived`. Квитанция версии 2 содержит `input_assets_digest` из условий. Это замер одной модели на 189 навыков; более тяжёлые методы (кросс-энкодер по всем парам, обучение) запас съедят — оценивать отдельно.
+- **Пробный `train submit`: НЕ ПРОЙДЕН.** `evaluator.train submit` (20 примеров `train_curve`, `--dataset ar04a-skill-select-v1`, `--conditions ar04a-metric-v1-runner-d4e3f8799ccc`) → сервер ответил HTTP 422 `{"detail":"candidate preparation is unavailable"}`; ни одного примера не решено. Квитанция валидна (digest кандидата совпал с клиентским, статус `FINISHED`, публикация существует). Логов сервера отсюда не видно; по коду арены (`evaluator/runner.py:314–335`, `validate_preparation`) вероятная причина — отсутствует каталог `/srv/arena/assets/prepared` (в контейнере `/assets` его нет), а runner требует его как точку монтирования результата build. Причина не подтверждена. `stage_srv.sh` исправлен (создаёт `assets/prepared` и `assets/derived`), но на хосте ещё не применён.
+  - Побочные следы пробы: в журнале `/tmp/smoke.sqlite3` измерение `smoke-m1` в состоянии `running` (после исправления повторить тот же вызов — он возобновляется); в общем хранилище квитанций `/srv/arena/builds` и публикаций `/srv/arena/derived` остались квитанция и публикация кандидата `smoke-dense`. Оператор может их оставить (на кампанию они не влияют, кроме учёта своих расходов) или убрать.
+- Логин Claude Code в контейнере и `/status` (модель, effort): не проверялись, это делает оператор при запуске поиска.
 
 ## Оставшиеся ограничения
 
-- **Таймаут 600 с общий для solve и build.** Оператор 2026-11-05 принял `ARENA_RUNNER_TIMEOUT=600` вместо 60 с из ADR-0004; условия и `compose.campaign.yaml` обновлены, ADR и `docs/` — нет. Арена применяет один таймаут к одному примеру и к build, поэтому зависший пример занимает слот до 10 минут. Достаточность 600 с для build эмбеддингов и индексов не проверена; замер на пробном кандидате (см. ниже) покажет запас. Отпечаток окружения build включает таймаут, поэтому значение нельзя менять после первого build.
+- **Таймаут 600 с общий для solve и build.** Оператор 2026-11-05 принял `ARENA_RUNNER_TIMEOUT=600` вместо 60 с из ADR-0004; условия и `compose.campaign.yaml` обновлены, ADR и `docs/` — нет. Арена применяет один таймаут к одному примеру и к build, поэтому зависший пример занимает слот до 10 минут. Пробный build эмбеддингов bge-base на 189 навыках занял 26 с (запас большой); тяжёлые методы нужно оценивать отдельно. Отпечаток окружения build включает таймаут, поэтому значение нельзя менять после первого build.
 - Изменения подготовки лежат в `/srv/arena/train` незакоммиченными: подготовка не коммитила. Оператору нужно закоммитить их там и забрать в свой репозиторий (`git -c safe.directory=/srv/arena/train pull /srv/arena/train main`).
-- Пробный build и `train submit` требуют кандидата, зарегистрированного в журнале; делать это в каноническом журнале нельзя (предложение занимает место из 30). Используйте отдельный журнал: `python -m evaluator.search --journal /tmp/smoke.sqlite3 init --max-solutions 1`.
+- Пробные build и `train submit` выполнены на отдельном журнале `/tmp/smoke.sqlite3` (не канонический, лимит 30 не затронут).
 
 ## Шаги оператора
 
-Подробные команды — [deploy/README.md](../../deploy/README.md), шаги 1–7. Кратко:
-
-1. Закоммитить файлы подготовки в `/srv/arena/train` и забрать в репозиторий; `sudo bash case/deploy/stage_srv.sh`.
-2. Собрать образы: `arena-evaluator:local` (target `evaluator`), `arena-runner:local`, `ar04a-runner:local`, `ar04a-researcher:local`.
-3. Заполнить `/etc/arena/campaign.env` из `campaign.env.example`: `ARENA_DOCKER_GID`, `AR04A_CONDITIONS_ID`, `AR04A_INPUT_ASSETS_DIGEST`.
-4. Установить метрику в `/srv/arena/metric`, сверить digest с `bc8760a07ae5…` и выполнить `evaluator.prepare verify`.
-5. `docker compose -p arena-ar04a -f case/deploy/compose.campaign.yaml --env-file /etc/arena/campaign.env up -d`; убедиться, что train, public и private `healthy`.
-6. Из контейнера исследователя (профиль `research`): `search-readiness --require-campaign --max-solutions 30 --finalists 5 --output-count 2 --release-id ar04a-c1-metric-bc8760a07ae5` и `check_isolation.sh`; проверить пробный build с отдельным журналом и его длительность относительно 600 с.
-7. Передать результаты сюда и повторить подготовку для проверки; затем отдельный запуск поиска по `prompts/start.md`.
+1. Создать на хосте недостающие каталоги и забрать правку скрипта: `git fetch --upload-pack="git -c safe.directory='*' upload-pack" /srv/arena/train main && git merge --ff-only FETCH_HEAD`, затем `sudo bash case/deploy/stage_srv.sh` (или вручную `sudo install -d -m 0755 /srv/arena/assets/prepared /srv/arena/assets/derived`). Пересчитывать `AR04A_INPUT_ASSETS_DIGEST` не нужно (пустые каталоги в digest не входят); сервисы, вероятно, придётся перезапустить, чтобы runner увидел каталог (`docker compose ... up -d`). Монтирование `assets` в контейнер исследователя тоже обновится при пересоздании.
+2. Повторить подготовку в части `train submit`: тот же вызов с `smoke-m1` на 20 примерах; ожидается `FINISHED`, score, время на пример и то, что `/assets/prepared` в runner содержит `emb.npy` и `ids.json`. Если 422 повторится — смотреть логи train-сервиса (`docker compose logs train`) и записать причину.
+3. После успешного `train submit` — отдельный запуск поиска по `prompts/start.md`.
