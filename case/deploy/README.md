@@ -65,7 +65,7 @@
    ```bash
    python -m evaluator.client search-readiness --url "$ARENA_PRIVATE_URL" \
      --token-file /run/secrets/arena/private-submit-token --require-campaign \
-     --max-solutions 60 --finalists 5 --output-count 2 --release-id <ARENA_RELEASE_ID>
+     --max-solutions 30 --finalists 5 --output-count 2 --release-id <ARENA_RELEASE_ID>
    docker compose -f compose.yaml -f $REPO/case/deploy/compose.override.yaml \
      --env-file /etc/arena/private.env --profile train run --rm researcher \
      bash /workspace/case/deploy/check_isolation.sh
