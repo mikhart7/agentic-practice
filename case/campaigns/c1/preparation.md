@@ -2,9 +2,9 @@
 
 Дата записи: 2026-11-05. Подготовка выполнена агентом по `prompts/prepare.md` арены в контейнере исследователя (uid 10001, без Docker и sudo). Поиск не запускался и субагенту не передавался.
 
-## Статус: поиск запускать нельзя
+## Статус: подготовка завершена, поиск можно запускать отдельным сеансом
 
-Подготовка не завершена. Сервисы запущены, `search-readiness` private и изоляция проверены (2026-11-05, см. «Готовность сервисов»), пробный build прошёл за 26 с из 600. Но **пробный `train submit` отклонён сервером (HTTP 422 «candidate preparation is unavailable»)**: вероятная причина — на хосте нет каталога `/srv/arena/assets/prepared`. Пока `train submit` для кандидата с `build.py` не пройдёт, поиск запускать нельзя. Что сделать оператору — в разделе «Шаги оператора».
+Сервисы healthy; `search-readiness` private, изоляция, пробный build и пробный `train submit` пройдены (2026-11-05, см. «Готовность сервисов»). Оставшиеся ограничения — в одноимённом разделе (в том числе стоимость одного примера и не проверенные вещи). Поиск запускается пользователем отдельно по `prompts/start.md`; подготовка его не запускала и субагенту не передавала.
 
 ## Условия и версии
 
@@ -51,7 +51,7 @@
 - public: `http://host.docker.internal:8090`
 - private: `http://host.docker.internal:8080`
 
-Из контейнера исследователя доступны train (build submit и train submit дошли до сервиса) и private (`search-readiness`). Public из контейнера отдельно не вызывался.
+Из контейнера исследователя доступны train (build submit, train submit, status, result) и private (`search-readiness`). Public из контейнера отдельно не вызывался (оценка на public — отдельная проверка только в ходе поиска).
 
 ## Условия окружения запуска (запись 2026-11-05)
 
@@ -69,8 +69,13 @@
   Код выхода 0; режим, защита, `evaluation_enabled`, лимит, K, N и release ID совпадают с условиями.
 - **Изоляция** (`case/deploy/check_isolation.sh`, из контейнера исследователя, 2026-11-05): 26 проверок OK, 0 FAIL, код выхода 0 (uid 10001; нет `/srv/arena`, `/private`, `/state`, `/usage`, `/search-control`, ключа модели, `/etc/arena`, docker.sock, docker CLI, sudo, wsl.exe, `/mnt/c`; нет `public.jsonl` и `private.jsonl`; нет операторских `ARENA_*`; train читается, `/search` пишется; `/assets` и `/derived` только чтение, `/staging` пишется; в `/run/secrets/arena` только три submit-токена). Прежние 3 FAIL по `/assets`, `/derived`, `/staging` устранены запуском по новому compose.
 - **Пробный build** (кандидат `smoke-dense`, плотный поиск `bge-base-en-v1.5` — самая тяжёлая из разрешённых bi-encoder моделей; журнал `/tmp/smoke.sqlite3`, `--max-solutions 1`; канонический журнал не тронут): `evaluator.build submit` принят, статус `FINISHED`, **26.3 с** при таймауте 600 с (запас ≈ 23×), без ошибок, публикация `21d248cc523d1ce2a7f44c86285b02032cb58671ed64d48cc4b21e50bc703754` (2 файла, 583 818 байт) видна в `/derived`. Квитанция версии 2 содержит `input_assets_digest` из условий. Это замер одной модели на 189 навыков; более тяжёлые методы (кросс-энкодер по всем парам, обучение) запас съедят — оценивать отдельно.
-- **Пробный `train submit`: НЕ ПРОЙДЕН.** `evaluator.train submit` (20 примеров `train_curve`, `--dataset ar04a-skill-select-v1`, `--conditions ar04a-metric-v1-runner-d4e3f8799ccc`) → сервер ответил HTTP 422 `{"detail":"candidate preparation is unavailable"}`; ни одного примера не решено. Квитанция валидна (digest кандидата совпал с клиентским, статус `FINISHED`, публикация существует). Логов сервера отсюда не видно; по коду арены (`evaluator/runner.py:314–335`, `validate_preparation`) вероятная причина — отсутствует каталог `/srv/arena/assets/prepared` (в контейнере `/assets` его нет), а runner требует его как точку монтирования результата build. Причина не подтверждена. `stage_srv.sh` исправлен (создаёт `assets/prepared` и `assets/derived`), но на хосте ещё не применён.
-  - Побочные следы пробы: в журнале `/tmp/smoke.sqlite3` измерение `smoke-m1` в состоянии `running` (после исправления повторить тот же вызов — он возобновляется); в общем хранилище квитанций `/srv/arena/builds` и публикаций `/srv/arena/derived` остались квитанция и публикация кандидата `smoke-dense`. Оператор может их оставить (на кампанию они не влияют, кроме учёта своих расходов) или убрать.
+- **Пробный `train submit`** (повтор 2026-11-05T17:22Z после того, как оператор создал `/srv/arena/assets/prepared` и `assets/derived`):
+  - Первая попытка (17:08Z) получила HTTP 422 «candidate preparation is unavailable»; оператор воспроизвёл причину в train-сервисе: `validate_candidate` падал с «invalid prepared runner asset mountpoint» (нет `assets/prepared`), квитанция build была валидна. Исправлено `stage_srv.sh` + созданием каталогов на хосте.
+  - Повтор: `evaluator.train submit --candidate smoke-dense --measurement smoke-m1 --dataset ar04a-skill-select-v1 --conditions ar04a-metric-v1-runner-d4e3f8799ccc` на первых 20 примерах `train_curve` → `RUNNING`, затем `FINISHED` (evaluation_id `26676354ed8496b8df8719eeae06423e8a5dfb55a4b1e7bbafa2d19ab995153e`), `evaluator.train result` получен, измерение закрыто в `/tmp/smoke.sqlite3` (`completed_measurements: 1`).
+  - Результат: 20/20 примеров решены и валидны, ошибок нет; score 0.915 на 20 примерах (технический прогон, не замер кампании и не показатель качества кандидата). В результате есть ответы и score по каждому примеру, `preparation` — квитанция build с `candidate_digest` кандидата и `input_assets_digest` из условий, расходы build учтены (26.3 с).
+  - **`/assets/prepared` в runner содержит результат build:** `solve.py` кандидата читает `emb.npy` и `ids.json` только из `/assets/prepared`, и все 20 ответов — осмысленные id каталога (например, для запроса про координаты адресов — `["acuris-mcp", …]`, score 1.0), то есть публикация смонтирована. Прямого просмотра каталога внутри контейнера runner не было (он `network=none`, одноразовый).
+  - **Время на пример:** время решателя на пример — среднее 9.15 с, медиана 8.90 с, мин 7.95 с, макс 12.56 с (сумма 183 с); wall всего измерения 186.4 с на 20 примеров (≈ 9.3 с на пример при двух слотах — параллелизм заметно не ускорил, т. к. `solver_seconds` 209 с > wall 186 с лишь немного). Judge (метрика) — около 0.19 с на пример. Всё далеко от 600 с на пример. Время почти целиком — загрузка `bge-base` и импорт torch в каждом одноразовом контейнере (каждый пример — отдельный запуск). Экстраполяция: `train_curve` (200 примеров) для такого кандидата ≈ 30 мин, то есть на границе ориентира ≤ 30 мин; public (380) ≈ 1 ч — на границе ≤ 60 мин. Кандидаты с более лёгким `solve` будут быстрее.
+  - Побочные следы пробы остались: измерение `smoke-m1` закрыто; в `/srv/arena/builds` и `/srv/arena/derived` — квитанция и публикация `smoke-dense` (на кампанию не влияют).
 - Логин Claude Code в контейнере и `/status` (модель, effort): не проверялись, это делает оператор при запуске поиска.
 
 ## Оставшиеся ограничения
@@ -79,8 +84,6 @@
 - Изменения подготовки лежат в `/srv/arena/train` незакоммиченными: подготовка не коммитила. Оператору нужно закоммитить их там и забрать в свой репозиторий (`git -c safe.directory=/srv/arena/train pull /srv/arena/train main`).
 - Пробные build и `train submit` выполнены на отдельном журнале `/tmp/smoke.sqlite3` (не канонический, лимит 30 не затронут).
 
-## Шаги оператора
+## Следующий шаг
 
-1. Создать на хосте недостающие каталоги и забрать правку скрипта: `git fetch --upload-pack="git -c safe.directory='*' upload-pack" /srv/arena/train main && git merge --ff-only FETCH_HEAD`, затем `sudo bash case/deploy/stage_srv.sh` (или вручную `sudo install -d -m 0755 /srv/arena/assets/prepared /srv/arena/assets/derived`). Пересчитывать `AR04A_INPUT_ASSETS_DIGEST` не нужно (пустые каталоги в digest не входят); сервисы, вероятно, придётся перезапустить, чтобы runner увидел каталог (`docker compose ... up -d`). Монтирование `assets` в контейнер исследователя тоже обновится при пересоздании.
-2. Повторить подготовку в части `train submit`: тот же вызов с `smoke-m1` на 20 примерах; ожидается `FINISHED`, score, время на пример и то, что `/assets/prepared` в runner содержит `emb.npy` и `ids.json`. Если 422 повторится — смотреть логи train-сервиса (`docker compose logs train`) и записать причину.
-3. После успешного `train submit` — отдельный запуск поиска по `prompts/start.md`.
+Оператор запускает контейнер исследователя (профиль `research`), логинится в `claude` (модель `claude-sonnet-5-5`, effort high, проверить в `/status`) и передаёт `prompts/start.md`, каталог кампании `/workspace/case/campaigns/c1` и адреса из `ARENA_*_URL` отдельным сеансом. Канонический журнал `/search/search.sqlite3` пуст (`proposed: 0`, `remaining_proposals: 30`).

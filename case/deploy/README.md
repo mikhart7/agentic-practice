@@ -93,7 +93,7 @@
 - Сам `docker compose config` и запуск: Docker в среде подготовки нет, YAML разобран PyYAML, а переменные окружения сервисов проверены через `Settings`, `TrainSettings` и `make_runner` арены.
 - Доступ из контейнера исследователя к оценщикам через `host.docker.internal` в Docker Desktop + WSL2.
 - Train-сервис с build: `evaluator.build submit` из контейнера исследователя, публикация результата и его монтирование в `/assets/prepared` и `/assets/derived/<digest>`. Проверять с отдельным пробным журналом (`evaluator.search --journal /tmp/smoke.sqlite3 init --max-solutions 1`), а не каноническим: предложение в `/search/search.sqlite3` занимает место из 30.
-- (выполнено 2026-11-05) build bge-base на 189 навыках — 26 с из 600; train submit с кандидатом, имеющим build.py, отклонён (422), нужен каталог `assets/prepared`, см. preparation.md.
+- (выполнено 2026-11-05) build bge-base на 189 навыках — 26 с из 600; train submit с кандидатом, имеющим build.py, проходит после создания `assets/prepared` (≈ 9 с на пример), см. preparation.md.
 - Логин Claude Code внутри контейнера.
 
 Уже проверено ([results/models/bench.md](../../results/models/bench.md), [results/smoke/isolation-2026-11-03.md](../../results/smoke/isolation-2026-11-03.md)): запуск контейнера runner — 0.4 с; модели грузятся из `/assets/models` при `network=none`; образ исследователя с Claude Code собирается, изоляция изнутри — 21/21.
