@@ -96,7 +96,7 @@
   - K=5 финалистов, N=2;
   - 2–3 параллельных исследователя;
   - таймаут 60 с на пример.
-- Подготовка по `prompts/prepare.md` арены: freeze и verify пакета метрики, `preparation.md` со свидетельствами, запуск оценщиков public и private (`search-readiness`).
+- Подготовка по `prompts/prepare.md` арены — отдельный запуск в контейнере `researcher`: freeze и verify пакета метрики, конфигурация train-сервиса с build (`supports_build`, `supports_asset_selection`), `preparation.md` со свидетельствами, запуск оценщиков public и private (`search-readiness`).
 - **ADR в `docs/adr/`:**
   - 0001 методология (арена как есть плюс Claude Code);
   - 0002 каталог, данные и split;
@@ -108,7 +108,7 @@
 
 ## Фаза 3. Эволюция → ЧП2
 
-- Запуск поиска по `prompts/start.md` отдельным сеансом Claude Code с правами исследователя. Кампания идёт до исчерпания 60 решений, затем финализация K=5 и private.
+- Запуск поиска по `prompts/start.md` отдельным сеансом Claude Code в контейнере `researcher`. Кампания идёт до исчерпания 60 решений, затем финализация K=5 и private.
 - Журнал (`search.sqlite3`), снимки и трейсы выгружаются в `results/campaign-1/`.
 - **Бонус B-5.3:** вторая кампания с другим стартом (dense-only) или другим сидом. Вопрос: сходится ли арена к тому же решению.
 

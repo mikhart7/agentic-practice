@@ -2,7 +2,7 @@
 
 Статус: **черновик**. Агент подготовки арены (`prompts/prepare.md`) переносит его в `<campaign_dir>/campaign.md`, заполняет пробелы, помеченные «TODO», и фиксирует до поиска.
 
-- **Каталог кампании:** `cases/ar04a-skill-select/campaigns/c1` в репозитории арены (`a28eee3`).
+- **Каталог кампании:** `case/campaigns/c1` этого репозитория. В контейнере исследователя, где идут подготовка и поиск, — `/workspace/case/campaigns/c1`; на хосте тот же каталог виден как `~/arena/cases/ar04a-skill-select/campaigns/c1`. Арена `a28eee3`.
 - **Метрика:** `ar04a-skill-select-metric-v1` ([metric/](../metric), [ADR-0003](../../docs/adr/0003-metric.md)), `maximize`, без модели. Замораживается до поиска. TODO: digest замороженного пакета.
 - **Данные** (sha256):
   - каталог `assets/catalog.jsonl` — 189 навыков, TODO: digest;
@@ -16,7 +16,7 @@
   - код решателя, модели из `assets/models.toml`, подготовка в `build.py` через train-сервис (эмбеддинги, индексы, обучение на train);
   - каталог, описания, сеть, LLM и таблицы запросов из train трогать нельзя.
 - **Среда исполнения:** runner-образ с библиотеками из `uv.lock`; `/assets` — каталог и модели, `/assets/prepared` — результат build кандидата; контейнер 2 CPU, 2 ГБ, `network=none`.
-- **Train-сервис:** с build и выбором опубликованных материалов (`supports_build: true`, `supports_asset_selection: true`) для харнеса `ar04a-runner:local`; TODO подготовки: конфигурация по `deploy/README.md` арены и образцу `cases/sc35`.
+- **Train-сервис:** с build и выбором опубликованных материалов (`supports_build: true`, `supports_asset_selection: true`) для харнеса `ar04a-runner:local`; TODO подготовки: конфигурация по [`deploy/README.md`](https://gitlab.deeppavlov.ai/deeppavlov/arena/-/blob/a28eee3abd72d5af3445e718b0253ff7147b8d45/deploy/README.md) арены и образцу [`cases/sc35/.../deploy/compose.yaml`](https://gitlab.deeppavlov.ai/deeppavlov/arena/-/blob/a28eee3abd72d5af3445e718b0253ff7147b8d45/cases/sc35/campaigns/sc35-first-20261028/deploy/compose.yaml).
 - **Таймауты:**
   - 60 с на пример;
   - оценка одного кандидата — ориентир ≤ 30 мин на `train_curve` и ≤ 60 мин на public;
