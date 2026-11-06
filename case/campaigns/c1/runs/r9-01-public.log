@@ -1,0 +1,7 @@
+submit: 0 {
+  "status": "running",
+  "evaluation_id": "70209cdd5fadfa03478828b76c04a94908a55bb93c170b0563ca6c972fa3ec5c"
+}
+
+final: {"status": "complete", "evaluation_id": "70209cdd5fadfa03478828b76c04a94908a55bb93c170b0563ca6c972fa3ec5c", "scores": [{"candidate_id": "r9-01", "score": 0.8056578947368421}]}
+PUBLIC r9-01 0.8056578947368421

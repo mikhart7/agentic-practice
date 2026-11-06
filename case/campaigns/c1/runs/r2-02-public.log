@@ -3,3 +3,5 @@ submit: 0 {
   "evaluation_id": "1d9fcafca8a16cf9734b9f320f7bd27b3e5bc9fa3724fcc0fedbc77316f97266"
 }
 
+final: {"status": "complete", "evaluation_id": "1d9fcafca8a16cf9734b9f320f7bd27b3e5bc9fa3724fcc0fedbc77316f97266", "scores": [{"candidate_id": "r2-02", "score": 0.7426315789473684}]}
+PUBLIC r2-02 0.7426315789473684
