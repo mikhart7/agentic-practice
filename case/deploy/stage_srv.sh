@@ -54,7 +54,8 @@ install -d -m 0755 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/derived" "$SRV/staging"
 
 # журнал кампании и операторский каталог остановки
 install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/search"
-install -d -m 0700 "$SRV/search-control"
+# search-control: оценщик (группа UID 10001) читает, писать может только root; исследователю каталог не монтируется
+install -d -m 0750 -o root -g "$UID_ARENA" "$SRV/search-control"
 
 # HOME исследователя (логин Claude Code, транскрипты) — отдельно от HOME оператора
 install -d -m 0700 -o "$UID_ARENA" -g "$UID_ARENA" "$SRV/researcher-home"

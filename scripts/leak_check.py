@@ -19,7 +19,9 @@ def ngrams(text: str) -> set[str]:
 
 
 def git(*args: str) -> str:
-    return subprocess.check_output(["git", *args], text=True, stderr=subprocess.DEVNULL)
+    # бинарные файлы (журнал search.sqlite3) читаются с пропуском невалидных байтов, как в --paths
+    out = subprocess.check_output(["git", *args], stderr=subprocess.DEVNULL)
+    return out.decode("utf-8", errors="ignore")
 
 
 held = set()
