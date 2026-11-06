@@ -1,0 +1,19 @@
+{
+ "candidate": "r9-02",
+ "measurement": "r9-02-curve-b",
+ "subset": "curve",
+ "evaluation_id": "941152d5ff268ff9fcdd97b938f40d885af6f1ada9ecdbd2f4de92f8bc940172",
+ "status": "FAILED",
+ "wall_seconds": 6.9,
+ "metrics": {
+  "solver_tokens": 0,
+  "solver_seconds": 515.8283594439781,
+  "solver_unreported_attempts": 0,
+  "solver_resources_complete": true,
+  "judge_tokens": 0,
+  "judge_seconds": 0.9034430820000008,
+  "judge_unreported_attempts": 0,
+  "judge_resources_complete": true,
+  "wall_seconds": 317.516004607
+ }
+}
