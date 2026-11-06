@@ -1,0 +1,756 @@
+{"id": "train-8dc61311171c", "family": "acuris-mcp#2", "style": "question", "cluster": "maps-geo", "intent": "geocode addresses in many countries", "tags": ["hard"]}
+{"id": "train-f9cd72ec4c67", "family": "acuris-mcp#2", "style": "indirect", "cluster": "maps-geo", "intent": "geocode addresses in many countries", "tags": ["hard"]}
+{"id": "train-33155af8c42b", "family": "acuris-mcp#2", "style": "casual", "cluster": "maps-geo", "intent": "geocode addresses in many countries", "tags": ["hard"]}
+{"id": "train-e1e7371d8bac", "family": "acuris-mcp#2", "style": "cmd", "cluster": "maps-geo", "intent": "geocode addresses in many countries", "tags": ["hard"]}
+{"id": "train-24caf7af7a75", "family": "agent-spreadsheet#2", "style": "question", "cluster": "spreadsheets", "intent": "verify Excel calculations", "tags": ["hard"]}
+{"id": "train-ff1b1d1a5be8", "family": "agent-spreadsheet#2", "style": "indirect", "cluster": "spreadsheets", "intent": "verify Excel calculations", "tags": ["hard"]}
+{"id": "train-7307958f5bfd", "family": "agent-spreadsheet#2", "style": "casual", "cluster": "spreadsheets", "intent": "verify Excel calculations", "tags": ["hard"]}
+{"id": "train-8f7373010a60", "family": "agent-spreadsheet#2", "style": "cmd", "cluster": "spreadsheets", "intent": "verify Excel calculations", "tags": ["hard"]}
+{"id": "train-8071a42c9c8b", "family": "ahasend#1", "style": "verbose", "cluster": "email", "intent": "run a transactional/marketing email campaign", "tags": ["hard"]}
+{"id": "train-a42df57564c7", "family": "ahasend#1", "style": "indirect", "cluster": "email", "intent": "run a transactional/marketing email campaign", "tags": ["hard"]}
+{"id": "train-66d2b65ceb40", "family": "ahasend#1", "style": "cmd", "cluster": "email", "intent": "run a transactional/marketing email campaign", "tags": ["hard"]}
+{"id": "train-1195f825c074", "family": "ahasend#1", "style": "typo", "cluster": "email", "intent": "run a transactional/marketing email campaign", "tags": ["hard"]}
+{"id": "train-b92a21304a25", "family": "airtable#2", "style": "question", "cluster": "spreadsheets", "intent": "query Airtable tables", "tags": ["hard"]}
+{"id": "train-3eee98ca2e5b", "family": "airtable#2", "style": "indirect", "cluster": "spreadsheets", "intent": "query Airtable tables", "tags": ["hard"]}
+{"id": "train-2461a987de37", "family": "airtable#2", "style": "casual", "cluster": "spreadsheets", "intent": "query Airtable tables", "tags": ["hard"]}
+{"id": "train-46277662a095", "family": "airtable#2", "style": "cmd", "cluster": "spreadsheets", "intent": "query Airtable tables", "tags": ["hard"]}
+{"id": "train-8c4115538eab", "family": "aria-mcp-server#2", "style": "question", "cluster": "research-papers", "intent": "find clinical trials", "tags": ["hard"]}
+{"id": "train-81f6a1a394ab", "family": "aria-mcp-server#2", "style": "indirect", "cluster": "research-papers", "intent": "find clinical trials", "tags": ["hard"]}
+{"id": "train-00741b73aaf8", "family": "aria-mcp-server#2", "style": "casual", "cluster": "research-papers", "intent": "find clinical trials", "tags": ["hard"]}
+{"id": "train-25dbf621c423", "family": "aria-mcp-server#2", "style": "cmd", "cluster": "research-papers", "intent": "find clinical trials", "tags": ["hard"]}
+{"id": "train-54cb1a366257", "family": "arkame-backup#1", "style": "cmd", "cluster": "cloud-storage", "intent": "back up a server to own S3", "tags": ["hard"]}
+{"id": "train-a0f9802f9c40", "family": "arkame-backup#1", "style": "verbose", "cluster": "cloud-storage", "intent": "back up a server to own S3", "tags": ["hard"]}
+{"id": "train-892f50f290c0", "family": "arkame-backup#1", "style": "indirect", "cluster": "cloud-storage", "intent": "back up a server to own S3", "tags": ["hard"]}
+{"id": "train-02a23d18fdf8", "family": "arkame-backup#1", "style": "typo", "cluster": "cloud-storage", "intent": "back up a server to own S3", "tags": ["hard"]}
+{"id": "train-923145c2e0ba", "family": "arxiv-mcp-server#1", "style": "cmd", "cluster": "research-papers", "intent": "search arXiv preprints", "tags": ["hard"]}
+{"id": "train-52961995acdd", "family": "arxiv-mcp-server#1", "style": "verbose", "cluster": "research-papers", "intent": "search arXiv preprints", "tags": ["hard"]}
+{"id": "train-f21dcf3b7980", "family": "arxiv-mcp-server#1", "style": "indirect", "cluster": "research-papers", "intent": "search arXiv preprints", "tags": ["hard"]}
+{"id": "train-d9051683d9a3", "family": "arxiv-mcp-server#1", "style": "typo", "cluster": "research-papers", "intent": "search arXiv preprints", "tags": ["hard"]}
+{"id": "train-8b35ddd29080", "family": "asana#2", "style": "question", "cluster": "project-management", "intent": "review portfolio status in Asana", "tags": ["hard"]}
+{"id": "train-acfefb7b60f4", "family": "asana#2", "style": "indirect", "cluster": "project-management", "intent": "review portfolio status in Asana", "tags": ["hard"]}
+{"id": "train-a5859e104b21", "family": "asana#2", "style": "casual", "cluster": "project-management", "intent": "review portfolio status in Asana", "tags": ["hard"]}
+{"id": "train-67694886ad23", "family": "asana#2", "style": "cmd", "cluster": "project-management", "intent": "review portfolio status in Asana", "tags": ["hard"]}
+{"id": "train-67e1e28e2f90", "family": "aviasurf#1", "style": "cmd", "cluster": "misc", "intent": "search cheap flights", "tags": []}
+{"id": "train-1fff8519df43", "family": "aviasurf#1", "style": "verbose", "cluster": "misc", "intent": "search cheap flights", "tags": []}
+{"id": "train-2a5ec1ba4a4c", "family": "aviasurf#1", "style": "indirect", "cluster": "misc", "intent": "search cheap flights", "tags": []}
+{"id": "train-32fa71e1c00e", "family": "aviasurf#1", "style": "typo", "cluster": "misc", "intent": "search cheap flights", "tags": []}
+{"id": "train-414481896edf", "family": "b2-mcp#1", "style": "cmd", "cluster": "cloud-storage", "intent": "manage Backblaze B2 buckets and keys", "tags": ["hard"]}
+{"id": "train-420b9081bc22", "family": "b2-mcp#1", "style": "verbose", "cluster": "cloud-storage", "intent": "manage Backblaze B2 buckets and keys", "tags": ["hard"]}
+{"id": "train-e4b38a9efaaf", "family": "b2-mcp#1", "style": "indirect", "cluster": "cloud-storage", "intent": "manage Backblaze B2 buckets and keys", "tags": ["hard"]}
+{"id": "train-911a173a6ae6", "family": "b2-mcp#1", "style": "typo", "cluster": "cloud-storage", "intent": "manage Backblaze B2 buckets and keys", "tags": ["hard"]}
+{"id": "train-f87635c48d97", "family": "bash-mcp#2", "style": "question", "cluster": "devops", "intent": "git and gh CLI wrappers", "tags": ["hard"]}
+{"id": "train-855f2af357a4", "family": "bash-mcp#2", "style": "indirect", "cluster": "devops", "intent": "git and gh CLI wrappers", "tags": ["hard"]}
+{"id": "train-31318f560b2c", "family": "bash-mcp#2", "style": "casual", "cluster": "devops", "intent": "git and gh CLI wrappers", "tags": ["hard"]}
+{"id": "train-50c3c9d50226", "family": "bash-mcp#2", "style": "cmd", "cluster": "devops", "intent": "git and gh CLI wrappers", "tags": ["hard"]}
+{"id": "train-c13cbc3d23e1", "family": "benchboss#1", "style": "cmd", "cluster": "misc", "intent": "play chess", "tags": []}
+{"id": "train-c4efa902249a", "family": "benchboss#1", "style": "verbose", "cluster": "misc", "intent": "play chess", "tags": []}
+{"id": "train-8be6bdee4033", "family": "benchboss#1", "style": "indirect", "cluster": "misc", "intent": "play chess", "tags": []}
+{"id": "train-28d235baf711", "family": "benchboss#1", "style": "typo", "cluster": "misc", "intent": "play chess", "tags": []}
+{"id": "train-70baf5784932", "family": "bible-api-mcp#2", "style": "question", "cluster": "misc", "intent": "random verse in a translation", "tags": []}
+{"id": "train-7a94e6b86108", "family": "bible-api-mcp#2", "style": "indirect", "cluster": "misc", "intent": "random verse in a translation", "tags": []}
+{"id": "train-578cf6661280", "family": "bible-api-mcp#2", "style": "casual", "cluster": "misc", "intent": "random verse in a translation", "tags": []}
+{"id": "train-0994fd7e6f5b", "family": "bible-api-mcp#2", "style": "cmd", "cluster": "misc", "intent": "random verse in a translation", "tags": []}
+{"id": "train-79c26ac8d964", "family": "bilibili-mcp#2", "style": "question", "cluster": "video-transcripts", "intent": "summarize comments on a Bilibili video", "tags": ["hard"]}
+{"id": "train-971d60057493", "family": "bilibili-mcp#2", "style": "indirect", "cluster": "video-transcripts", "intent": "summarize comments on a Bilibili video", "tags": ["hard"]}
+{"id": "train-8b52ea670254", "family": "bilibili-mcp#2", "style": "casual", "cluster": "video-transcripts", "intent": "summarize comments on a Bilibili video", "tags": ["hard"]}
+{"id": "train-b411eee9de9d", "family": "bilibili-mcp#2", "style": "cmd", "cluster": "video-transcripts", "intent": "summarize comments on a Bilibili video", "tags": ["hard"]}
+{"id": "train-31268a9fe409", "family": "biotech-news#1", "style": "cmd", "cluster": "news", "intent": "FDA approvals and pharma news", "tags": ["hard"]}
+{"id": "train-becee1dd851e", "family": "biotech-news#1", "style": "verbose", "cluster": "news", "intent": "FDA approvals and pharma news", "tags": ["hard"]}
+{"id": "train-4f4fb7797d38", "family": "biotech-news#1", "style": "indirect", "cluster": "news", "intent": "FDA approvals and pharma news", "tags": ["hard"]}
+{"id": "train-1087fb2a5efb", "family": "biotech-news#1", "style": "typo", "cluster": "news", "intent": "FDA approvals and pharma news", "tags": ["hard"]}
+{"id": "train-7875a8eceaa5", "family": "bitbucket-mcp-server#2", "style": "question", "cluster": "code-hosting", "intent": "work with Bitbucket Cloud repositories", "tags": ["hard"]}
+{"id": "train-e64c6b34ef27", "family": "bitbucket-mcp-server#2", "style": "indirect", "cluster": "code-hosting", "intent": "work with Bitbucket Cloud repositories", "tags": ["hard"]}
+{"id": "train-8603741a9830", "family": "bitbucket-mcp-server#2", "style": "casual", "cluster": "code-hosting", "intent": "work with Bitbucket Cloud repositories", "tags": ["hard"]}
+{"id": "train-ad4e024c08a1", "family": "bitbucket-mcp-server#2", "style": "cmd", "cluster": "code-hosting", "intent": "work with Bitbucket Cloud repositories", "tags": ["hard"]}
+{"id": "train-00f271937806", "family": "blender-mcp#2", "style": "question", "cluster": "misc", "intent": "convert 3D file formats", "tags": []}
+{"id": "train-c4bfd67442bf", "family": "blender-mcp#2", "style": "indirect", "cluster": "misc", "intent": "convert 3D file formats", "tags": []}
+{"id": "train-93345f58a163", "family": "blender-mcp#2", "style": "casual", "cluster": "misc", "intent": "convert 3D file formats", "tags": []}
+{"id": "train-05246a80c767", "family": "blender-mcp#2", "style": "cmd", "cluster": "misc", "intent": "convert 3D file formats", "tags": []}
+{"id": "train-7d35c8330f5b", "family": "bolsai-mcp#2", "style": "question", "cluster": "market-data", "intent": "Brazilian real estate funds (FIIs)", "tags": ["hard"]}
+{"id": "train-cc53d19a0b64", "family": "bolsai-mcp#2", "style": "indirect", "cluster": "market-data", "intent": "Brazilian real estate funds (FIIs)", "tags": ["hard"]}
+{"id": "train-ddee669b1161", "family": "bolsai-mcp#2", "style": "casual", "cluster": "market-data", "intent": "Brazilian real estate funds (FIIs)", "tags": ["hard"]}
+{"id": "train-4c6f8d565701", "family": "bolsai-mcp#2", "style": "cmd", "cluster": "market-data", "intent": "Brazilian real estate funds (FIIs)", "tags": ["hard"]}
+{"id": "train-08c872acc2d3", "family": "calendarmcp#2", "style": "question", "cluster": "calendar", "intent": "automate local Mac calendars", "tags": ["hard"]}
+{"id": "train-daadd543c305", "family": "calendarmcp#2", "style": "indirect", "cluster": "calendar", "intent": "automate local Mac calendars", "tags": ["hard"]}
+{"id": "train-74a3737b31e3", "family": "calendarmcp#2", "style": "casual", "cluster": "calendar", "intent": "automate local Mac calendars", "tags": ["hard"]}
+{"id": "train-069fcd67b607", "family": "calendarmcp#2", "style": "cmd", "cluster": "calendar", "intent": "automate local Mac calendars", "tags": ["hard"]}
+{"id": "train-1c8288a7436b", "family": "celo-mcp#2", "style": "question", "cluster": "crypto", "intent": "Celo governance and staking", "tags": ["hard"]}
+{"id": "train-d5e3c6cb0077", "family": "celo-mcp#2", "style": "indirect", "cluster": "crypto", "intent": "Celo governance and staking", "tags": ["hard"]}
+{"id": "train-e660fdb3b787", "family": "celo-mcp#2", "style": "casual", "cluster": "crypto", "intent": "Celo governance and staking", "tags": ["hard"]}
+{"id": "train-0370783f8946", "family": "celo-mcp#2", "style": "cmd", "cluster": "crypto", "intent": "Celo governance and staking", "tags": ["hard"]}
+{"id": "train-be6453f74e03", "family": "chargescout#2", "style": "question", "cluster": "spreadsheets", "intent": "detect double charges and price increases", "tags": ["hard"]}
+{"id": "train-5adfea7ba312", "family": "chargescout#2", "style": "indirect", "cluster": "spreadsheets", "intent": "detect double charges and price increases", "tags": ["hard"]}
+{"id": "train-86fb49e0f5d0", "family": "chargescout#2", "style": "casual", "cluster": "spreadsheets", "intent": "detect double charges and price increases", "tags": ["hard"]}
+{"id": "train-339310fde6c7", "family": "chargescout#2", "style": "cmd", "cluster": "spreadsheets", "intent": "detect double charges and price increases", "tags": ["hard"]}
+{"id": "train-d9e5e63440ca", "family": "chowdown#1", "style": "cmd", "cluster": "misc", "intent": "search my recipes stored in Drive", "tags": []}
+{"id": "train-bb47d843c5e4", "family": "chowdown#1", "style": "verbose", "cluster": "misc", "intent": "search my recipes stored in Drive", "tags": []}
+{"id": "train-01fa62f7158f", "family": "chowdown#1", "style": "indirect", "cluster": "misc", "intent": "search my recipes stored in Drive", "tags": []}
+{"id": "train-878d6ac18926", "family": "chowdown#1", "style": "typo", "cluster": "misc", "intent": "search my recipes stored in Drive", "tags": []}
+{"id": "train-cb1ff79f18b9", "family": "clusterport#2", "style": "question", "cluster": "devops", "intent": "scale a deployment", "tags": ["hard"]}
+{"id": "train-fe597095a1c2", "family": "clusterport#2", "style": "indirect", "cluster": "devops", "intent": "scale a deployment", "tags": ["hard"]}
+{"id": "train-71d3a3f2f7ea", "family": "clusterport#2", "style": "casual", "cluster": "devops", "intent": "scale a deployment", "tags": ["hard"]}
+{"id": "train-fe5571f8fcbc", "family": "clusterport#2", "style": "cmd", "cluster": "devops", "intent": "scale a deployment", "tags": ["hard"]}
+{"id": "train-f4295fb7b4e8", "family": "code-engine-mcp-server#1", "style": "cmd", "cluster": "devops", "intent": "deploy an app to IBM Code Engine", "tags": ["hard"]}
+{"id": "train-3c8b17fb6b5d", "family": "code-engine-mcp-server#1", "style": "verbose", "cluster": "devops", "intent": "deploy an app to IBM Code Engine", "tags": ["hard"]}
+{"id": "train-210e74026a2c", "family": "code-engine-mcp-server#1", "style": "indirect", "cluster": "devops", "intent": "deploy an app to IBM Code Engine", "tags": ["hard"]}
+{"id": "train-226f32c968c9", "family": "code-engine-mcp-server#1", "style": "typo", "cluster": "devops", "intent": "deploy an app to IBM Code Engine", "tags": ["hard"]}
+{"id": "train-ddbde9b6f00b", "family": "codehost-port#1", "style": "cmd", "cluster": "code-hosting", "intent": "manage GitHub issues and pull requests", "tags": ["hard"]}
+{"id": "train-1ca3e84226b6", "family": "codehost-port#1", "style": "verbose", "cluster": "code-hosting", "intent": "manage GitHub issues and pull requests", "tags": ["hard"]}
+{"id": "train-f8acb519c879", "family": "codehost-port#1", "style": "indirect", "cluster": "code-hosting", "intent": "manage GitHub issues and pull requests", "tags": ["hard"]}
+{"id": "train-34acb7af68fb", "family": "codehost-port#1", "style": "typo", "cluster": "code-hosting", "intent": "manage GitHub issues and pull requests", "tags": ["hard"]}
+{"id": "train-e0ae1fab61a7", "family": "codeofpaper#2", "style": "question", "cluster": "research-papers", "intent": "find papers with available code on a topic", "tags": ["hard"]}
+{"id": "train-cf008d4c7d5f", "family": "codeofpaper#2", "style": "indirect", "cluster": "research-papers", "intent": "find papers with available code on a topic", "tags": ["hard"]}
+{"id": "train-323e61edab4b", "family": "codeofpaper#2", "style": "casual", "cluster": "research-papers", "intent": "find papers with available code on a topic", "tags": ["hard"]}
+{"id": "train-81f554d239e9", "family": "codeofpaper#2", "style": "cmd", "cluster": "research-papers", "intent": "find papers with available code on a topic", "tags": ["hard"]}
+{"id": "train-813242a21bd7", "family": "coinvello#2", "style": "question", "cluster": "payments", "intent": "crypto invoices and webhooks", "tags": ["hard"]}
+{"id": "train-b4055274574f", "family": "coinvello#2", "style": "indirect", "cluster": "payments", "intent": "crypto invoices and webhooks", "tags": ["hard"]}
+{"id": "train-937e3219e440", "family": "coinvello#2", "style": "casual", "cluster": "payments", "intent": "crypto invoices and webhooks", "tags": ["hard"]}
+{"id": "train-8f48789a4efa", "family": "coinvello#2", "style": "cmd", "cluster": "payments", "intent": "crypto invoices and webhooks", "tags": ["hard"]}
+{"id": "train-4ada2890b83e", "family": "cron-translator#1", "style": "cmd", "cluster": "translation", "intent": "explain a cron expression", "tags": ["hard"]}
+{"id": "train-5b7e988fcf04", "family": "cron-translator#1", "style": "question", "cluster": "translation", "intent": "explain a cron expression", "tags": ["hard"]}
+{"id": "train-b98df12c8e9d", "family": "cron-translator#1", "style": "indirect", "cluster": "translation", "intent": "explain a cron expression", "tags": ["hard"]}
+{"id": "train-99006d4b5130", "family": "cron-translator#1", "style": "typo", "cluster": "translation", "intent": "explain a cron expression", "tags": ["hard"]}
+{"id": "train-cb424894583b", "family": "cronicorn-mcp-server#1", "style": "cmd", "cluster": "devops", "intent": "schedule HTTP endpoint calls", "tags": ["hard"]}
+{"id": "train-9ea0a42c8a6d", "family": "cronicorn-mcp-server#1", "style": "verbose", "cluster": "devops", "intent": "schedule HTTP endpoint calls", "tags": ["hard"]}
+{"id": "train-dfa53dd7ef4b", "family": "cronicorn-mcp-server#1", "style": "indirect", "cluster": "devops", "intent": "schedule HTTP endpoint calls", "tags": ["hard"]}
+{"id": "train-11b665ed00df", "family": "cronicorn-mcp-server#1", "style": "typo", "cluster": "devops", "intent": "schedule HTTP endpoint calls", "tags": ["hard"]}
+{"id": "train-62c1bc936ea6", "family": "crowdin#1", "style": "cmd", "cluster": "translation", "intent": "check translation progress in Crowdin", "tags": ["hard"]}
+{"id": "train-5148f1de25d7", "family": "crowdin#1", "style": "verbose", "cluster": "translation", "intent": "check translation progress in Crowdin", "tags": ["hard"]}
+{"id": "train-2916835ae351", "family": "crowdin#1", "style": "indirect", "cluster": "translation", "intent": "check translation progress in Crowdin", "tags": ["hard"]}
+{"id": "train-9f62d666e97d", "family": "crowdin#1", "style": "typo", "cluster": "translation", "intent": "check translation progress in Crowdin", "tags": ["hard"]}
+{"id": "train-e137d24de50b", "family": "crypto-safety#2", "style": "question", "cluster": "crypto", "intent": "check addresses and phishing links", "tags": ["hard"]}
+{"id": "train-81ee457f9fdf", "family": "crypto-safety#2", "style": "indirect", "cluster": "crypto", "intent": "check addresses and phishing links", "tags": ["hard"]}
+{"id": "train-675cecd0f296", "family": "crypto-safety#2", "style": "casual", "cluster": "crypto", "intent": "check addresses and phishing links", "tags": ["hard"]}
+{"id": "train-404c267d049a", "family": "crypto-safety#2", "style": "cmd", "cluster": "crypto", "intent": "check addresses and phishing links", "tags": ["hard"]}
+{"id": "train-cc8b726fe70b", "family": "crypto_prices_mcp#1", "style": "cmd", "cluster": "crypto", "intent": "current cryptocurrency price", "tags": ["hard"]}
+{"id": "train-8c99c6e27fc1", "family": "crypto_prices_mcp#1", "style": "casual", "cluster": "crypto", "intent": "current cryptocurrency price", "tags": ["hard"]}
+{"id": "train-3786418417d6", "family": "crypto_prices_mcp#1", "style": "question", "cluster": "crypto", "intent": "current cryptocurrency price", "tags": ["hard"]}
+{"id": "train-a7af123822c2", "family": "crypto_prices_mcp#1", "style": "indirect", "cluster": "crypto", "intent": "current cryptocurrency price", "tags": ["hard"]}
+{"id": "train-fb79632e33f1", "family": "cryptohopper-data#2", "style": "question", "cluster": "crypto", "intent": "compare tickers across crypto exchanges", "tags": ["hard"]}
+{"id": "train-7b067f5f0689", "family": "cryptohopper-data#2", "style": "indirect", "cluster": "crypto", "intent": "compare tickers across crypto exchanges", "tags": ["hard"]}
+{"id": "train-81bc33b4a522", "family": "cryptohopper-data#2", "style": "casual", "cluster": "crypto", "intent": "compare tickers across crypto exchanges", "tags": ["hard"]}
+{"id": "train-72fc35b7c0b2", "family": "cryptohopper-data#2", "style": "cmd", "cluster": "crypto", "intent": "compare tickers across crypto exchanges", "tags": ["hard"]}
+{"id": "train-d8521fb6d234", "family": "csv-mcp#2", "style": "question", "cluster": "spreadsheets", "intent": "parse a CSV with no network", "tags": ["hard"]}
+{"id": "train-1ac0e8d15e38", "family": "csv-mcp#2", "style": "indirect", "cluster": "spreadsheets", "intent": "parse a CSV with no network", "tags": ["hard"]}
+{"id": "train-5d3cef33f433", "family": "csv-mcp#2", "style": "casual", "cluster": "spreadsheets", "intent": "parse a CSV with no network", "tags": ["hard"]}
+{"id": "train-36b63d12595f", "family": "csv-mcp#2", "style": "cmd", "cluster": "spreadsheets", "intent": "parse a CSV with no network", "tags": ["hard"]}
+{"id": "train-e723cf88f6eb", "family": "csv-repair#1", "style": "cmd", "cluster": "spreadsheets", "intent": "fix a broken CSV", "tags": ["hard"]}
+{"id": "train-76c8d87b595b", "family": "csv-repair#1", "style": "verbose", "cluster": "spreadsheets", "intent": "fix a broken CSV", "tags": ["hard"]}
+{"id": "train-63a51a0acf0c", "family": "csv-repair#1", "style": "indirect", "cluster": "spreadsheets", "intent": "fix a broken CSV", "tags": ["hard"]}
+{"id": "train-6d45dbcc452e", "family": "csv-repair#1", "style": "typo", "cluster": "spreadsheets", "intent": "fix a broken CSV", "tags": ["hard"]}
+{"id": "train-acaecba66df8", "family": "cwa-mcp-server#2", "style": "question", "cluster": "weather", "intent": "Taiwan earthquake reports", "tags": ["hard"]}
+{"id": "train-55088c94d2da", "family": "cwa-mcp-server#2", "style": "indirect", "cluster": "weather", "intent": "Taiwan earthquake reports", "tags": ["hard"]}
+{"id": "train-299e4d35927a", "family": "cwa-mcp-server#2", "style": "casual", "cluster": "weather", "intent": "Taiwan earthquake reports", "tags": ["hard"]}
+{"id": "train-f690a7fff7b5", "family": "cwa-mcp-server#2", "style": "cmd", "cluster": "weather", "intent": "Taiwan earthquake reports", "tags": ["hard"]}
+{"id": "train-b213a6b4f21d", "family": "database-admin#1", "style": "verbose", "cluster": "sql-database", "intent": "optimize a slow SQL query", "tags": ["hard"]}
+{"id": "train-8585dc08d88e", "family": "database-admin#1", "style": "indirect", "cluster": "sql-database", "intent": "optimize a slow SQL query", "tags": ["hard"]}
+{"id": "train-18dde6aef3ca", "family": "database-admin#1", "style": "cmd", "cluster": "sql-database", "intent": "optimize a slow SQL query", "tags": ["hard"]}
+{"id": "train-35e997ab7d1f", "family": "database-admin#1", "style": "typo", "cluster": "sql-database", "intent": "optimize a slow SQL query", "tags": ["hard"]}
+{"id": "train-195af277db26", "family": "dataloupe#2", "style": "question", "cluster": "spreadsheets", "intent": "render interactive HTML view of data", "tags": ["hard"]}
+{"id": "train-90c3b9b2cb79", "family": "dataloupe#2", "style": "indirect", "cluster": "spreadsheets", "intent": "render interactive HTML view of data", "tags": ["hard"]}
+{"id": "train-ea6eb347e872", "family": "dataloupe#2", "style": "casual", "cluster": "spreadsheets", "intent": "render interactive HTML view of data", "tags": ["hard"]}
+{"id": "train-6a4afcfa931e", "family": "dataloupe#2", "style": "cmd", "cluster": "spreadsheets", "intent": "render interactive HTML view of data", "tags": ["hard"]}
+{"id": "train-6e16b85b2f64", "family": "dbtrail#2", "style": "question", "cluster": "sql-database", "intent": "audit who changed what in MySQL for compliance", "tags": ["hard"]}
+{"id": "train-260b8da37ccc", "family": "dbtrail#2", "style": "indirect", "cluster": "sql-database", "intent": "audit who changed what in MySQL for compliance", "tags": ["hard"]}
+{"id": "train-8f662b01a409", "family": "dbtrail#2", "style": "casual", "cluster": "sql-database", "intent": "audit who changed what in MySQL for compliance", "tags": ["hard"]}
+{"id": "train-7b347efa360f", "family": "dbtrail#2", "style": "cmd", "cluster": "sql-database", "intent": "audit who changed what in MySQL for compliance", "tags": ["hard"]}
+{"id": "train-5730d7530325", "family": "deepviews#1", "style": "cmd", "cluster": "market-data", "intent": "DCF valuation of a company", "tags": ["hard"]}
+{"id": "train-ab4fffb3777d", "family": "deepviews#1", "style": "verbose", "cluster": "market-data", "intent": "DCF valuation of a company", "tags": ["hard"]}
+{"id": "train-7b7b8c165eed", "family": "deepviews#1", "style": "indirect", "cluster": "market-data", "intent": "DCF valuation of a company", "tags": ["hard"]}
+{"id": "train-31b4bb9378ef", "family": "deepviews#1", "style": "typo", "cluster": "market-data", "intent": "DCF valuation of a company", "tags": ["hard"]}
+{"id": "train-5dd3846b8efc", "family": "dialectos#2", "style": "question", "cluster": "translation", "intent": "enforce a glossary in Spanish translation", "tags": ["hard"]}
+{"id": "train-228d9686c3fc", "family": "dialectos#2", "style": "indirect", "cluster": "translation", "intent": "enforce a glossary in Spanish translation", "tags": ["hard"]}
+{"id": "train-258099d9eb8b", "family": "dialectos#2", "style": "casual", "cluster": "translation", "intent": "enforce a glossary in Spanish translation", "tags": ["hard"]}
+{"id": "train-ad7b0865b2ac", "family": "dialectos#2", "style": "cmd", "cluster": "translation", "intent": "enforce a glossary in Spanish translation", "tags": ["hard"]}
+{"id": "train-1ecd2b8e1eb3", "family": "discord-mcp#2", "style": "question", "cluster": "team-chat", "intent": "manage channels and roles on Discord", "tags": ["hard"]}
+{"id": "train-e53aa27cbcc6", "family": "discord-mcp#2", "style": "indirect", "cluster": "team-chat", "intent": "manage channels and roles on Discord", "tags": ["hard"]}
+{"id": "train-aabe5e5a5044", "family": "discord-mcp#2", "style": "casual", "cluster": "team-chat", "intent": "manage channels and roles on Discord", "tags": ["hard"]}
+{"id": "train-70c3a3353b65", "family": "discord-mcp#2", "style": "cmd", "cluster": "team-chat", "intent": "manage channels and roles on Discord", "tags": ["hard"]}
+{"id": "train-59c38fdcdaf7", "family": "dmarc-spf-audit#2", "style": "question", "cluster": "email", "intent": "check SPF lookup count limit", "tags": ["hard"]}
+{"id": "train-df350385dd8f", "family": "dmarc-spf-audit#2", "style": "indirect", "cluster": "email", "intent": "check SPF lookup count limit", "tags": ["hard"]}
+{"id": "train-72d0215b8dd9", "family": "dmarc-spf-audit#2", "style": "casual", "cluster": "email", "intent": "check SPF lookup count limit", "tags": ["hard"]}
+{"id": "train-3a0541472551", "family": "dmarc-spf-audit#2", "style": "cmd", "cluster": "email", "intent": "check SPF lookup count limit", "tags": ["hard"]}
+{"id": "train-c5a4554b243f", "family": "dockerhub#2", "style": "question", "cluster": "devops", "intent": "search public container images", "tags": ["hard"]}
+{"id": "train-6b237efb8b4e", "family": "dockerhub#2", "style": "indirect", "cluster": "devops", "intent": "search public container images", "tags": ["hard"]}
+{"id": "train-f38b04ea7155", "family": "dockerhub#2", "style": "casual", "cluster": "devops", "intent": "search public container images", "tags": ["hard"]}
+{"id": "train-6ac7cf578a56", "family": "dockerhub#2", "style": "cmd", "cluster": "devops", "intent": "search public container images", "tags": ["hard"]}
+{"id": "train-e3e41ef162cb", "family": "document-scanner#1", "style": "cmd", "cluster": "pdf", "intent": "find PII in documents", "tags": ["hard"]}
+{"id": "train-14b2d83c30ff", "family": "document-scanner#1", "style": "verbose", "cluster": "pdf", "intent": "find PII in documents", "tags": ["hard"]}
+{"id": "train-febd85a35430", "family": "document-scanner#1", "style": "indirect", "cluster": "pdf", "intent": "find PII in documents", "tags": ["hard"]}
+{"id": "train-e67503e6aeab", "family": "document-scanner#1", "style": "typo", "cluster": "pdf", "intent": "find PII in documents", "tags": ["hard"]}
+{"id": "train-747289703843", "family": "dropbox#1", "style": "cmd", "cluster": "cloud-storage", "intent": "work with Dropbox files", "tags": ["hard"]}
+{"id": "train-77c2d0939376", "family": "dropbox#1", "style": "verbose", "cluster": "cloud-storage", "intent": "work with Dropbox files", "tags": ["hard"]}
+{"id": "train-c4f1aa3ba18d", "family": "dropbox#1", "style": "indirect", "cluster": "cloud-storage", "intent": "work with Dropbox files", "tags": ["hard"]}
+{"id": "train-970604708891", "family": "dropbox#1", "style": "typo", "cluster": "cloud-storage", "intent": "work with Dropbox files", "tags": ["hard"]}
+{"id": "train-5a966fa2777e", "family": "email-mcp#2", "style": "cmd", "cluster": "email", "intent": "send an email through own SMTP server", "tags": ["hard"]}
+{"id": "train-de7918bf85e0", "family": "email-mcp#2", "style": "indirect", "cluster": "email", "intent": "send an email through own SMTP server", "tags": ["hard"]}
+{"id": "train-616c3227f6a8", "family": "email-mcp#2", "style": "question", "cluster": "email", "intent": "send an email through own SMTP server", "tags": ["hard"]}
+{"id": "train-4732bd4b1bfa", "family": "email-mcp#2", "style": "casual", "cluster": "email", "intent": "send an email through own SMTP server", "tags": ["hard"]}
+{"id": "train-86d19f6a48f0", "family": "equation-steps#2", "style": "question", "cluster": "misc", "intent": "solve a linear equation with steps", "tags": []}
+{"id": "train-2c5d6022cdb3", "family": "equation-steps#2", "style": "indirect", "cluster": "misc", "intent": "solve a linear equation with steps", "tags": []}
+{"id": "train-fc794c6d3f3d", "family": "equation-steps#2", "style": "casual", "cluster": "misc", "intent": "solve a linear equation with steps", "tags": []}
+{"id": "train-c3cf93d67b7e", "family": "equation-steps#2", "style": "cmd", "cluster": "misc", "intent": "solve a linear equation with steps", "tags": []}
+{"id": "train-4a9412575a09", "family": "esim#2", "style": "question", "cluster": "misc", "intent": "compare eSIM plans for a destination", "tags": []}
+{"id": "train-0d648bf173b6", "family": "esim#2", "style": "indirect", "cluster": "misc", "intent": "compare eSIM plans for a destination", "tags": []}
+{"id": "train-5553a2198895", "family": "esim#2", "style": "casual", "cluster": "misc", "intent": "compare eSIM plans for a destination", "tags": []}
+{"id": "train-6517602bdc64", "family": "esim#2", "style": "cmd", "cluster": "misc", "intent": "compare eSIM plans for a destination", "tags": []}
+{"id": "train-3dd093042161", "family": "estimay#2", "style": "question", "cluster": "project-management", "intent": "write estimates back to the tracker", "tags": ["hard"]}
+{"id": "train-baa4f1f2bd79", "family": "estimay#2", "style": "indirect", "cluster": "project-management", "intent": "write estimates back to the tracker", "tags": ["hard"]}
+{"id": "train-4bc40a33647d", "family": "estimay#2", "style": "casual", "cluster": "project-management", "intent": "write estimates back to the tracker", "tags": ["hard"]}
+{"id": "train-06cb70c8769a", "family": "estimay#2", "style": "cmd", "cluster": "project-management", "intent": "write estimates back to the tracker", "tags": ["hard"]}
+{"id": "train-353b8675ec89", "family": "feed-forge#1", "style": "cmd", "cluster": "news", "intent": "create an RSS feed for a site without one", "tags": ["hard"]}
+{"id": "train-6d4a4cf26ca8", "family": "feed-forge#1", "style": "verbose", "cluster": "news", "intent": "create an RSS feed for a site without one", "tags": ["hard"]}
+{"id": "train-fce6bc2591aa", "family": "feed-forge#1", "style": "indirect", "cluster": "news", "intent": "create an RSS feed for a site without one", "tags": ["hard"]}
+{"id": "train-96a08dce0dda", "family": "feed-forge#1", "style": "typo", "cluster": "news", "intent": "create an RSS feed for a site without one", "tags": ["hard"]}
+{"id": "train-77697e5a7ef1", "family": "frugal-memory#2", "style": "question", "cluster": "agent-memory", "intent": "full-text recall of saved notes", "tags": ["hard"]}
+{"id": "train-f361e66529df", "family": "frugal-memory#2", "style": "indirect", "cluster": "agent-memory", "intent": "full-text recall of saved notes", "tags": ["hard"]}
+{"id": "train-1f68649b374a", "family": "frugal-memory#2", "style": "casual", "cluster": "agent-memory", "intent": "full-text recall of saved notes", "tags": ["hard"]}
+{"id": "train-1da52f431083", "family": "frugal-memory#2", "style": "cmd", "cluster": "agent-memory", "intent": "full-text recall of saved notes", "tags": ["hard"]}
+{"id": "train-2129557dcc9d", "family": "fulltext-article-downloader#1", "style": "cmd", "cluster": "research-papers", "intent": "download full text by DOI", "tags": ["hard"]}
+{"id": "train-a8a28d2a18f5", "family": "fulltext-article-downloader#1", "style": "verbose", "cluster": "research-papers", "intent": "download full text by DOI", "tags": ["hard"]}
+{"id": "train-b059010bf8ad", "family": "fulltext-article-downloader#1", "style": "indirect", "cluster": "research-papers", "intent": "download full text by DOI", "tags": ["hard"]}
+{"id": "train-97543fb14550", "family": "fulltext-article-downloader#1", "style": "typo", "cluster": "research-papers", "intent": "download full text by DOI", "tags": ["hard"]}
+{"id": "train-65bfa7fd63e3", "family": "gannet-mcp#2", "style": "casual", "cluster": "web-search", "intent": "general web search for an agent", "tags": ["hard"]}
+{"id": "train-11e3ea51cf2a", "family": "gannet-mcp#2", "style": "cmd", "cluster": "web-search", "intent": "general web search for an agent", "tags": ["hard"]}
+{"id": "train-00001bd0d0ef", "family": "gannet-mcp#2", "style": "indirect", "cluster": "web-search", "intent": "general web search for an agent", "tags": ["hard"]}
+{"id": "train-221035eddbeb", "family": "gannet-mcp#2", "style": "typo", "cluster": "web-search", "intent": "general web search for an agent", "tags": ["hard"]}
+{"id": "train-5a0adc51be9d", "family": "gdelt-mcp#2", "style": "question", "cluster": "news", "intent": "filter news by language and recency", "tags": ["hard"]}
+{"id": "train-60b8b25cea37", "family": "gdelt-mcp#2", "style": "indirect", "cluster": "news", "intent": "filter news by language and recency", "tags": ["hard"]}
+{"id": "train-11b2ad70a866", "family": "gdelt-mcp#2", "style": "casual", "cluster": "news", "intent": "filter news by language and recency", "tags": ["hard"]}
+{"id": "train-53ca616217f4", "family": "gdelt-mcp#2", "style": "cmd", "cluster": "news", "intent": "filter news by language and recency", "tags": ["hard"]}
+{"id": "train-39c8b5965e4c", "family": "gemini-image-studio#1", "style": "cmd", "cluster": "image-generation", "intent": "edit an existing image with Gemini", "tags": ["hard"]}
+{"id": "train-eab36d5e6b56", "family": "gemini-image-studio#1", "style": "verbose", "cluster": "image-generation", "intent": "edit an existing image with Gemini", "tags": ["hard"]}
+{"id": "train-1fa37ad43db8", "family": "gemini-image-studio#1", "style": "indirect", "cluster": "image-generation", "intent": "edit an existing image with Gemini", "tags": ["hard"]}
+{"id": "train-d8c5a7516273", "family": "gemini-image-studio#1", "style": "typo", "cluster": "image-generation", "intent": "edit an existing image with Gemini", "tags": ["hard"]}
+{"id": "train-f559f810e579", "family": "gency-mcp#2", "style": "question", "cluster": "image-generation", "intent": "lifestyle shots for a product listing", "tags": ["hard"]}
+{"id": "train-450c78823d5f", "family": "gency-mcp#2", "style": "indirect", "cluster": "image-generation", "intent": "lifestyle shots for a product listing", "tags": ["hard"]}
+{"id": "train-604dc4fea118", "family": "gency-mcp#2", "style": "casual", "cluster": "image-generation", "intent": "lifestyle shots for a product listing", "tags": ["hard"]}
+{"id": "train-2fc9bc5e44eb", "family": "gency-mcp#2", "style": "cmd", "cluster": "image-generation", "intent": "lifestyle shots for a product listing", "tags": ["hard"]}
+{"id": "train-a5e366e40137", "family": "github-audit#1", "style": "cmd", "cluster": "code-hosting", "intent": "license risk audit of a GitHub repo", "tags": ["hard"]}
+{"id": "train-773d130d921d", "family": "github-audit#1", "style": "verbose", "cluster": "code-hosting", "intent": "license risk audit of a GitHub repo", "tags": ["hard"]}
+{"id": "train-5caa4c5cfa7f", "family": "github-audit#1", "style": "indirect", "cluster": "code-hosting", "intent": "license risk audit of a GitHub repo", "tags": ["hard"]}
+{"id": "train-92c2f652ee7b", "family": "github-audit#1", "style": "typo", "cluster": "code-hosting", "intent": "license risk audit of a GitHub repo", "tags": ["hard"]}
+{"id": "train-9707b9af8f46", "family": "github-issue-mcp#1", "style": "cmd", "cluster": "code-hosting", "intent": "generate a GitHub issue from a description", "tags": ["hard"]}
+{"id": "train-fb88dbdb5306", "family": "github-issue-mcp#1", "style": "verbose", "cluster": "code-hosting", "intent": "generate a GitHub issue from a description", "tags": ["hard"]}
+{"id": "train-8ea00588b697", "family": "github-issue-mcp#1", "style": "indirect", "cluster": "code-hosting", "intent": "generate a GitHub issue from a description", "tags": ["hard"]}
+{"id": "train-35aec25ffcd6", "family": "github-issue-mcp#1", "style": "typo", "cluster": "code-hosting", "intent": "generate a GitHub issue from a description", "tags": ["hard"]}
+{"id": "train-fa7de1795a34", "family": "github-stats#2", "style": "verbose", "cluster": "code-hosting", "intent": "check repo activity over time", "tags": ["hard"]}
+{"id": "train-b655594ffc65", "family": "github-stats#2", "style": "indirect", "cluster": "code-hosting", "intent": "check repo activity over time", "tags": ["hard"]}
+{"id": "train-c21d2bf8e61f", "family": "github-stats#2", "style": "casual", "cluster": "code-hosting", "intent": "check repo activity over time", "tags": ["hard"]}
+{"id": "train-5dd96ffd8f62", "family": "github-stats#2", "style": "cmd", "cluster": "code-hosting", "intent": "check repo activity over time", "tags": ["hard"]}
+{"id": "train-6ffc6d464ddd", "family": "gitlab-mcp#1", "style": "cmd", "cluster": "code-hosting", "intent": "look up public GitLab projects", "tags": ["hard"]}
+{"id": "train-029f8600433a", "family": "gitlab-mcp#1", "style": "verbose", "cluster": "code-hosting", "intent": "look up public GitLab projects", "tags": ["hard"]}
+{"id": "train-0e1f3196f85c", "family": "gitlab-mcp#1", "style": "indirect", "cluster": "code-hosting", "intent": "look up public GitLab projects", "tags": ["hard"]}
+{"id": "train-6aded7e5f284", "family": "gitlab-mcp#1", "style": "typo", "cluster": "code-hosting", "intent": "look up public GitLab projects", "tags": ["hard"]}
+{"id": "train-99b229b5f241", "family": "google-cal-mcp#2", "style": "question", "cluster": "calendar", "intent": "list upcoming events", "tags": ["hard"]}
+{"id": "train-4f1c32a0b2b2", "family": "google-cal-mcp#2", "style": "casual", "cluster": "calendar", "intent": "list upcoming events", "tags": ["hard"]}
+{"id": "train-7355f0d15a0b", "family": "google-cal-mcp#2", "style": "indirect", "cluster": "calendar", "intent": "list upcoming events", "tags": ["hard"]}
+{"id": "train-b9615d42485a", "family": "google-cal-mcp#2", "style": "cmd", "cluster": "calendar", "intent": "list upcoming events", "tags": ["hard"]}
+{"id": "train-2cb89011f814", "family": "google-drive-comments-mcp#1", "style": "cmd", "cluster": "cloud-storage", "intent": "read comments on a Google Doc", "tags": ["hard"]}
+{"id": "train-b38531681e55", "family": "google-drive-comments-mcp#1", "style": "verbose", "cluster": "cloud-storage", "intent": "read comments on a Google Doc", "tags": ["hard"]}
+{"id": "train-104dbbb6efe1", "family": "google-drive-comments-mcp#1", "style": "indirect", "cluster": "cloud-storage", "intent": "read comments on a Google Doc", "tags": ["hard"]}
+{"id": "train-7ed356f86d08", "family": "google-drive-comments-mcp#1", "style": "typo", "cluster": "cloud-storage", "intent": "read comments on a Google Doc", "tags": ["hard"]}
+{"id": "train-ffd840aecf17", "family": "google-drive-mcp#2", "style": "question", "cluster": "cloud-storage", "intent": "search files in cloud storage", "tags": ["hard"]}
+{"id": "train-49e20834881c", "family": "google-drive-mcp#2", "style": "indirect", "cluster": "cloud-storage", "intent": "search files in cloud storage", "tags": ["hard"]}
+{"id": "train-960c8c03aca4", "family": "google-drive-mcp#2", "style": "casual", "cluster": "cloud-storage", "intent": "search files in cloud storage", "tags": ["hard"]}
+{"id": "train-7106c4243bf8", "family": "google-drive-mcp#2", "style": "cmd", "cluster": "cloud-storage", "intent": "search files in cloud storage", "tags": ["hard"]}
+{"id": "train-a19eb161d5ed", "family": "google-maps#1", "style": "cmd", "cluster": "maps-geo", "intent": "find nearby places", "tags": ["hard"]}
+{"id": "train-f24458810daa", "family": "google-maps#1", "style": "casual", "cluster": "maps-geo", "intent": "find nearby places", "tags": ["hard"]}
+{"id": "train-e3e3812214f9", "family": "google-maps#1", "style": "question", "cluster": "maps-geo", "intent": "find nearby places", "tags": ["hard"]}
+{"id": "train-824acd746a9f", "family": "google-maps#1", "style": "indirect", "cluster": "maps-geo", "intent": "find nearby places", "tags": ["hard"]}
+{"id": "train-f073ff786f1d", "family": "google-maps-places-mcp#1", "style": "cmd", "cluster": "maps-geo", "intent": "get business info for a place", "tags": ["hard"]}
+{"id": "train-1f30771672e7", "family": "google-maps-places-mcp#1", "style": "verbose", "cluster": "maps-geo", "intent": "get business info for a place", "tags": ["hard"]}
+{"id": "train-1a8099530ffe", "family": "google-maps-places-mcp#1", "style": "indirect", "cluster": "maps-geo", "intent": "get business info for a place", "tags": ["hard"]}
+{"id": "train-be649bdfccbf", "family": "google-maps-places-mcp#1", "style": "typo", "cluster": "maps-geo", "intent": "get business info for a place", "tags": ["hard"]}
+{"id": "train-0d5dad83a161", "family": "google-maps-reviews#1", "style": "cmd", "cluster": "maps-geo", "intent": "get reviews of a place", "tags": ["hard"]}
+{"id": "train-155a9e719c29", "family": "google-maps-reviews#1", "style": "verbose", "cluster": "maps-geo", "intent": "get reviews of a place", "tags": ["hard"]}
+{"id": "train-b6da32d1b95a", "family": "google-maps-reviews#1", "style": "indirect", "cluster": "maps-geo", "intent": "get reviews of a place", "tags": ["hard"]}
+{"id": "train-f9f86f7cf4da", "family": "google-maps-reviews#1", "style": "typo", "cluster": "maps-geo", "intent": "get reviews of a place", "tags": ["hard"]}
+{"id": "train-60e41ec58a75", "family": "google-serp#2", "style": "cmd", "cluster": "web-search", "intent": "structured Google news results at scale", "tags": ["hard"]}
+{"id": "train-d1034fd898a4", "family": "google-serp#2", "style": "indirect", "cluster": "web-search", "intent": "structured Google news results at scale", "tags": ["hard"]}
+{"id": "train-74abebb3bf05", "family": "google-serp#2", "style": "question", "cluster": "web-search", "intent": "structured Google news results at scale", "tags": ["hard"]}
+{"id": "train-e6ea783ca08a", "family": "google-serp#2", "style": "casual", "cluster": "web-search", "intent": "structured Google news results at scale", "tags": ["hard"]}
+{"id": "train-7cd30761ce13", "family": "gradient#2", "style": "question", "cluster": "misc", "intent": "conic gradient for a design", "tags": []}
+{"id": "train-f1c430d842a9", "family": "gradient#2", "style": "indirect", "cluster": "misc", "intent": "conic gradient for a design", "tags": []}
+{"id": "train-409352acbf51", "family": "gradient#2", "style": "casual", "cluster": "misc", "intent": "conic gradient for a design", "tags": []}
+{"id": "train-40aadcea8e1f", "family": "gradient#2", "style": "cmd", "cluster": "misc", "intent": "conic gradient for a design", "tags": []}
+{"id": "train-da52c65e110d", "family": "hackernews-mcp#2", "style": "verbose", "cluster": "news", "intent": "search Hacker News discussions", "tags": ["hard"]}
+{"id": "train-331d30fd4204", "family": "hackernews-mcp#2", "style": "indirect", "cluster": "news", "intent": "search Hacker News discussions", "tags": ["hard"]}
+{"id": "train-d7866662f42a", "family": "hackernews-mcp#2", "style": "cmd", "cluster": "news", "intent": "search Hacker News discussions", "tags": ["hard"]}
+{"id": "train-2121c241ae59", "family": "hackernews-mcp#2", "style": "typo", "cluster": "news", "intent": "search Hacker News discussions", "tags": ["hard"]}
+{"id": "train-fd98776e0ed9", "family": "holiday-calendar#1", "style": "cmd", "cluster": "calendar", "intent": "US federal holidays with observed dates", "tags": ["hard"]}
+{"id": "train-d05ee7ce047f", "family": "holiday-calendar#1", "style": "question", "cluster": "calendar", "intent": "US federal holidays with observed dates", "tags": ["hard"]}
+{"id": "train-4e2715735d2a", "family": "holiday-calendar#1", "style": "indirect", "cluster": "calendar", "intent": "US federal holidays with observed dates", "tags": ["hard"]}
+{"id": "train-307e83740d94", "family": "holiday-calendar#1", "style": "typo", "cluster": "calendar", "intent": "US federal holidays with observed dates", "tags": ["hard"]}
+{"id": "train-8f948a7ea4ed", "family": "image-generation-mcp#2", "style": "question", "cluster": "image-generation", "intent": "use local Stable Diffusion WebUI", "tags": ["hard"]}
+{"id": "train-ebc3495b9abb", "family": "image-generation-mcp#2", "style": "indirect", "cluster": "image-generation", "intent": "use local Stable Diffusion WebUI", "tags": ["hard"]}
+{"id": "train-bad3b28cf853", "family": "image-generation-mcp#2", "style": "casual", "cluster": "image-generation", "intent": "use local Stable Diffusion WebUI", "tags": ["hard"]}
+{"id": "train-1d300a3dc317", "family": "image-generation-mcp#2", "style": "cmd", "cluster": "image-generation", "intent": "use local Stable Diffusion WebUI", "tags": ["hard"]}
+{"id": "train-ab558368b52d", "family": "instagram-transcripts#2", "style": "question", "cluster": "video-transcripts", "intent": "transcribe reels in their original language", "tags": ["hard"]}
+{"id": "train-bd98dfdd74af", "family": "instagram-transcripts#2", "style": "indirect", "cluster": "video-transcripts", "intent": "transcribe reels in their original language", "tags": ["hard"]}
+{"id": "train-6c92be5008c8", "family": "instagram-transcripts#2", "style": "casual", "cluster": "video-transcripts", "intent": "transcribe reels in their original language", "tags": ["hard"]}
+{"id": "train-aba1cae347ee", "family": "instagram-transcripts#2", "style": "cmd", "cluster": "video-transcripts", "intent": "transcribe reels in their original language", "tags": ["hard"]}
+{"id": "train-4f1fba302f70", "family": "invoice-generator#2", "style": "question", "cluster": "payments", "intent": "use an invoice template", "tags": ["hard"]}
+{"id": "train-506bc0252b3b", "family": "invoice-generator#2", "style": "indirect", "cluster": "payments", "intent": "use an invoice template", "tags": ["hard"]}
+{"id": "train-b86623324cc4", "family": "invoice-generator#2", "style": "casual", "cluster": "payments", "intent": "use an invoice template", "tags": ["hard"]}
+{"id": "train-8c733ade9bf5", "family": "invoice-generator#2", "style": "cmd", "cluster": "payments", "intent": "use an invoice template", "tags": ["hard"]}
+{"id": "train-7f95fa633aaf", "family": "invoice-reader#2", "style": "question", "cluster": "payments", "intent": "check the math on an invoice", "tags": ["hard"]}
+{"id": "train-809204570356", "family": "invoice-reader#2", "style": "indirect", "cluster": "payments", "intent": "check the math on an invoice", "tags": ["hard"]}
+{"id": "train-f471ca41c03b", "family": "invoice-reader#2", "style": "casual", "cluster": "payments", "intent": "check the math on an invoice", "tags": ["hard"]}
+{"id": "train-1513787c06c7", "family": "invoice-reader#2", "style": "cmd", "cluster": "payments", "intent": "check the math on an invoice", "tags": ["hard"]}
+{"id": "train-71b387cdade8", "family": "invoicepdfs#1", "style": "cmd", "cluster": "payments", "intent": "check an invoice against EN 16931", "tags": ["hard"]}
+{"id": "train-eb0979b60e33", "family": "invoicepdfs#1", "style": "verbose", "cluster": "payments", "intent": "check an invoice against EN 16931", "tags": ["hard"]}
+{"id": "train-4826a3569a3d", "family": "invoicepdfs#1", "style": "indirect", "cluster": "payments", "intent": "check an invoice against EN 16931", "tags": ["hard"]}
+{"id": "train-81b6f15cf563", "family": "invoicepdfs#1", "style": "typo", "cluster": "payments", "intent": "check an invoice against EN 16931", "tags": ["hard"]}
+{"id": "train-9045bef896ba", "family": "isomor#2", "style": "question", "cluster": "pdf", "intent": "produce a bilingual PDF", "tags": ["hard"]}
+{"id": "train-57620157fd8d", "family": "isomor#2", "style": "indirect", "cluster": "pdf", "intent": "produce a bilingual PDF", "tags": ["hard"]}
+{"id": "train-8d8e59337d3f", "family": "isomor#2", "style": "casual", "cluster": "pdf", "intent": "produce a bilingual PDF", "tags": ["hard"]}
+{"id": "train-4a0f03ab08c1", "family": "isomor#2", "style": "cmd", "cluster": "pdf", "intent": "produce a bilingual PDF", "tags": ["hard"]}
+{"id": "train-dcd025d3ba75", "family": "issueport#1", "style": "cmd", "cluster": "project-management", "intent": "create an issue in Linear", "tags": ["hard"]}
+{"id": "train-9d3038ec38da", "family": "issueport#1", "style": "verbose", "cluster": "project-management", "intent": "create an issue in Linear", "tags": ["hard"]}
+{"id": "train-1fbb69d45ad5", "family": "issueport#1", "style": "indirect", "cluster": "project-management", "intent": "create an issue in Linear", "tags": ["hard"]}
+{"id": "train-14bb637f85dd", "family": "issueport#1", "style": "typo", "cluster": "project-management", "intent": "create an issue in Linear", "tags": ["hard"]}
+{"id": "train-0d16d47f2d62", "family": "itineraires#1", "style": "cmd", "cluster": "maps-geo", "intent": "bike route in Europe", "tags": ["hard"]}
+{"id": "train-2d8ddfb31bf8", "family": "itineraires#1", "style": "verbose", "cluster": "maps-geo", "intent": "bike route in Europe", "tags": ["hard"]}
+{"id": "train-a8a166230900", "family": "itineraires#1", "style": "indirect", "cluster": "maps-geo", "intent": "bike route in Europe", "tags": ["hard"]}
+{"id": "train-e545edd78290", "family": "itineraires#1", "style": "typo", "cluster": "maps-geo", "intent": "bike route in Europe", "tags": ["hard"]}
+{"id": "train-84502e1d0c59", "family": "iwe#1", "style": "cmd", "cluster": "notes-knowledge", "intent": "use a local markdown notes folder as agent memory", "tags": ["hard"]}
+{"id": "train-c4eda1b09c19", "family": "iwe#1", "style": "verbose", "cluster": "notes-knowledge", "intent": "use a local markdown notes folder as agent memory", "tags": ["hard"]}
+{"id": "train-86c94d57e192", "family": "iwe#1", "style": "indirect", "cluster": "notes-knowledge", "intent": "use a local markdown notes folder as agent memory", "tags": ["hard"]}
+{"id": "train-b3943018c21b", "family": "iwe#1", "style": "typo", "cluster": "notes-knowledge", "intent": "use a local markdown notes folder as agent memory", "tags": ["hard"]}
+{"id": "train-8447b4d24209", "family": "justcaptions#2", "style": "question", "cluster": "video-transcripts", "intent": "correct and style video captions", "tags": ["hard"]}
+{"id": "train-d61d8a4f23c0", "family": "justcaptions#2", "style": "indirect", "cluster": "video-transcripts", "intent": "correct and style video captions", "tags": ["hard"]}
+{"id": "train-1460d0706d10", "family": "justcaptions#2", "style": "casual", "cluster": "video-transcripts", "intent": "correct and style video captions", "tags": ["hard"]}
+{"id": "train-4fe077c9cf9f", "family": "justcaptions#2", "style": "cmd", "cluster": "video-transcripts", "intent": "correct and style video captions", "tags": ["hard"]}
+{"id": "train-8e9e1ed65bb3", "family": "kaeris-mcp#2", "style": "question", "cluster": "translation", "intent": "check placeholders and plurals in language files", "tags": ["hard"]}
+{"id": "train-3328952f24bd", "family": "kaeris-mcp#2", "style": "indirect", "cluster": "translation", "intent": "check placeholders and plurals in language files", "tags": ["hard"]}
+{"id": "train-7ac03f98e02a", "family": "kaeris-mcp#2", "style": "casual", "cluster": "translation", "intent": "check placeholders and plurals in language files", "tags": ["hard"]}
+{"id": "train-adcbc7180c8f", "family": "kaeris-mcp#2", "style": "cmd", "cluster": "translation", "intent": "check placeholders and plurals in language files", "tags": ["hard"]}
+{"id": "train-d658ec18cb16", "family": "kanta#2", "style": "verbose", "cluster": "email", "intent": "verify whether email addresses are valid", "tags": ["hard"]}
+{"id": "train-95f6c4af5712", "family": "kanta#2", "style": "indirect", "cluster": "email", "intent": "verify whether email addresses are valid", "tags": ["hard"]}
+{"id": "train-aa103765b5f0", "family": "kanta#2", "style": "cmd", "cluster": "email", "intent": "verify whether email addresses are valid", "tags": ["hard"]}
+{"id": "train-c211c6deb2c7", "family": "kanta#2", "style": "casual", "cluster": "email", "intent": "verify whether email addresses are valid", "tags": ["hard"]}
+{"id": "train-34403afc230b", "family": "kika#1", "style": "cmd", "cluster": "agent-memory", "intent": "shared memory for client engagements", "tags": ["hard"]}
+{"id": "train-eedf724a7113", "family": "kika#1", "style": "verbose", "cluster": "agent-memory", "intent": "shared memory for client engagements", "tags": ["hard"]}
+{"id": "train-463746660543", "family": "kika#1", "style": "indirect", "cluster": "agent-memory", "intent": "shared memory for client engagements", "tags": ["hard"]}
+{"id": "train-9082177b2261", "family": "kika#1", "style": "typo", "cluster": "agent-memory", "intent": "shared memory for client engagements", "tags": ["hard"]}
+{"id": "train-66c1ffa60289", "family": "kilimo-mcp#1", "style": "cmd", "cluster": "misc", "intent": "Kenyan crop calendar and planting advice", "tags": []}
+{"id": "train-941f4a319b56", "family": "kilimo-mcp#1", "style": "verbose", "cluster": "misc", "intent": "Kenyan crop calendar and planting advice", "tags": []}
+{"id": "train-9177463a59de", "family": "kilimo-mcp#1", "style": "indirect", "cluster": "misc", "intent": "Kenyan crop calendar and planting advice", "tags": []}
+{"id": "train-a250b96f6c8b", "family": "kilimo-mcp#1", "style": "typo", "cluster": "misc", "intent": "Kenyan crop calendar and planting advice", "tags": []}
+{"id": "train-44088f6e9a28", "family": "kubeview#2", "style": "question", "cluster": "devops", "intent": "find overprovisioned workloads", "tags": ["hard"]}
+{"id": "train-7bca7677cfc8", "family": "kubeview#2", "style": "indirect", "cluster": "devops", "intent": "find overprovisioned workloads", "tags": ["hard"]}
+{"id": "train-c4ce4df8b737", "family": "kubeview#2", "style": "casual", "cluster": "devops", "intent": "find overprovisioned workloads", "tags": ["hard"]}
+{"id": "train-9ec49aeea7ac", "family": "kubeview#2", "style": "cmd", "cluster": "devops", "intent": "find overprovisioned workloads", "tags": ["hard"]}
+{"id": "train-f892e58fa577", "family": "langbly#2", "style": "question", "cluster": "translation", "intent": "detect language of a text", "tags": ["hard"]}
+{"id": "train-ba55d63272c2", "family": "langbly#2", "style": "indirect", "cluster": "translation", "intent": "detect language of a text", "tags": ["hard"]}
+{"id": "train-af73f8816932", "family": "langbly#2", "style": "casual", "cluster": "translation", "intent": "detect language of a text", "tags": ["hard"]}
+{"id": "train-531646f42689", "family": "langbly#2", "style": "cmd", "cluster": "translation", "intent": "detect language of a text", "tags": ["hard"]}
+{"id": "train-b6b87d18e4d4", "family": "laravel-forge#1", "style": "cmd", "cluster": "devops", "intent": "deploy a Laravel site via Forge", "tags": ["hard"]}
+{"id": "train-5503d6a279ff", "family": "laravel-forge#1", "style": "verbose", "cluster": "devops", "intent": "deploy a Laravel site via Forge", "tags": ["hard"]}
+{"id": "train-f00057eab382", "family": "laravel-forge#1", "style": "indirect", "cluster": "devops", "intent": "deploy a Laravel site via Forge", "tags": ["hard"]}
+{"id": "train-483239e34518", "family": "laravel-forge#1", "style": "typo", "cluster": "devops", "intent": "deploy a Laravel site via Forge", "tags": ["hard"]}
+{"id": "train-b3311ea29adb", "family": "litebase#1", "style": "cmd", "cluster": "sql-database", "intent": "query and write a local SQLite file", "tags": ["hard"]}
+{"id": "train-f13f9a8bf99b", "family": "litebase#1", "style": "verbose", "cluster": "sql-database", "intent": "query and write a local SQLite file", "tags": ["hard"]}
+{"id": "train-fd993b9319fa", "family": "litebase#1", "style": "indirect", "cluster": "sql-database", "intent": "query and write a local SQLite file", "tags": ["hard"]}
+{"id": "train-a1dac9134e14", "family": "litebase#1", "style": "typo", "cluster": "sql-database", "intent": "query and write a local SQLite file", "tags": ["hard"]}
+{"id": "train-3c0ceaead997", "family": "loan-schedule#2", "style": "question", "cluster": "misc", "intent": "savings from early loan payoff", "tags": []}
+{"id": "train-f344c1cf7bf7", "family": "loan-schedule#2", "style": "indirect", "cluster": "misc", "intent": "savings from early loan payoff", "tags": []}
+{"id": "train-cd6c6be40a83", "family": "loan-schedule#2", "style": "casual", "cluster": "misc", "intent": "savings from early loan payoff", "tags": []}
+{"id": "train-5a7a3241c7a9", "family": "loan-schedule#2", "style": "cmd", "cluster": "misc", "intent": "savings from early loan payoff", "tags": []}
+{"id": "train-8a9c19a88888", "family": "local-whisper-mcp#2", "style": "question", "cluster": "video-transcripts", "intent": "transcribe a video file using local GPU", "tags": ["hard"]}
+{"id": "train-daf9538f6598", "family": "local-whisper-mcp#2", "style": "indirect", "cluster": "video-transcripts", "intent": "transcribe a video file using local GPU", "tags": ["hard"]}
+{"id": "train-ccf63997f693", "family": "local-whisper-mcp#2", "style": "casual", "cluster": "video-transcripts", "intent": "transcribe a video file using local GPU", "tags": ["hard"]}
+{"id": "train-40e5431856b1", "family": "local-whisper-mcp#2", "style": "cmd", "cluster": "video-transcripts", "intent": "transcribe a video file using local GPU", "tags": ["hard"]}
+{"id": "train-e5cab70f5a33", "family": "mail-receive#2", "style": "cmd", "cluster": "email", "intent": "manage inbound mail domains and routes", "tags": ["hard"]}
+{"id": "train-06a62f93aa8d", "family": "mail-receive#2", "style": "indirect", "cluster": "email", "intent": "manage inbound mail domains and routes", "tags": ["hard"]}
+{"id": "train-0c4afd75db90", "family": "mail-receive#2", "style": "typo", "cluster": "email", "intent": "manage inbound mail domains and routes", "tags": ["hard"]}
+{"id": "train-a7969fd2c8c3", "family": "mail-receive#2", "style": "casual", "cluster": "email", "intent": "manage inbound mail domains and routes", "tags": ["hard"]}
+{"id": "train-902c3a2484ef", "family": "mapmap#1", "style": "cmd", "cluster": "maps-geo", "intent": "truck routing with hazardous goods", "tags": ["hard"]}
+{"id": "train-15c69c53ebda", "family": "mapmap#1", "style": "verbose", "cluster": "maps-geo", "intent": "truck routing with hazardous goods", "tags": ["hard"]}
+{"id": "train-383ca37c87bc", "family": "mapmap#1", "style": "indirect", "cluster": "maps-geo", "intent": "truck routing with hazardous goods", "tags": ["hard"]}
+{"id": "train-d1b3486766f4", "family": "mapmap#1", "style": "typo", "cluster": "maps-geo", "intent": "truck routing with hazardous goods", "tags": ["hard"]}
+{"id": "train-2aea124b1c24", "family": "market-news#1", "style": "cmd", "cluster": "market-data", "intent": "latest news for a stock ticker", "tags": ["hard"]}
+{"id": "train-11ded8bcb506", "family": "market-news#1", "style": "verbose", "cluster": "market-data", "intent": "latest news for a stock ticker", "tags": ["hard"]}
+{"id": "train-f929c9895998", "family": "market-news#1", "style": "indirect", "cluster": "market-data", "intent": "latest news for a stock ticker", "tags": ["hard"]}
+{"id": "train-14aaa96c3ad2", "family": "market-news#1", "style": "typo", "cluster": "market-data", "intent": "latest news for a stock ticker", "tags": ["hard"]}
+{"id": "train-bb8fc68fd48d", "family": "marqpdf#1", "style": "cmd", "cluster": "pdf", "intent": "compress a PDF to a target size", "tags": ["hard"]}
+{"id": "train-3f082c604d78", "family": "marqpdf#1", "style": "verbose", "cluster": "pdf", "intent": "compress a PDF to a target size", "tags": ["hard"]}
+{"id": "train-ccf3b8b25b78", "family": "marqpdf#1", "style": "indirect", "cluster": "pdf", "intent": "compress a PDF to a target size", "tags": ["hard"]}
+{"id": "train-ccac0e33a051", "family": "marqpdf#1", "style": "typo", "cluster": "pdf", "intent": "compress a PDF to a target size", "tags": ["hard"]}
+{"id": "train-3f375811c333", "family": "mcp-accessibility-scanner#2", "style": "question", "cluster": "browser-automation", "intent": "check color contrast and ARIA issues", "tags": ["hard"]}
+{"id": "train-c08697582ac7", "family": "mcp-accessibility-scanner#2", "style": "indirect", "cluster": "browser-automation", "intent": "check color contrast and ARIA issues", "tags": ["hard"]}
+{"id": "train-f84e5891459f", "family": "mcp-accessibility-scanner#2", "style": "casual", "cluster": "browser-automation", "intent": "check color contrast and ARIA issues", "tags": ["hard"]}
+{"id": "train-fb82505bac2f", "family": "mcp-accessibility-scanner#2", "style": "cmd", "cluster": "browser-automation", "intent": "check color contrast and ARIA issues", "tags": ["hard"]}
+{"id": "train-0e92c14d15ca", "family": "mcp-drawthings#1", "style": "cmd", "cluster": "image-generation", "intent": "generate images locally on a Mac", "tags": ["hard"]}
+{"id": "train-cffa448fa320", "family": "mcp-drawthings#1", "style": "verbose", "cluster": "image-generation", "intent": "generate images locally on a Mac", "tags": ["hard"]}
+{"id": "train-deb1f001303f", "family": "mcp-drawthings#1", "style": "indirect", "cluster": "image-generation", "intent": "generate images locally on a Mac", "tags": ["hard"]}
+{"id": "train-9a73c27ce1a0", "family": "mcp-drawthings#1", "style": "typo", "cluster": "image-generation", "intent": "generate images locally on a Mac", "tags": ["hard"]}
+{"id": "train-efcf5ae2afc1", "family": "mcp-google-custom-search#2", "style": "cmd", "cluster": "web-search", "intent": "image search via Google", "tags": ["hard"]}
+{"id": "train-81360349bee2", "family": "mcp-google-custom-search#2", "style": "casual", "cluster": "web-search", "intent": "image search via Google", "tags": ["hard"]}
+{"id": "train-92d42a173214", "family": "mcp-google-custom-search#2", "style": "indirect", "cluster": "web-search", "intent": "image search via Google", "tags": ["hard"]}
+{"id": "train-b1bf5d69f53a", "family": "mcp-google-custom-search#2", "style": "typo", "cluster": "web-search", "intent": "image search via Google", "tags": ["hard"]}
+{"id": "train-947287ece568", "family": "mcp-google-sheets#1", "style": "cmd", "cluster": "spreadsheets", "intent": "read and write ranges in Google Sheets", "tags": ["hard"]}
+{"id": "train-50be2f4311d3", "family": "mcp-google-sheets#1", "style": "verbose", "cluster": "spreadsheets", "intent": "read and write ranges in Google Sheets", "tags": ["hard"]}
+{"id": "train-3032b7569bb9", "family": "mcp-google-sheets#1", "style": "indirect", "cluster": "spreadsheets", "intent": "read and write ranges in Google Sheets", "tags": ["hard"]}
+{"id": "train-870512d3f77d", "family": "mcp-google-sheets#1", "style": "typo", "cluster": "spreadsheets", "intent": "read and write ranges in Google Sheets", "tags": ["hard"]}
+{"id": "train-777d373bdd6f", "family": "mcp-icloud-caldav#1", "style": "cmd", "cluster": "calendar", "intent": "manage iCloud calendar events", "tags": ["hard"]}
+{"id": "train-71535f1ac068", "family": "mcp-icloud-caldav#1", "style": "verbose", "cluster": "calendar", "intent": "manage iCloud calendar events", "tags": ["hard"]}
+{"id": "train-3ef200ab0b93", "family": "mcp-icloud-caldav#1", "style": "indirect", "cluster": "calendar", "intent": "manage iCloud calendar events", "tags": ["hard"]}
+{"id": "train-034630ff6f35", "family": "mcp-icloud-caldav#1", "style": "typo", "cluster": "calendar", "intent": "manage iCloud calendar events", "tags": ["hard"]}
+{"id": "train-5a7bfbc3cea9", "family": "mcp-jira-stdio#2", "style": "question", "cluster": "project-management", "intent": "transition and comment on a Jira issue", "tags": ["hard"]}
+{"id": "train-18f329fb9654", "family": "mcp-jira-stdio#2", "style": "indirect", "cluster": "project-management", "intent": "transition and comment on a Jira issue", "tags": ["hard"]}
+{"id": "train-df450f1f0b4c", "family": "mcp-jira-stdio#2", "style": "casual", "cluster": "project-management", "intent": "transition and comment on a Jira issue", "tags": ["hard"]}
+{"id": "train-49c6913c5218", "family": "mcp-jira-stdio#2", "style": "cmd", "cluster": "project-management", "intent": "transition and comment on a Jira issue", "tags": ["hard"]}
+{"id": "train-d92705866d64", "family": "mcp-jp-calendar#1", "style": "cmd", "cluster": "calendar", "intent": "Japanese business days and holidays", "tags": ["hard"]}
+{"id": "train-96ee7a06d018", "family": "mcp-jp-calendar#1", "style": "verbose", "cluster": "calendar", "intent": "Japanese business days and holidays", "tags": ["hard"]}
+{"id": "train-c79ff7a12062", "family": "mcp-jp-calendar#1", "style": "indirect", "cluster": "calendar", "intent": "Japanese business days and holidays", "tags": ["hard"]}
+{"id": "train-bf8db5b5ae5a", "family": "mcp-jp-calendar#1", "style": "typo", "cluster": "calendar", "intent": "Japanese business days and holidays", "tags": ["hard"]}
+{"id": "train-b29e0df5feb1", "family": "mcp-obsidian-via-rest#2", "style": "question", "cluster": "notes-knowledge", "intent": "create or edit a note in Obsidian", "tags": ["hard"]}
+{"id": "train-a627fddb804f", "family": "mcp-obsidian-via-rest#2", "style": "indirect", "cluster": "notes-knowledge", "intent": "create or edit a note in Obsidian", "tags": ["hard"]}
+{"id": "train-01e19ee4844d", "family": "mcp-obsidian-via-rest#2", "style": "casual", "cluster": "notes-knowledge", "intent": "create or edit a note in Obsidian", "tags": ["hard"]}
+{"id": "train-2e36e253d208", "family": "mcp-obsidian-via-rest#2", "style": "cmd", "cluster": "notes-knowledge", "intent": "create or edit a note in Obsidian", "tags": ["hard"]}
+{"id": "train-58957ba2be04", "family": "mcp-s3#1", "style": "cmd", "cluster": "cloud-storage", "intent": "list objects in an S3 bucket read-only", "tags": ["hard"]}
+{"id": "train-f5e1534d51d8", "family": "mcp-s3#1", "style": "verbose", "cluster": "cloud-storage", "intent": "list objects in an S3 bucket read-only", "tags": ["hard"]}
+{"id": "train-f1bdf449be7f", "family": "mcp-s3#1", "style": "indirect", "cluster": "cloud-storage", "intent": "list objects in an S3 bucket read-only", "tags": ["hard"]}
+{"id": "train-243d1712921c", "family": "mcp-s3#1", "style": "typo", "cluster": "cloud-storage", "intent": "list objects in an S3 bucket read-only", "tags": ["hard"]}
+{"id": "train-6b2d3d047657", "family": "mcp-server-browser-automation#1", "style": "cmd", "cluster": "browser-automation", "intent": "fill a web form in a browser", "tags": ["hard"]}
+{"id": "train-060996817d96", "family": "mcp-server-browser-automation#1", "style": "verbose", "cluster": "browser-automation", "intent": "fill a web form in a browser", "tags": ["hard"]}
+{"id": "train-e682d47220ec", "family": "mcp-server-browser-automation#1", "style": "indirect", "cluster": "browser-automation", "intent": "fill a web form in a browser", "tags": ["hard"]}
+{"id": "train-ae9c8a86d1a7", "family": "mcp-server-browser-automation#1", "style": "typo", "cluster": "browser-automation", "intent": "fill a web form in a browser", "tags": ["hard"]}
+{"id": "train-0eea6e50e55c", "family": "mcp-server-slack#1", "style": "cmd", "cluster": "team-chat", "intent": "post a message to a Slack channel", "tags": ["hard"]}
+{"id": "train-bcdca394eaa4", "family": "mcp-server-slack#1", "style": "verbose", "cluster": "team-chat", "intent": "post a message to a Slack channel", "tags": ["hard"]}
+{"id": "train-4198f0cc3481", "family": "mcp-server-slack#1", "style": "indirect", "cluster": "team-chat", "intent": "post a message to a Slack channel", "tags": ["hard"]}
+{"id": "train-2999b95c2457", "family": "mcp-server-slack#1", "style": "typo", "cluster": "team-chat", "intent": "post a message to a Slack channel", "tags": ["hard"]}
+{"id": "train-424235456c6a", "family": "mdpipeline#1", "style": "cmd", "cluster": "project-management", "intent": "export Jira as local Markdown files", "tags": ["hard"]}
+{"id": "train-87be4efe4d18", "family": "mdpipeline#1", "style": "verbose", "cluster": "project-management", "intent": "export Jira as local Markdown files", "tags": ["hard"]}
+{"id": "train-5b3a7e9f31b7", "family": "mdpipeline#1", "style": "indirect", "cluster": "project-management", "intent": "export Jira as local Markdown files", "tags": ["hard"]}
+{"id": "train-c60e80fc5fb0", "family": "mdpipeline#1", "style": "typo", "cluster": "project-management", "intent": "export Jira as local Markdown files", "tags": ["hard"]}
+{"id": "train-b95f19d2244b", "family": "meet-bot#2", "style": "cmd", "cluster": "calendar", "intent": "check availability and book a meeting", "tags": ["hard"]}
+{"id": "train-f968a4b39281", "family": "meet-bot#2", "style": "question", "cluster": "calendar", "intent": "check availability and book a meeting", "tags": ["hard"]}
+{"id": "train-e0d4ce2f54d9", "family": "meet-bot#2", "style": "indirect", "cluster": "calendar", "intent": "check availability and book a meeting", "tags": ["hard"]}
+{"id": "train-347a0fb65972", "family": "meet-bot#2", "style": "casual", "cluster": "calendar", "intent": "check availability and book a meeting", "tags": ["hard"]}
+{"id": "train-55b60c4cb155", "family": "memento#1", "style": "cmd", "cluster": "agent-memory", "intent": "persistent knowledge graph memory", "tags": ["hard"]}
+{"id": "train-c0741372d1eb", "family": "memento#1", "style": "verbose", "cluster": "agent-memory", "intent": "persistent knowledge graph memory", "tags": ["hard"]}
+{"id": "train-0d38d992fa9b", "family": "memento#1", "style": "indirect", "cluster": "agent-memory", "intent": "persistent knowledge graph memory", "tags": ["hard"]}
+{"id": "train-db7fc74dc5e5", "family": "memento#1", "style": "typo", "cluster": "agent-memory", "intent": "persistent knowledge graph memory", "tags": ["hard"]}
+{"id": "train-775b5a0dd91b", "family": "mexico-invoice-mcp#2", "style": "question", "cluster": "payments", "intent": "cancel a CFDI invoice", "tags": ["hard"]}
+{"id": "train-5bc8c4dd9a78", "family": "mexico-invoice-mcp#2", "style": "indirect", "cluster": "payments", "intent": "cancel a CFDI invoice", "tags": ["hard"]}
+{"id": "train-3f3703bdc19d", "family": "mexico-invoice-mcp#2", "style": "casual", "cluster": "payments", "intent": "cancel a CFDI invoice", "tags": ["hard"]}
+{"id": "train-625864b95363", "family": "mexico-invoice-mcp#2", "style": "cmd", "cluster": "payments", "intent": "cancel a CFDI invoice", "tags": ["hard"]}
+{"id": "train-ae53cf97e14f", "family": "miapi#2", "style": "casual", "cluster": "web-search", "intent": "quick web lookup of a current fact", "tags": ["hard"]}
+{"id": "train-ecbc15d9919f", "family": "miapi#2", "style": "indirect", "cluster": "web-search", "intent": "quick web lookup of a current fact", "tags": ["hard"]}
+{"id": "train-5256d68da28d", "family": "miapi#2", "style": "typo", "cluster": "web-search", "intent": "quick web lookup of a current fact", "tags": ["hard"]}
+{"id": "train-a94befa3d9ad", "family": "miapi#2", "style": "cmd", "cluster": "web-search", "intent": "quick web lookup of a current fact", "tags": ["hard"]}
+{"id": "train-b1a72af595cc", "family": "microsoft-teams-mcp#1", "style": "cmd", "cluster": "team-chat", "intent": "read unread Teams messages", "tags": ["hard"]}
+{"id": "train-2de99dfbf527", "family": "microsoft-teams-mcp#1", "style": "verbose", "cluster": "team-chat", "intent": "read unread Teams messages", "tags": ["hard"]}
+{"id": "train-b3e30a8fddd4", "family": "microsoft-teams-mcp#1", "style": "indirect", "cluster": "team-chat", "intent": "read unread Teams messages", "tags": ["hard"]}
+{"id": "train-140bdb80037a", "family": "microsoft-teams-mcp#1", "style": "typo", "cluster": "team-chat", "intent": "read unread Teams messages", "tags": ["hard"]}
+{"id": "train-c3523a5dc4c4", "family": "mindmeister#1", "style": "cmd", "cluster": "maps-geo", "intent": "create a mind map", "tags": ["hard"]}
+{"id": "train-71fe4a95e80f", "family": "mindmeister#1", "style": "verbose", "cluster": "maps-geo", "intent": "create a mind map", "tags": ["hard"]}
+{"id": "train-bd860301fe2d", "family": "mindmeister#1", "style": "indirect", "cluster": "maps-geo", "intent": "create a mind map", "tags": ["hard"]}
+{"id": "train-3fd9a09518a0", "family": "mindmeister#1", "style": "typo", "cluster": "maps-geo", "intent": "create a mind map", "tags": ["hard"]}
+{"id": "train-84a05277e733", "family": "modern-treasury#1", "style": "cmd", "cluster": "payments", "intent": "create a payment order to a counterparty", "tags": ["hard"]}
+{"id": "train-92262e5099f7", "family": "modern-treasury#1", "style": "verbose", "cluster": "payments", "intent": "create a payment order to a counterparty", "tags": ["hard"]}
+{"id": "train-f3b1a167dfc6", "family": "modern-treasury#1", "style": "indirect", "cluster": "payments", "intent": "create a payment order to a counterparty", "tags": ["hard"]}
+{"id": "train-3d01bc9eb7a7", "family": "modern-treasury#1", "style": "typo", "cluster": "payments", "intent": "create a payment order to a counterparty", "tags": ["hard"]}
+{"id": "train-fe2c03240399", "family": "monet#1", "style": "cmd", "cluster": "agent-memory", "intent": "memory for coding agents across sessions", "tags": ["hard"]}
+{"id": "train-45b56df3a032", "family": "monet#1", "style": "verbose", "cluster": "agent-memory", "intent": "memory for coding agents across sessions", "tags": ["hard"]}
+{"id": "train-7332eec68051", "family": "monet#1", "style": "indirect", "cluster": "agent-memory", "intent": "memory for coding agents across sessions", "tags": ["hard"]}
+{"id": "train-f7e7d031e4c7", "family": "monet#1", "style": "typo", "cluster": "agent-memory", "intent": "memory for coding agents across sessions", "tags": ["hard"]}
+{"id": "train-1e3daa464bd1", "family": "ms-onedrive-mcp#1", "style": "cmd", "cluster": "cloud-storage", "intent": "browse OneDrive files", "tags": ["hard"]}
+{"id": "train-e6e7b13c83a8", "family": "ms-onedrive-mcp#1", "style": "verbose", "cluster": "cloud-storage", "intent": "browse OneDrive files", "tags": ["hard"]}
+{"id": "train-9f685c7555ba", "family": "ms-onedrive-mcp#1", "style": "indirect", "cluster": "cloud-storage", "intent": "browse OneDrive files", "tags": ["hard"]}
+{"id": "train-d03575e05b8c", "family": "ms-onedrive-mcp#1", "style": "typo", "cluster": "cloud-storage", "intent": "browse OneDrive files", "tags": ["hard"]}
+{"id": "train-877d474b9ebd", "family": "municipal-data#2", "style": "question", "cluster": "market-data", "intent": "compare municipal economic indicators", "tags": ["hard"]}
+{"id": "train-ca059904c673", "family": "municipal-data#2", "style": "indirect", "cluster": "market-data", "intent": "compare municipal economic indicators", "tags": ["hard"]}
+{"id": "train-b9c5e5a9016d", "family": "municipal-data#2", "style": "casual", "cluster": "market-data", "intent": "compare municipal economic indicators", "tags": ["hard"]}
+{"id": "train-4664650e18d0", "family": "municipal-data#2", "style": "cmd", "cluster": "market-data", "intent": "compare municipal economic indicators", "tags": ["hard"]}
+{"id": "train-56839a1a7720", "family": "mysql-ops-mcp#2", "style": "question", "cluster": "sql-database", "intent": "browse MySQL schema", "tags": ["hard"]}
+{"id": "train-76e1c1b423d3", "family": "mysql-ops-mcp#2", "style": "indirect", "cluster": "sql-database", "intent": "browse MySQL schema", "tags": ["hard"]}
+{"id": "train-f1431a010080", "family": "mysql-ops-mcp#2", "style": "casual", "cluster": "sql-database", "intent": "browse MySQL schema", "tags": ["hard"]}
+{"id": "train-833169459c24", "family": "mysql-ops-mcp#2", "style": "cmd", "cluster": "sql-database", "intent": "browse MySQL schema", "tags": ["hard"]}
+{"id": "train-5a070580ceb0", "family": "notion#1", "style": "cmd", "cluster": "notes-knowledge", "intent": "search and read Notion pages", "tags": ["hard"]}
+{"id": "train-ad6919a32c84", "family": "notion#1", "style": "verbose", "cluster": "notes-knowledge", "intent": "search and read Notion pages", "tags": ["hard"]}
+{"id": "train-f1390bbab1c3", "family": "notion#1", "style": "indirect", "cluster": "notes-knowledge", "intent": "search and read Notion pages", "tags": ["hard"]}
+{"id": "train-033019e26325", "family": "notion#1", "style": "typo", "cluster": "notes-knowledge", "intent": "search and read Notion pages", "tags": ["hard"]}
+{"id": "train-af1c124fbe26", "family": "ocrspace#1", "style": "cmd", "cluster": "pdf", "intent": "OCR a scanned image to text", "tags": ["hard"]}
+{"id": "train-9b7518b6129e", "family": "ocrspace#1", "style": "indirect", "cluster": "pdf", "intent": "OCR a scanned image to text", "tags": ["hard"]}
+{"id": "train-42093cf63409", "family": "ocrspace#1", "style": "typo", "cluster": "pdf", "intent": "OCR a scanned image to text", "tags": ["hard"]}
+{"id": "train-c0fea4a8bf7d", "family": "ocrspace#1", "style": "question", "cluster": "pdf", "intent": "OCR a scanned image to text", "tags": ["hard"]}
+{"id": "train-eacd436a3632", "family": "onecite#2", "style": "question", "cluster": "research-papers", "intent": "format references in APA or MLA", "tags": ["hard"]}
+{"id": "train-72b8782548bb", "family": "onecite#2", "style": "indirect", "cluster": "research-papers", "intent": "format references in APA or MLA", "tags": ["hard"]}
+{"id": "train-ad0178a673ca", "family": "onecite#2", "style": "casual", "cluster": "research-papers", "intent": "format references in APA or MLA", "tags": ["hard"]}
+{"id": "train-94a6567ffba2", "family": "onecite#2", "style": "cmd", "cluster": "research-papers", "intent": "format references in APA or MLA", "tags": ["hard"]}
+{"id": "train-f98fae2d2f28", "family": "open-meteo-mcp-server#1", "style": "cmd", "cluster": "weather", "intent": "weather forecast for a city", "tags": ["hard"]}
+{"id": "train-8ca611df52b0", "family": "open-meteo-mcp-server#1", "style": "casual", "cluster": "weather", "intent": "weather forecast for a city", "tags": ["hard"]}
+{"id": "train-1914b04056c0", "family": "open-meteo-mcp-server#1", "style": "question", "cluster": "weather", "intent": "weather forecast for a city", "tags": ["hard"]}
+{"id": "train-77f15cc2a413", "family": "open-meteo-mcp-server#1", "style": "indirect", "cluster": "weather", "intent": "weather forecast for a city", "tags": ["hard"]}
+{"id": "train-11413bf7418f", "family": "opportunity-mcp#2", "style": "question", "cluster": "misc", "intent": "find internships and fellowships", "tags": []}
+{"id": "train-b1c9584583cb", "family": "opportunity-mcp#2", "style": "indirect", "cluster": "misc", "intent": "find internships and fellowships", "tags": []}
+{"id": "train-4b6e4bdd7734", "family": "opportunity-mcp#2", "style": "casual", "cluster": "misc", "intent": "find internships and fellowships", "tags": []}
+{"id": "train-12d7af46ec66", "family": "opportunity-mcp#2", "style": "cmd", "cluster": "misc", "intent": "find internships and fellowships", "tags": []}
+{"id": "train-71b9e41db090", "family": "papernexus#1", "style": "cmd", "cluster": "research-papers", "intent": "find related papers via citation network", "tags": ["hard"]}
+{"id": "train-9b632fbb91a0", "family": "papernexus#1", "style": "verbose", "cluster": "research-papers", "intent": "find related papers via citation network", "tags": ["hard"]}
+{"id": "train-9d13744cf8ff", "family": "papernexus#1", "style": "indirect", "cluster": "research-papers", "intent": "find related papers via citation network", "tags": ["hard"]}
+{"id": "train-b22f148f9a84", "family": "papernexus#1", "style": "typo", "cluster": "research-papers", "intent": "find related papers via citation network", "tags": ["hard"]}
+{"id": "train-aa3b1f299d39", "family": "payport#1", "style": "cmd", "cluster": "payments", "intent": "create a Stripe customer and invoice", "tags": ["hard"]}
+{"id": "train-8f89cde0eb37", "family": "payport#1", "style": "verbose", "cluster": "payments", "intent": "create a Stripe customer and invoice", "tags": ["hard"]}
+{"id": "train-ca98038de244", "family": "payport#1", "style": "indirect", "cluster": "payments", "intent": "create a Stripe customer and invoice", "tags": ["hard"]}
+{"id": "train-645e5a0b1a9c", "family": "payport#1", "style": "typo", "cluster": "payments", "intent": "create a Stripe customer and invoice", "tags": ["hard"]}
+{"id": "train-3f8f3c87eaf8", "family": "pdf-to-md#1", "style": "cmd", "cluster": "pdf", "intent": "convert a PDF into Markdown", "tags": ["hard"]}
+{"id": "train-523af065e84a", "family": "pdf-to-md#1", "style": "indirect", "cluster": "pdf", "intent": "convert a PDF into Markdown", "tags": ["hard"]}
+{"id": "train-ce4d67fe7644", "family": "pdf-to-md#1", "style": "question", "cluster": "pdf", "intent": "convert a PDF into Markdown", "tags": ["hard"]}
+{"id": "train-695456a58a01", "family": "pdf-to-md#1", "style": "typo", "cluster": "pdf", "intent": "convert a PDF into Markdown", "tags": ["hard"]}
+{"id": "train-dee9424b14a6", "family": "pdfsamenvoegen#2", "style": "verbose", "cluster": "pdf", "intent": "produce one downloadable PDF from chapters", "tags": ["hard"]}
+{"id": "train-cbd1f6f97930", "family": "pdfsamenvoegen#2", "style": "indirect", "cluster": "pdf", "intent": "produce one downloadable PDF from chapters", "tags": ["hard"]}
+{"id": "train-281f61cdf6ec", "family": "pdfsamenvoegen#2", "style": "question", "cluster": "pdf", "intent": "produce one downloadable PDF from chapters", "tags": ["hard"]}
+{"id": "train-2ea3a24bb7a3", "family": "pdfsamenvoegen#2", "style": "cmd", "cluster": "pdf", "intent": "produce one downloadable PDF from chapters", "tags": ["hard"]}
+{"id": "train-7c27bb497d51", "family": "perigon#1", "style": "cmd", "cluster": "news", "intent": "real-time news search", "tags": ["hard"]}
+{"id": "train-8c3abe9a9b2f", "family": "perigon#1", "style": "verbose", "cluster": "news", "intent": "real-time news search", "tags": ["hard"]}
+{"id": "train-019598bbb9a3", "family": "perigon#1", "style": "indirect", "cluster": "news", "intent": "real-time news search", "tags": ["hard"]}
+{"id": "train-4f15d6ca3048", "family": "perigon#1", "style": "typo", "cluster": "news", "intent": "real-time news search", "tags": ["hard"]}
+{"id": "train-5d81e01aaefe", "family": "pgcloud#1", "style": "cmd", "cluster": "sql-database", "intent": "manage Neon Postgres branches", "tags": ["hard"]}
+{"id": "train-520f518898ec", "family": "pgcloud#1", "style": "verbose", "cluster": "sql-database", "intent": "manage Neon Postgres branches", "tags": ["hard"]}
+{"id": "train-99abbe262516", "family": "pgcloud#1", "style": "indirect", "cluster": "sql-database", "intent": "manage Neon Postgres branches", "tags": ["hard"]}
+{"id": "train-25a9adafc30c", "family": "pgcloud#1", "style": "typo", "cluster": "sql-database", "intent": "manage Neon Postgres branches", "tags": ["hard"]}
+{"id": "train-002dc557175e", "family": "pgport#2", "style": "question", "cluster": "sql-database", "intent": "inspect data in a Postgres table", "tags": ["hard"]}
+{"id": "train-2675196aba3a", "family": "pgport#2", "style": "casual", "cluster": "sql-database", "intent": "inspect data in a Postgres table", "tags": ["hard"]}
+{"id": "train-28e2bc461145", "family": "pgport#2", "style": "indirect", "cluster": "sql-database", "intent": "inspect data in a Postgres table", "tags": ["hard"]}
+{"id": "train-941e6bd4d334", "family": "pgport#2", "style": "cmd", "cluster": "sql-database", "intent": "inspect data in a Postgres table", "tags": ["hard"]}
+{"id": "train-0e63cb28283a", "family": "playwright-report-mcp#2", "style": "question", "cluster": "browser-automation", "intent": "analyze test failures from an E2E run", "tags": ["hard"]}
+{"id": "train-31d959c6a48c", "family": "playwright-report-mcp#2", "style": "indirect", "cluster": "browser-automation", "intent": "analyze test failures from an E2E run", "tags": ["hard"]}
+{"id": "train-e59eb7dad9c5", "family": "playwright-report-mcp#2", "style": "casual", "cluster": "browser-automation", "intent": "analyze test failures from an E2E run", "tags": ["hard"]}
+{"id": "train-89898459ee99", "family": "playwright-report-mcp#2", "style": "cmd", "cluster": "browser-automation", "intent": "analyze test failures from an E2E run", "tags": ["hard"]}
+{"id": "train-90013d40a363", "family": "playwright-trace-decoder-mcp#2", "style": "question", "cluster": "browser-automation", "intent": "inspect network and actions inside a test trace", "tags": ["hard"]}
+{"id": "train-3998c7fa9e0d", "family": "playwright-trace-decoder-mcp#2", "style": "indirect", "cluster": "browser-automation", "intent": "inspect network and actions inside a test trace", "tags": ["hard"]}
+{"id": "train-007952b78507", "family": "playwright-trace-decoder-mcp#2", "style": "casual", "cluster": "browser-automation", "intent": "inspect network and actions inside a test trace", "tags": ["hard"]}
+{"id": "train-2084b6487b12", "family": "playwright-trace-decoder-mcp#2", "style": "cmd", "cluster": "browser-automation", "intent": "inspect network and actions inside a test trace", "tags": ["hard"]}
+{"id": "train-b9a60a3b3a0a", "family": "polymarket-toolkit#2", "style": "question", "cluster": "market-data", "intent": "profile PnL on Polymarket", "tags": ["hard"]}
+{"id": "train-5be655415e24", "family": "polymarket-toolkit#2", "style": "indirect", "cluster": "market-data", "intent": "profile PnL on Polymarket", "tags": ["hard"]}
+{"id": "train-11db638cb6a2", "family": "polymarket-toolkit#2", "style": "casual", "cluster": "market-data", "intent": "profile PnL on Polymarket", "tags": ["hard"]}
+{"id": "train-a3894c4fd263", "family": "polymarket-toolkit#2", "style": "cmd", "cluster": "market-data", "intent": "profile PnL on Polymarket", "tags": ["hard"]}
+{"id": "train-c1d284ccfdd5", "family": "presentr-analyze#1", "style": "cmd", "cluster": "video-transcripts", "intent": "generate podcast show notes and chapters", "tags": ["hard"]}
+{"id": "train-b58620b8669e", "family": "presentr-analyze#1", "style": "verbose", "cluster": "video-transcripts", "intent": "generate podcast show notes and chapters", "tags": ["hard"]}
+{"id": "train-be1a14285c88", "family": "presentr-analyze#1", "style": "indirect", "cluster": "video-transcripts", "intent": "generate podcast show notes and chapters", "tags": ["hard"]}
+{"id": "train-55fead56f357", "family": "presentr-analyze#1", "style": "typo", "cluster": "video-transcripts", "intent": "generate podcast show notes and chapters", "tags": ["hard"]}
+{"id": "train-15aac81e6be9", "family": "promise#2", "style": "question", "cluster": "agent-memory", "intent": "list open commitments", "tags": ["hard"]}
+{"id": "train-a891f1f9de88", "family": "promise#2", "style": "indirect", "cluster": "agent-memory", "intent": "list open commitments", "tags": ["hard"]}
+{"id": "train-4d5cb245ba3a", "family": "promise#2", "style": "casual", "cluster": "agent-memory", "intent": "list open commitments", "tags": ["hard"]}
+{"id": "train-ad4258d6db94", "family": "promise#2", "style": "cmd", "cluster": "agent-memory", "intent": "list open commitments", "tags": ["hard"]}
+{"id": "train-f43736995c26", "family": "prompt-refiner#1", "style": "cmd", "cluster": "image-generation", "intent": "improve a prompt for Midjourney", "tags": ["hard"]}
+{"id": "train-dd9287039a8d", "family": "prompt-refiner#1", "style": "verbose", "cluster": "image-generation", "intent": "improve a prompt for Midjourney", "tags": ["hard"]}
+{"id": "train-a4efebf411fa", "family": "prompt-refiner#1", "style": "indirect", "cluster": "image-generation", "intent": "improve a prompt for Midjourney", "tags": ["hard"]}
+{"id": "train-23b430e4f8db", "family": "prompt-refiner#1", "style": "typo", "cluster": "image-generation", "intent": "improve a prompt for Midjourney", "tags": ["hard"]}
+{"id": "train-d4aad7c14ad8", "family": "remote-filesystem#2", "style": "question", "cluster": "cloud-storage", "intent": "write and move files in GCS", "tags": ["hard"]}
+{"id": "train-1efb8000d828", "family": "remote-filesystem#2", "style": "indirect", "cluster": "cloud-storage", "intent": "write and move files in GCS", "tags": ["hard"]}
+{"id": "train-c80f6bcdfe15", "family": "remote-filesystem#2", "style": "casual", "cluster": "cloud-storage", "intent": "write and move files in GCS", "tags": ["hard"]}
+{"id": "train-e808c7f93c7e", "family": "remote-filesystem#2", "style": "cmd", "cluster": "cloud-storage", "intent": "write and move files in GCS", "tags": ["hard"]}
+{"id": "train-1d488b83e222", "family": "repowiki#1", "style": "cmd", "cluster": "notes-knowledge", "intent": "ask questions about a public GitHub repo via its wiki", "tags": ["hard"]}
+{"id": "train-52f2e60f305e", "family": "repowiki#1", "style": "verbose", "cluster": "notes-knowledge", "intent": "ask questions about a public GitHub repo via its wiki", "tags": ["hard"]}
+{"id": "train-b8dfb8bc186f", "family": "repowiki#1", "style": "indirect", "cluster": "notes-knowledge", "intent": "ask questions about a public GitHub repo via its wiki", "tags": ["hard"]}
+{"id": "train-f6c224bbc0f4", "family": "repowiki#1", "style": "typo", "cluster": "notes-knowledge", "intent": "ask questions about a public GitHub repo via its wiki", "tags": ["hard"]}
+{"id": "train-70785a78c97f", "family": "rewindmap#1", "style": "cmd", "cluster": "maps-geo", "intent": "historical borders on a date", "tags": ["hard"]}
+{"id": "train-22e595c12fe3", "family": "rewindmap#1", "style": "verbose", "cluster": "maps-geo", "intent": "historical borders on a date", "tags": ["hard"]}
+{"id": "train-bf9c9f47085f", "family": "rewindmap#1", "style": "indirect", "cluster": "maps-geo", "intent": "historical borders on a date", "tags": ["hard"]}
+{"id": "train-ebcaafe8301d", "family": "rewindmap#1", "style": "typo", "cluster": "maps-geo", "intent": "historical borders on a date", "tags": ["hard"]}
+{"id": "train-55f373e9f307", "family": "rosetta-mcp#1", "style": "cmd", "cluster": "translation", "intent": "translate an Excel file keeping formulas", "tags": ["hard"]}
+{"id": "train-add7fd325556", "family": "rosetta-mcp#1", "style": "verbose", "cluster": "translation", "intent": "translate an Excel file keeping formulas", "tags": ["hard"]}
+{"id": "train-9fadda09c7f1", "family": "rosetta-mcp#1", "style": "indirect", "cluster": "translation", "intent": "translate an Excel file keeping formulas", "tags": ["hard"]}
+{"id": "train-26ba35286d4c", "family": "rosetta-mcp#1", "style": "typo", "cluster": "translation", "intent": "translate an Excel file keeping formulas", "tags": ["hard"]}
+{"id": "train-72351f547c21", "family": "rpgmaker-mz-mcp#1", "style": "cmd", "cluster": "misc", "intent": "edit an RPG Maker MZ map", "tags": []}
+{"id": "train-6a56254a8524", "family": "rpgmaker-mz-mcp#1", "style": "verbose", "cluster": "misc", "intent": "edit an RPG Maker MZ map", "tags": []}
+{"id": "train-f9928ca59cb4", "family": "rpgmaker-mz-mcp#1", "style": "indirect", "cluster": "misc", "intent": "edit an RPG Maker MZ map", "tags": []}
+{"id": "train-f350a169ed54", "family": "rpgmaker-mz-mcp#1", "style": "typo", "cluster": "misc", "intent": "edit an RPG Maker MZ map", "tags": []}
+{"id": "train-5035a0068604", "family": "rss-mcp#2", "style": "question", "cluster": "news", "intent": "convert RSS to JSON", "tags": ["hard"]}
+{"id": "train-d11b8506f143", "family": "rss-mcp#2", "style": "indirect", "cluster": "news", "intent": "convert RSS to JSON", "tags": ["hard"]}
+{"id": "train-36405d1a9c65", "family": "rss-mcp#2", "style": "casual", "cluster": "news", "intent": "convert RSS to JSON", "tags": ["hard"]}
+{"id": "train-c967ccaf0f06", "family": "rss-mcp#2", "style": "cmd", "cluster": "news", "intent": "convert RSS to JSON", "tags": ["hard"]}
+{"id": "train-bb2e7c900ba8", "family": "runzumi#2", "style": "question", "cluster": "code-hosting", "intent": "find failing or slow GitHub Actions jobs", "tags": ["hard"]}
+{"id": "train-a7c5bc0afddc", "family": "runzumi#2", "style": "indirect", "cluster": "code-hosting", "intent": "find failing or slow GitHub Actions jobs", "tags": ["hard"]}
+{"id": "train-a9789b873abd", "family": "runzumi#2", "style": "casual", "cluster": "code-hosting", "intent": "find failing or slow GitHub Actions jobs", "tags": ["hard"]}
+{"id": "train-c0535bb556b7", "family": "runzumi#2", "style": "cmd", "cluster": "code-hosting", "intent": "find failing or slow GitHub Actions jobs", "tags": ["hard"]}
+{"id": "train-18c19db90bd6", "family": "salamailer#2", "style": "question", "cluster": "email", "intent": "share files securely with client-side encryption", "tags": ["hard"]}
+{"id": "train-63d963c82f97", "family": "salamailer#2", "style": "indirect", "cluster": "email", "intent": "share files securely with client-side encryption", "tags": ["hard"]}
+{"id": "train-98e80a484e82", "family": "salamailer#2", "style": "casual", "cluster": "email", "intent": "share files securely with client-side encryption", "tags": ["hard"]}
+{"id": "train-bc75d21b4835", "family": "salamailer#2", "style": "cmd", "cluster": "email", "intent": "share files securely with client-side encryption", "tags": ["hard"]}
+{"id": "train-ae6a22f55378", "family": "screenshot-mcp#1", "style": "cmd", "cluster": "browser-automation", "intent": "take a website screenshot", "tags": ["hard"]}
+{"id": "train-fb603f7ceb32", "family": "screenshot-mcp#1", "style": "verbose", "cluster": "browser-automation", "intent": "take a website screenshot", "tags": ["hard"]}
+{"id": "train-9c71a59b7ee4", "family": "screenshot-mcp#1", "style": "indirect", "cluster": "browser-automation", "intent": "take a website screenshot", "tags": ["hard"]}
+{"id": "train-273df4559460", "family": "screenshot-mcp#1", "style": "typo", "cluster": "browser-automation", "intent": "take a website screenshot", "tags": ["hard"]}
+{"id": "train-52c4360eebe0", "family": "semanticscholar#1", "style": "cmd", "cluster": "research-papers", "intent": "find citations of a paper", "tags": ["hard"]}
+{"id": "train-ad1c896baf82", "family": "semanticscholar#1", "style": "verbose", "cluster": "research-papers", "intent": "find citations of a paper", "tags": ["hard"]}
+{"id": "train-6f9cf6e9ed77", "family": "semanticscholar#1", "style": "indirect", "cluster": "research-papers", "intent": "find citations of a paper", "tags": ["hard"]}
+{"id": "train-2f973a9b617a", "family": "semanticscholar#1", "style": "typo", "cluster": "research-papers", "intent": "find citations of a paper", "tags": ["hard"]}
+{"id": "train-4e4bef70ac04", "family": "seolytics#1", "style": "verbose", "cluster": "web-search", "intent": "backlink and site audit for SEO", "tags": ["hard"]}
+{"id": "train-f70cf5069915", "family": "seolytics#1", "style": "indirect", "cluster": "web-search", "intent": "backlink and site audit for SEO", "tags": ["hard"]}
+{"id": "train-99cf5407841f", "family": "seolytics#1", "style": "cmd", "cluster": "web-search", "intent": "backlink and site audit for SEO", "tags": ["hard"]}
+{"id": "train-99f423fbbeb3", "family": "seolytics#1", "style": "typo", "cluster": "web-search", "intent": "backlink and site audit for SEO", "tags": ["hard"]}
+{"id": "train-9a36b031b78d", "family": "serpapi-mcp#1", "style": "cmd", "cluster": "web-search", "intent": "get raw Google search results for a query", "tags": ["hard"]}
+{"id": "train-32f207e27849", "family": "serpapi-mcp#1", "style": "indirect", "cluster": "web-search", "intent": "get raw Google search results for a query", "tags": ["hard"]}
+{"id": "train-ab813a63c4e5", "family": "serpapi-mcp#1", "style": "question", "cluster": "web-search", "intent": "get raw Google search results for a query", "tags": ["hard"]}
+{"id": "train-56a0471e6bcc", "family": "serpapi-mcp#1", "style": "typo", "cluster": "web-search", "intent": "get raw Google search results for a query", "tags": ["hard"]}
+{"id": "train-7d230fbd099c", "family": "shearline#2", "style": "question", "cluster": "weather", "intent": "lightning and radar analysis for US storms", "tags": ["hard"]}
+{"id": "train-415a7aea0756", "family": "shearline#2", "style": "indirect", "cluster": "weather", "intent": "lightning and radar analysis for US storms", "tags": ["hard"]}
+{"id": "train-450d8ca6b5cf", "family": "shearline#2", "style": "casual", "cluster": "weather", "intent": "lightning and radar analysis for US storms", "tags": ["hard"]}
+{"id": "train-8f8f68adb5e2", "family": "shearline#2", "style": "cmd", "cluster": "weather", "intent": "lightning and radar analysis for US storms", "tags": ["hard"]}
+{"id": "train-7421b3d1b4ac", "family": "sheet-shift#2", "style": "question", "cluster": "spreadsheets", "intent": "dedupe and get stats for a table", "tags": ["hard"]}
+{"id": "train-ccf4bc1042a6", "family": "sheet-shift#2", "style": "indirect", "cluster": "spreadsheets", "intent": "dedupe and get stats for a table", "tags": ["hard"]}
+{"id": "train-101bff3fd2f6", "family": "sheet-shift#2", "style": "casual", "cluster": "spreadsheets", "intent": "dedupe and get stats for a table", "tags": ["hard"]}
+{"id": "train-8f8e9591f155", "family": "sheet-shift#2", "style": "cmd", "cluster": "spreadsheets", "intent": "dedupe and get stats for a table", "tags": ["hard"]}
+{"id": "train-ce574f321fcb", "family": "sidenote#1", "style": "cmd", "cluster": "notes-knowledge", "intent": "read Chrome side-panel notes", "tags": ["hard"]}
+{"id": "train-69de2f586eae", "family": "sidenote#1", "style": "verbose", "cluster": "notes-knowledge", "intent": "read Chrome side-panel notes", "tags": ["hard"]}
+{"id": "train-d19ef3ad9c64", "family": "sidenote#1", "style": "indirect", "cluster": "notes-knowledge", "intent": "read Chrome side-panel notes", "tags": ["hard"]}
+{"id": "train-ea11e7799842", "family": "sidenote#1", "style": "typo", "cluster": "notes-knowledge", "intent": "read Chrome side-panel notes", "tags": ["hard"]}
+{"id": "train-1c428fcb7e04", "family": "simplenote-mcp#1", "style": "cmd", "cluster": "notes-knowledge", "intent": "read Simplenote notes", "tags": ["hard"]}
+{"id": "train-46bda92d0239", "family": "simplenote-mcp#1", "style": "verbose", "cluster": "notes-knowledge", "intent": "read Simplenote notes", "tags": ["hard"]}
+{"id": "train-c2d8dd616f54", "family": "simplenote-mcp#1", "style": "indirect", "cluster": "notes-knowledge", "intent": "read Simplenote notes", "tags": ["hard"]}
+{"id": "train-8b0201a97bd4", "family": "simplenote-mcp#1", "style": "typo", "cluster": "notes-knowledge", "intent": "read Simplenote notes", "tags": ["hard"]}
+{"id": "train-a68d9be27d67", "family": "slack-explorer-mcp#2", "style": "question", "cluster": "team-chat", "intent": "retrieve and summarize a Slack thread", "tags": ["hard"]}
+{"id": "train-5d33a87bb48b", "family": "slack-explorer-mcp#2", "style": "indirect", "cluster": "team-chat", "intent": "retrieve and summarize a Slack thread", "tags": ["hard"]}
+{"id": "train-8f0e9f76a424", "family": "slack-explorer-mcp#2", "style": "casual", "cluster": "team-chat", "intent": "retrieve and summarize a Slack thread", "tags": ["hard"]}
+{"id": "train-91117f053649", "family": "slack-explorer-mcp#2", "style": "cmd", "cluster": "team-chat", "intent": "retrieve and summarize a Slack thread", "tags": ["hard"]}
+{"id": "train-133be846245b", "family": "smoothsign#1", "style": "cmd", "cluster": "pdf", "intent": "send a PDF for e-signature", "tags": ["hard"]}
+{"id": "train-65297f969189", "family": "smoothsign#1", "style": "verbose", "cluster": "pdf", "intent": "send a PDF for e-signature", "tags": ["hard"]}
+{"id": "train-b54992b94ec8", "family": "smoothsign#1", "style": "indirect", "cluster": "pdf", "intent": "send a PDF for e-signature", "tags": ["hard"]}
+{"id": "train-de2696f1322e", "family": "smoothsign#1", "style": "typo", "cluster": "pdf", "intent": "send a PDF for e-signature", "tags": ["hard"]}
+{"id": "train-baa706936451", "family": "snapog#2", "style": "question", "cluster": "image-generation", "intent": "audit social metadata of a page", "tags": ["hard"]}
+{"id": "train-4d0e30b5cb21", "family": "snapog#2", "style": "indirect", "cluster": "image-generation", "intent": "audit social metadata of a page", "tags": ["hard"]}
+{"id": "train-ca1780351075", "family": "snapog#2", "style": "casual", "cluster": "image-generation", "intent": "audit social metadata of a page", "tags": ["hard"]}
+{"id": "train-79c8a9eb7e61", "family": "snapog#2", "style": "cmd", "cluster": "image-generation", "intent": "audit social metadata of a page", "tags": ["hard"]}
+{"id": "train-595b53afd7ad", "family": "solana-pulse-gateway#2", "style": "question", "cluster": "crypto", "intent": "detect token traps in a Solana transaction", "tags": ["hard"]}
+{"id": "train-d7c926cb0215", "family": "solana-pulse-gateway#2", "style": "indirect", "cluster": "crypto", "intent": "detect token traps in a Solana transaction", "tags": ["hard"]}
+{"id": "train-7e72478bc734", "family": "solana-pulse-gateway#2", "style": "casual", "cluster": "crypto", "intent": "detect token traps in a Solana transaction", "tags": ["hard"]}
+{"id": "train-6cb0bf324421", "family": "solana-pulse-gateway#2", "style": "cmd", "cluster": "crypto", "intent": "detect token traps in a Solana transaction", "tags": ["hard"]}
+{"id": "train-fd947773b8dd", "family": "spaceflight-news-mcp#2", "style": "question", "cluster": "news", "intent": "news about a specific space mission", "tags": ["hard"]}
+{"id": "train-d3c0d6179a40", "family": "spaceflight-news-mcp#2", "style": "indirect", "cluster": "news", "intent": "news about a specific space mission", "tags": ["hard"]}
+{"id": "train-c593510b2c29", "family": "spaceflight-news-mcp#2", "style": "casual", "cluster": "news", "intent": "news about a specific space mission", "tags": ["hard"]}
+{"id": "train-8e1decbb1333", "family": "spaceflight-news-mcp#2", "style": "cmd", "cluster": "news", "intent": "news about a specific space mission", "tags": ["hard"]}
+{"id": "train-8628c0f37f10", "family": "spaceweather-mcp#1", "style": "cmd", "cluster": "weather", "intent": "geomagnetic storm conditions / aurora chances", "tags": ["hard"]}
+{"id": "train-997688d755c8", "family": "spaceweather-mcp#1", "style": "question", "cluster": "weather", "intent": "geomagnetic storm conditions / aurora chances", "tags": ["hard"]}
+{"id": "train-b8b1c24ffbd8", "family": "spaceweather-mcp#1", "style": "indirect", "cluster": "weather", "intent": "geomagnetic storm conditions / aurora chances", "tags": ["hard"]}
+{"id": "train-593c7cc74689", "family": "spaceweather-mcp#1", "style": "typo", "cluster": "weather", "intent": "geomagnetic storm conditions / aurora chances", "tags": ["hard"]}
+{"id": "train-b7ed799e2fbb", "family": "sqlike-mcp#2", "style": "question", "cluster": "sql-database", "intent": "check two SQL versions return the same rows", "tags": ["hard"]}
+{"id": "train-2d329c75e34f", "family": "sqlike-mcp#2", "style": "indirect", "cluster": "sql-database", "intent": "check two SQL versions return the same rows", "tags": ["hard"]}
+{"id": "train-79a3690ca85d", "family": "sqlike-mcp#2", "style": "casual", "cluster": "sql-database", "intent": "check two SQL versions return the same rows", "tags": ["hard"]}
+{"id": "train-e1fb857a1a1a", "family": "sqlike-mcp#2", "style": "cmd", "cluster": "sql-database", "intent": "check two SQL versions return the same rows", "tags": ["hard"]}
+{"id": "train-6ef17e8d18a1", "family": "standup-mcp#1", "style": "cmd", "cluster": "project-management", "intent": "generate daily standup from activity", "tags": ["hard"]}
+{"id": "train-f98ab79eee3c", "family": "standup-mcp#1", "style": "verbose", "cluster": "project-management", "intent": "generate daily standup from activity", "tags": ["hard"]}
+{"id": "train-3b26f3ee8a3f", "family": "standup-mcp#1", "style": "indirect", "cluster": "project-management", "intent": "generate daily standup from activity", "tags": ["hard"]}
+{"id": "train-913b558fb62b", "family": "standup-mcp#1", "style": "typo", "cluster": "project-management", "intent": "generate daily standup from activity", "tags": ["hard"]}
+{"id": "train-eabdc0909d92", "family": "stripe-analytics#2", "style": "question", "cluster": "payments", "intent": "refund statistics", "tags": ["hard"]}
+{"id": "train-98c0f76c7b00", "family": "stripe-analytics#2", "style": "indirect", "cluster": "payments", "intent": "refund statistics", "tags": ["hard"]}
+{"id": "train-eed3f6fda178", "family": "stripe-analytics#2", "style": "casual", "cluster": "payments", "intent": "refund statistics", "tags": ["hard"]}
+{"id": "train-01b4107b8c0a", "family": "stripe-analytics#2", "style": "cmd", "cluster": "payments", "intent": "refund statistics", "tags": ["hard"]}
+{"id": "train-29feae7a30b3", "family": "sync-day#2", "style": "question", "cluster": "calendar", "intent": "rank time slots by who's free", "tags": ["hard"]}
+{"id": "train-207df4dbbd00", "family": "sync-day#2", "style": "indirect", "cluster": "calendar", "intent": "rank time slots by who's free", "tags": ["hard"]}
+{"id": "train-16977854f532", "family": "sync-day#2", "style": "casual", "cluster": "calendar", "intent": "rank time slots by who's free", "tags": ["hard"]}
+{"id": "train-383ca52094ba", "family": "sync-day#2", "style": "cmd", "cluster": "calendar", "intent": "rank time slots by who's free", "tags": ["hard"]}
+{"id": "train-8441f81442cc", "family": "telegram-archive-mcp#1", "style": "cmd", "cluster": "team-chat", "intent": "search old Telegram chats", "tags": ["hard"]}
+{"id": "train-ab2a25a04b60", "family": "telegram-archive-mcp#1", "style": "verbose", "cluster": "team-chat", "intent": "search old Telegram chats", "tags": ["hard"]}
+{"id": "train-22fea3371fdb", "family": "telegram-archive-mcp#1", "style": "indirect", "cluster": "team-chat", "intent": "search old Telegram chats", "tags": ["hard"]}
+{"id": "train-f71e7fc416dd", "family": "telegram-archive-mcp#1", "style": "typo", "cluster": "team-chat", "intent": "search old Telegram chats", "tags": ["hard"]}
+{"id": "train-01b2b5ed7da9", "family": "telegram-bot-mcp-server#1", "style": "cmd", "cluster": "team-chat", "intent": "send rich messages with buttons via a Telegram bot", "tags": ["hard"]}
+{"id": "train-82ea47e24d87", "family": "telegram-bot-mcp-server#1", "style": "verbose", "cluster": "team-chat", "intent": "send rich messages with buttons via a Telegram bot", "tags": ["hard"]}
+{"id": "train-dfdea6457378", "family": "telegram-bot-mcp-server#1", "style": "indirect", "cluster": "team-chat", "intent": "send rich messages with buttons via a Telegram bot", "tags": ["hard"]}
+{"id": "train-e6de682ff483", "family": "telegram-bot-mcp-server#1", "style": "typo", "cluster": "team-chat", "intent": "send rich messages with buttons via a Telegram bot", "tags": ["hard"]}
+{"id": "train-3dc23fecae08", "family": "telegram-channel-admin#1", "style": "cmd", "cluster": "team-chat", "intent": "publish a post to a Telegram channel", "tags": ["hard"]}
+{"id": "train-59e6dfa847b5", "family": "telegram-channel-admin#1", "style": "verbose", "cluster": "team-chat", "intent": "publish a post to a Telegram channel", "tags": ["hard"]}
+{"id": "train-4fb155e803b3", "family": "telegram-channel-admin#1", "style": "indirect", "cluster": "team-chat", "intent": "publish a post to a Telegram channel", "tags": ["hard"]}
+{"id": "train-642b792917e6", "family": "telegram-channel-admin#1", "style": "typo", "cluster": "team-chat", "intent": "publish a post to a Telegram channel", "tags": ["hard"]}
+{"id": "train-d88f8c12c9ac", "family": "thinkpattern-news#2", "style": "question", "cluster": "news", "intent": "how widely a story was covered", "tags": ["hard"]}
+{"id": "train-c3011b259f07", "family": "thinkpattern-news#2", "style": "indirect", "cluster": "news", "intent": "how widely a story was covered", "tags": ["hard"]}
+{"id": "train-f15b4da87afe", "family": "thinkpattern-news#2", "style": "casual", "cluster": "news", "intent": "how widely a story was covered", "tags": ["hard"]}
+{"id": "train-ea4157481b76", "family": "thinkpattern-news#2", "style": "cmd", "cluster": "news", "intent": "how widely a story was covered", "tags": ["hard"]}
+{"id": "train-f20294edafdf", "family": "tickerinside-mcp#1", "style": "cmd", "cluster": "market-data", "intent": "which ETFs hold a stock", "tags": ["hard"]}
+{"id": "train-1e58f592e4a4", "family": "tickerinside-mcp#1", "style": "verbose", "cluster": "market-data", "intent": "which ETFs hold a stock", "tags": ["hard"]}
+{"id": "train-530c8f3fae19", "family": "tickerinside-mcp#1", "style": "indirect", "cluster": "market-data", "intent": "which ETFs hold a stock", "tags": ["hard"]}
+{"id": "train-62f77a6297e4", "family": "tickerinside-mcp#1", "style": "typo", "cluster": "market-data", "intent": "which ETFs hold a stock", "tags": ["hard"]}
+{"id": "train-ccb8dac65efc", "family": "tiro#2", "style": "question", "cluster": "notes-knowledge", "intent": "look up team wiki pages", "tags": ["hard"]}
+{"id": "train-2ac2cf111862", "family": "tiro#2", "style": "indirect", "cluster": "notes-knowledge", "intent": "look up team wiki pages", "tags": ["hard"]}
+{"id": "train-90b9e140c7ad", "family": "tiro#2", "style": "casual", "cluster": "notes-knowledge", "intent": "look up team wiki pages", "tags": ["hard"]}
+{"id": "train-f3f6db4845b8", "family": "tiro#2", "style": "cmd", "cluster": "notes-knowledge", "intent": "look up team wiki pages", "tags": ["hard"]}
+{"id": "train-193569939ca4", "family": "tolgee#2", "style": "question", "cluster": "translation", "intent": "search existing app translations", "tags": ["hard"]}
+{"id": "train-09f0968eb60c", "family": "tolgee#2", "style": "indirect", "cluster": "translation", "intent": "search existing app translations", "tags": ["hard"]}
+{"id": "train-11f7cd0cba97", "family": "tolgee#2", "style": "casual", "cluster": "translation", "intent": "search existing app translations", "tags": ["hard"]}
+{"id": "train-f08646273fb4", "family": "tolgee#2", "style": "cmd", "cluster": "translation", "intent": "search existing app translations", "tags": ["hard"]}
+{"id": "train-bf513bf8e1e7", "family": "trello-mcp#2", "style": "question", "cluster": "project-management", "intent": "read Trello boards in read-only mode", "tags": ["hard"]}
+{"id": "train-596296285807", "family": "trello-mcp#2", "style": "indirect", "cluster": "project-management", "intent": "read Trello boards in read-only mode", "tags": ["hard"]}
+{"id": "train-f9e637a4953d", "family": "trello-mcp#2", "style": "casual", "cluster": "project-management", "intent": "read Trello boards in read-only mode", "tags": ["hard"]}
+{"id": "train-a3590293d25f", "family": "trello-mcp#2", "style": "cmd", "cluster": "project-management", "intent": "read Trello boards in read-only mode", "tags": ["hard"]}
+{"id": "train-0a348b4cb758", "family": "trigger-dev#1", "style": "cmd", "cluster": "devops", "intent": "debug a failed background job run", "tags": ["hard"]}
+{"id": "train-bfd0417a402c", "family": "trigger-dev#1", "style": "verbose", "cluster": "devops", "intent": "debug a failed background job run", "tags": ["hard"]}
+{"id": "train-b9cafc24e965", "family": "trigger-dev#1", "style": "indirect", "cluster": "devops", "intent": "debug a failed background job run", "tags": ["hard"]}
+{"id": "train-030035296d74", "family": "trigger-dev#1", "style": "typo", "cluster": "devops", "intent": "debug a failed background job run", "tags": ["hard"]}
+{"id": "train-0160fd7abca9", "family": "trykitt#1", "style": "verbose", "cluster": "email", "intent": "B2B email finder for a list of prospects", "tags": ["hard"]}
+{"id": "train-b1b80fda4ae3", "family": "trykitt#1", "style": "indirect", "cluster": "email", "intent": "B2B email finder for a list of prospects", "tags": ["hard"]}
+{"id": "train-cc9db56d89dc", "family": "trykitt#1", "style": "cmd", "cluster": "email", "intent": "B2B email finder for a list of prospects", "tags": ["hard"]}
+{"id": "train-f6f5abc697cf", "family": "trykitt#1", "style": "casual", "cluster": "email", "intent": "B2B email finder for a list of prospects", "tags": ["hard"]}
+{"id": "train-3914a43d552f", "family": "vaultrubric#2", "style": "question", "cluster": "crypto", "intent": "compare wallets and savings accounts", "tags": ["hard"]}
+{"id": "train-c8a038f91322", "family": "vaultrubric#2", "style": "indirect", "cluster": "crypto", "intent": "compare wallets and savings accounts", "tags": ["hard"]}
+{"id": "train-7fc65b263cda", "family": "vaultrubric#2", "style": "casual", "cluster": "crypto", "intent": "compare wallets and savings accounts", "tags": ["hard"]}
+{"id": "train-696d3008aa16", "family": "vaultrubric#2", "style": "cmd", "cluster": "crypto", "intent": "compare wallets and savings accounts", "tags": ["hard"]}
+{"id": "train-e39c42ee2292", "family": "veto#2", "style": "question", "cluster": "sql-database", "intent": "estimate cost of a Postgres query before running", "tags": ["hard"]}
+{"id": "train-c3cbb6e109c3", "family": "veto#2", "style": "indirect", "cluster": "sql-database", "intent": "estimate cost of a Postgres query before running", "tags": ["hard"]}
+{"id": "train-1968d2cfdeb0", "family": "veto#2", "style": "casual", "cluster": "sql-database", "intent": "estimate cost of a Postgres query before running", "tags": ["hard"]}
+{"id": "train-89dfccd9d744", "family": "veto#2", "style": "cmd", "cluster": "sql-database", "intent": "estimate cost of a Postgres query before running", "tags": ["hard"]}
+{"id": "train-0e1d09fe820e", "family": "viberaven#2", "style": "question", "cluster": "devops", "intent": "verify webhook and grant configuration before launch", "tags": ["hard"]}
+{"id": "train-c03280c18be9", "family": "viberaven#2", "style": "indirect", "cluster": "devops", "intent": "verify webhook and grant configuration before launch", "tags": ["hard"]}
+{"id": "train-8792420a589e", "family": "viberaven#2", "style": "casual", "cluster": "devops", "intent": "verify webhook and grant configuration before launch", "tags": ["hard"]}
+{"id": "train-8afde59b3432", "family": "viberaven#2", "style": "cmd", "cluster": "devops", "intent": "verify webhook and grant configuration before launch", "tags": ["hard"]}
+{"id": "train-04ad11a357e7", "family": "vidlet#2", "style": "question", "cluster": "video-transcripts", "intent": "create a Short and upload to YouTube", "tags": ["hard"]}
+{"id": "train-980b33da75d5", "family": "vidlet#2", "style": "indirect", "cluster": "video-transcripts", "intent": "create a Short and upload to YouTube", "tags": ["hard"]}
+{"id": "train-5ee7a0ef75fd", "family": "vidlet#2", "style": "casual", "cluster": "video-transcripts", "intent": "create a Short and upload to YouTube", "tags": ["hard"]}
+{"id": "train-60046ede15bf", "family": "vidlet#2", "style": "cmd", "cluster": "video-transcripts", "intent": "create a Short and upload to YouTube", "tags": ["hard"]}
+{"id": "train-803ccba5772b", "family": "vietnamese-calendar#2", "style": "verbose", "cluster": "calendar", "intent": "cultural insights about a lunar date", "tags": ["hard"]}
+{"id": "train-2862ed3c90c8", "family": "vietnamese-calendar#2", "style": "indirect", "cluster": "calendar", "intent": "cultural insights about a lunar date", "tags": ["hard"]}
+{"id": "train-1b30fcc5977b", "family": "vietnamese-calendar#2", "style": "casual", "cluster": "calendar", "intent": "cultural insights about a lunar date", "tags": ["hard"]}
+{"id": "train-026df9cd9159", "family": "vietnamese-calendar#2", "style": "cmd", "cluster": "calendar", "intent": "cultural insights about a lunar date", "tags": ["hard"]}
+{"id": "train-a307f6b11690", "family": "weathersight#2", "style": "question", "cluster": "weather", "intent": "climate normals and extremes", "tags": ["hard"]}
+{"id": "train-abd4cf57a7b5", "family": "weathersight#2", "style": "indirect", "cluster": "weather", "intent": "climate normals and extremes", "tags": ["hard"]}
+{"id": "train-b1ee81d14732", "family": "weathersight#2", "style": "casual", "cluster": "weather", "intent": "climate normals and extremes", "tags": ["hard"]}
+{"id": "train-15b228534485", "family": "weathersight#2", "style": "cmd", "cluster": "weather", "intent": "climate normals and extremes", "tags": ["hard"]}
+{"id": "train-2ad209fcf48f", "family": "webreaper#2", "style": "question", "cluster": "browser-automation", "intent": "scrape one page to clean text", "tags": ["hard"]}
+{"id": "train-7e10566a4af8", "family": "webreaper#2", "style": "indirect", "cluster": "browser-automation", "intent": "scrape one page to clean text", "tags": ["hard"]}
+{"id": "train-f6411ae54747", "family": "webreaper#2", "style": "casual", "cluster": "browser-automation", "intent": "scrape one page to clean text", "tags": ["hard"]}
+{"id": "train-ac7e93fd594a", "family": "webreaper#2", "style": "cmd", "cluster": "browser-automation", "intent": "scrape one page to clean text", "tags": ["hard"]}
+{"id": "train-4285b9f01ba7", "family": "wikijs-mcp#1", "style": "cmd", "cluster": "notes-knowledge", "intent": "edit a Wiki.js page", "tags": ["hard"]}
+{"id": "train-dd69b48043e6", "family": "wikijs-mcp#1", "style": "verbose", "cluster": "notes-knowledge", "intent": "edit a Wiki.js page", "tags": ["hard"]}
+{"id": "train-6b19ee1efc00", "family": "wikijs-mcp#1", "style": "indirect", "cluster": "notes-knowledge", "intent": "edit a Wiki.js page", "tags": ["hard"]}
+{"id": "train-2c169519484f", "family": "wikijs-mcp#1", "style": "typo", "cluster": "notes-knowledge", "intent": "edit a Wiki.js page", "tags": ["hard"]}
+{"id": "train-9a84ce76b3a7", "family": "words#1", "style": "cmd", "cluster": "misc", "intent": "play a daily word puzzle", "tags": []}
+{"id": "train-5e2a601993ee", "family": "words#1", "style": "verbose", "cluster": "misc", "intent": "play a daily word puzzle", "tags": []}
+{"id": "train-a85ad3ebb9e0", "family": "words#1", "style": "indirect", "cluster": "misc", "intent": "play a daily word puzzle", "tags": []}
+{"id": "train-70129340b280", "family": "words#1", "style": "typo", "cluster": "misc", "intent": "play a daily word puzzle", "tags": []}
+{"id": "train-b85f9c0a3cc5", "family": "wttr-mcp#1", "style": "cmd", "cluster": "weather", "intent": "quick plain-text weather without API key", "tags": ["hard"]}
+{"id": "train-875180176f01", "family": "wttr-mcp#1", "style": "casual", "cluster": "weather", "intent": "quick plain-text weather without API key", "tags": ["hard"]}
+{"id": "train-d584d623426c", "family": "wttr-mcp#1", "style": "indirect", "cluster": "weather", "intent": "quick plain-text weather without API key", "tags": ["hard"]}
+{"id": "train-a82732da9bbf", "family": "wttr-mcp#1", "style": "typo", "cluster": "weather", "intent": "quick plain-text weather without API key", "tags": ["hard"]}
+{"id": "train-75464d8a05c2", "family": "ww3-mcp#1", "style": "cmd", "cluster": "weather", "intent": "ocean wave forecast for surfing/sailing", "tags": ["hard"]}
+{"id": "train-b051d7d7782f", "family": "ww3-mcp#1", "style": "verbose", "cluster": "weather", "intent": "ocean wave forecast for surfing/sailing", "tags": ["hard"]}
+{"id": "train-880416567872", "family": "ww3-mcp#1", "style": "indirect", "cluster": "weather", "intent": "ocean wave forecast for surfing/sailing", "tags": ["hard"]}
+{"id": "train-29c9b0db778a", "family": "ww3-mcp#1", "style": "typo", "cluster": "weather", "intent": "ocean wave forecast for surfing/sailing", "tags": ["hard"]}
+{"id": "train-e9fda6a9959c", "family": "yahoo-finance-mcp-server#2", "style": "verbose", "cluster": "market-data", "intent": "compare historical stock prices", "tags": ["hard"]}
+{"id": "train-40a1a54666d9", "family": "yahoo-finance-mcp-server#2", "style": "indirect", "cluster": "market-data", "intent": "compare historical stock prices", "tags": ["hard"]}
+{"id": "train-62a220bb3846", "family": "yahoo-finance-mcp-server#2", "style": "cmd", "cluster": "market-data", "intent": "compare historical stock prices", "tags": ["hard"]}
+{"id": "train-b79448b5d0b6", "family": "yahoo-finance-mcp-server#2", "style": "typo", "cluster": "market-data", "intent": "compare historical stock prices", "tags": ["hard"]}
+{"id": "train-a5811a68936c", "family": "yandex-search#1", "style": "cmd", "cluster": "web-search", "intent": "search results from Yandex", "tags": ["hard"]}
+{"id": "train-2bbbffbe2473", "family": "yandex-search#1", "style": "verbose", "cluster": "web-search", "intent": "search results from Yandex", "tags": ["hard"]}
+{"id": "train-2d67691f030b", "family": "yandex-search#1", "style": "indirect", "cluster": "web-search", "intent": "search results from Yandex", "tags": ["hard"]}
+{"id": "train-bc0daae3886c", "family": "yandex-search#1", "style": "question", "cluster": "web-search", "intent": "search results from Yandex", "tags": ["hard"]}
+{"id": "train-36ff3149a46a", "family": "yantrikdb-mcp#1", "style": "cmd", "cluster": "agent-memory", "intent": "detect contradictions in agent memory", "tags": ["hard"]}
+{"id": "train-abb24c688037", "family": "yantrikdb-mcp#1", "style": "verbose", "cluster": "agent-memory", "intent": "detect contradictions in agent memory", "tags": ["hard"]}
+{"id": "train-93b48e2eaafa", "family": "yantrikdb-mcp#1", "style": "indirect", "cluster": "agent-memory", "intent": "detect contradictions in agent memory", "tags": ["hard"]}
+{"id": "train-36b62c7ace92", "family": "yantrikdb-mcp#1", "style": "typo", "cluster": "agent-memory", "intent": "detect contradictions in agent memory", "tags": ["hard"]}
+{"id": "train-533e9d2ca6fe", "family": "yeetpost#2", "style": "question", "cluster": "team-chat", "intent": "schedule social posts", "tags": ["hard"]}
+{"id": "train-20f8c0d1fcd4", "family": "yeetpost#2", "style": "indirect", "cluster": "team-chat", "intent": "schedule social posts", "tags": ["hard"]}
+{"id": "train-02b64e002a8f", "family": "yeetpost#2", "style": "casual", "cluster": "team-chat", "intent": "schedule social posts", "tags": ["hard"]}
+{"id": "train-2306eb838a0c", "family": "yeetpost#2", "style": "cmd", "cluster": "team-chat", "intent": "schedule social posts", "tags": ["hard"]}
+{"id": "train-fb2a6c6ae21f", "family": "youtube-transcripts-mcp#1", "style": "cmd", "cluster": "video-transcripts", "intent": "get the transcript of a YouTube video", "tags": ["hard"]}
+{"id": "train-7700e366e220", "family": "youtube-transcripts-mcp#1", "style": "verbose", "cluster": "video-transcripts", "intent": "get the transcript of a YouTube video", "tags": ["hard"]}
+{"id": "train-cb9a257a33af", "family": "youtube-transcripts-mcp#1", "style": "indirect", "cluster": "video-transcripts", "intent": "get the transcript of a YouTube video", "tags": ["hard"]}
+{"id": "train-a9453ceeafdc", "family": "youtube-transcripts-mcp#1", "style": "typo", "cluster": "video-transcripts", "intent": "get the transcript of a YouTube video", "tags": ["hard"]}
+{"id": "train-cabd8401c029", "family": "zotero-library-mcp#1", "style": "cmd", "cluster": "research-papers", "intent": "add a paper to Zotero", "tags": ["hard"]}
+{"id": "train-66074adf116a", "family": "zotero-library-mcp#1", "style": "verbose", "cluster": "research-papers", "intent": "add a paper to Zotero", "tags": ["hard"]}
+{"id": "train-b9332d271dff", "family": "zotero-library-mcp#1", "style": "indirect", "cluster": "research-papers", "intent": "add a paper to Zotero", "tags": ["hard"]}
+{"id": "train-5eb076ea6eb8", "family": "zotero-library-mcp#1", "style": "typo", "cluster": "research-papers", "intent": "add a paper to Zotero", "tags": ["hard"]}

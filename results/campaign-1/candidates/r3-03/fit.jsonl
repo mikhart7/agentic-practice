@@ -1,0 +1,300 @@
+{"input": "translate xlsx to french keep formulas", "relevant": ["rosetta-mcp"]}
+{"input": "onedrvie files list", "relevant": ["ms-onedrive-mcp"]}
+{"input": "kubectl scale deployment", "relevant": ["clusterport"]}
+{"input": "something like that green-and-yellow letter game from the newspaper, but rude and british", "relevant": ["words"]}
+{"input": "keep a local text copy of our atlassian tickets for my agent to read", "relevant": ["mdpipeline"]}
+{"input": "My agent has stored many facts about the project; check whether any of them contradict each other.", "relevant": ["yantrikdb-mcp"]}
+{"input": "create table in sqlite db and insert rows", "relevant": ["litebase"]}
+{"input": "treat the folder of .md files I'm in as your memory of my projects", "relevant": ["iwe", "mcp-obsidian-via-rest"]}
+{"input": "any contrast issues on the site?", "relevant": ["mcp-accessibility-scanner"]}
+{"input": "compres pdf to under 1 mb for email", "relevant": ["marqpdf"]}
+{"input": "what french-language news is there about the olympics from the last 3 days?", "relevant": ["gdelt-mcp"]}
+{"input": "taiwan earthquake report latest", "relevant": ["cwa-mcp-server"]}
+{"input": "who cites attention is all you need", "relevant": ["semanticscholar", "papernexus"]}
+{"input": "how can I get to rome from london for as little as possible next month?", "relevant": ["aviasurf"]}
+{"input": "audit the database permissions and incoming hooks of our vibe-coded app before shipping", "relevant": ["viberaven"]}
+{"input": "update wiki.js page deployment guide", "relevant": ["wikijs-mcp"]}
+{"input": "Compare how NVDA, AMD and INTC have performed over the last 5 years, with historical prices.", "relevant": ["yahoo-finance-mcp-server"]}
+{"input": "what did I get done yesterday? write it up for the morning meeting", "relevant": ["standup-mcp"]}
+{"input": "Before we share this folder of scanned HR documents with the auditor, I need to know which ones contain personal data like ID numbers or addresses.", "relevant": ["document-scanner"]}
+{"input": "are our supabase grants and webhooks configured safely for launch?", "relevant": ["viberaven"]}
+{"input": "send slack mesage to channel eng", "relevant": ["mcp-server-slack"]}
+{"input": "weather forecast berlin next 3 days", "relevant": ["open-meteo-mcp-server", "wttr-mcp"]}
+{"input": "go online and find some pages about repotting a monstera", "relevant": ["gannet-mcp", "miapi"]}
+{"input": "scrape url to clean markdown", "relevant": ["webreaper", "screenshot-mcp"]}
+{"input": "I'm new to the langchain codebase; use the DeepWiki pages for that repository to explain how the agent executor works.", "relevant": ["repowiki"]}
+{"input": "create backblaze b2 bucket", "relevant": ["b2-mcp"]}
+{"input": "open sidenote notepads", "relevant": ["sidenote"]}
+{"input": "add event to icloud calendar saturday 6pm", "relevant": ["mcp-icloud-caldav"]}
+{"input": "bike route from amsterdam to utrecht", "relevant": ["itineraires"]}
+{"input": "Set up nightly backups of our VPS and its Docker volumes to our own S3 bucket.", "relevant": ["arkame-backup"]}
+{"input": "show which options most of the club members can attend", "relevant": ["sync-day"]}
+{"input": "ask deepwiki how does fastapi handle dependencies", "relevant": ["repowiki"]}
+{"input": "whats the current population of tokyo, look it up online", "relevant": ["miapi", "gannet-mcp"]}
+{"input": "is this a lucky day in the viet calendar", "relevant": ["vietnamese-calendar"]}
+{"input": "We're opening a shop in Ho Chi Minh City and want to know if the lunar date of our planned opening is considered auspicious.", "relevant": ["vietnamese-calendar"]}
+{"input": "how much interest do I save if I pay off my car loan two years early?", "relevant": ["loan-schedule"]}
+{"input": "can I transcribe this mp4 lecture using my own gpu?", "relevant": ["local-whisper-mcp"]}
+{"input": "opening hours and phone of blue bottle coffee sf", "relevant": ["google-maps-places-mcp", "google-maps"]}
+{"input": "just book me a call w/ the designer sometime tue", "relevant": ["meet-bot"]}
+{"input": "which of these proposed times works for the most people on the team?", "relevant": ["sync-day"]}
+{"input": "when am I available next week to book a call with the investor?", "relevant": ["meet-bot"]}
+{"input": "set up inbound routes for the new domain", "relevant": ["mail-receive"]}
+{"input": "starting from this one study, map out the cluster of connected research", "relevant": ["papernexus"]}
+{"input": "generate image locally on my mac with draw things", "relevant": ["mcp-drawthings"]}
+{"input": "Our team uses IBM Cloud; build the container from this repo, push it and deploy it as an app on Code Engine.", "relevant": ["code-engine-mcp-server"]}
+{"input": "Find the cheapest return flights from Warsaw to Barcelona in June for two adults.", "relevant": ["aviasurf"]}
+{"input": "send telegram bot message with buttons", "relevant": ["telegram-bot-mcp-server"]}
+{"input": "Store the fact that our staging DB is on port 5433 and the client's name is Ortega in persistent memory, linked as a knowledge graph.", "relevant": ["memento", "yantrikdb-mcp"]}
+{"input": "will this bill pass the european e-invoicing rules that government buyers require?", "relevant": ["invoicepdfs"]}
+{"input": "validate invoice against en 16931", "relevant": ["invoicepdfs"]}
+{"input": "find translation for key", "relevant": ["tolgee", "crowdin"]}
+{"input": "what's the current german translation for \"save changes\" in our project?", "relevant": ["tolgee", "crowdin"]}
+{"input": "lay out my thesis ideas as a branching diagram with a central topic", "relevant": ["mindmeister"]}
+{"input": "parse my csv locally", "relevant": ["csv-mcp"]}
+{"input": "how many rows in the postgres events table have status = 'failed'?", "relevant": ["pgport", "database-admin", "mysql-ops-mcp"]}
+{"input": "which papers on 3d gaussian splatting have official code?", "relevant": ["codeofpaper"]}
+{"input": "crypto invoice + webhook", "relevant": ["coinvello"]}
+{"input": "configure mail receving routes for my domain", "relevant": ["mail-receive"]}
+{"input": "google news results for 500 brand keywords", "relevant": ["google-serp", "serpapi-mcp"]}
+{"input": "wcag contrast aria check", "relevant": ["mcp-accessibility-scanner"]}
+{"input": "create paymnet order for counterparty", "relevant": ["modern-treasury"]}
+{"input": "check whether a merchant billed me two times or quietly increased the fee", "relevant": ["chargescout"]}
+{"input": "find that document I saved months ago about the apartment lease", "relevant": ["google-drive-mcp", "ms-onedrive-mcp", "dropbox"]}
+{"input": "etfs that own apple stock", "relevant": ["tickerinside-mcp"]}
+{"input": "is this repo dead? check activity", "relevant": ["github-stats"]}
+{"input": "I need the full text of these papers by DOI and PubMed Central ID, verified against the official record.", "relevant": ["fulltext-article-downloader"]}
+{"input": "the building shook in taichung a minute ago — what was the magnitude?", "relevant": ["cwa-mcp-server"]}
+{"input": "which github actions jobs fail most often or take the longest?", "relevant": ["runzumi"]}
+{"input": "citations for paper semantic scholar", "relevant": ["semanticscholar", "papernexus"]}
+{"input": "I'm surfing in Ericeira this weekend; what wave heights and periods does the wave model predict?", "relevant": ["ww3-mcp", "open-meteo-mcp-server"]}
+{"input": "deploy app to ibm code engine", "relevant": ["code-engine-mcp-server"]}
+{"input": "asana portfolio status", "relevant": ["asana"]}
+{"input": "hackernews coments about bun", "relevant": ["hackernews-mcp"]}
+{"input": "give me the items of this xml feed as structured data", "relevant": ["rss-mcp"]}
+{"input": "Two years ago a friend sent me an apartment address in a Telegram chat; search my archived messages to find it.", "relevant": ["telegram-archive-mcp"]}
+{"input": "is this project still alive or did people stop working on it?", "relevant": ["github-stats"]}
+{"input": "historical stock prises for google vs meta", "relevant": ["yahoo-finance-mcp-server"]}
+{"input": "chepest flights to tokyo", "relevant": ["aviasurf"]}
+{"input": "create neon branch for feature-x", "relevant": ["pgcloud"]}
+{"input": "apa mla citation", "relevant": ["onecite"]}
+{"input": "does this solana transaction contain any hidden token approvals or traps?", "relevant": ["solana-pulse-gateway", "crypto-safety"]}
+{"input": "related papers to graph attention networks", "relevant": ["papernexus"]}
+{"input": "coding agent memory state", "relevant": ["monet"]}
+{"input": "get recent commits and open review requests from the command line tools as json", "relevant": ["bash-mcp"]}
+{"input": "get comments from google sheets file", "relevant": ["google-drive-comments-mcp"]}
+{"input": "backup server to my s3", "relevant": ["arkame-backup"]}
+{"input": "dcf valuation for coca-cola", "relevant": ["deepviews"]}
+{"input": "trcuk routing with hazmat restrictions", "relevant": ["mapmap"]}
+{"input": "crypto invoice webhook", "relevant": ["coinvello"]}
+{"input": "is this sol tx safe to sign?", "relevant": ["solana-pulse-gateway", "crypto-safety"]}
+{"input": "translat excel sheet keep formating", "relevant": ["rosetta-mcp"]}
+{"input": "check what the main russian search engine ranks first for \"dacha heating\"", "relevant": ["yandex-search"]}
+{"input": "this file won't import because some rows have extra commas, fix it", "relevant": ["csv-repair"]}
+{"input": "is this company's share price justified by its future cash generation?", "relevant": ["deepviews"]}
+{"input": "Write my daily standup update based on what I actually did yesterday in GitHub, Jira and Slack.", "relevant": ["standup-mcp"]}
+{"input": "any double charges?", "relevant": ["chargescout"]}
+{"input": "get me contact addresses for these decision makers so sales can reach out", "relevant": ["trykitt", "kanta"]}
+{"input": "I have the thesis as 6 separate chapter PDFs and the university portal only takes one upload, so I need them joined in chapter order and a download link.", "relevant": ["pdfsamenvoegen"]}
+{"input": "how widely covered is this story", "relevant": ["thinkpattern-news"]}
+{"input": "how do I get organic and news results from google in bulk for a keyword list?", "relevant": ["google-serp", "serpapi-mcp"]}
+{"input": "compare crypto wallets", "relevant": ["vaultrubric"]}
+{"input": "export jira to markdown files", "relevant": ["mdpipeline"]}
+{"input": "which repos in our bitbucket workspace have open PRs?", "relevant": ["bitbucket-mcp-server"]}
+{"input": "change this 3d asset into a format that works on the web", "relevant": ["blender-mcp"]}
+{"input": "I run a news channel on Telegram with 20k subscribers; publish today's digest there through my bot.", "relevant": ["telegram-channel-admin"]}
+{"input": "I found one great paper on protein folding; find related papers through its citation network so I don't miss key work.", "relevant": ["papernexus"]}
+{"input": "count the working days for our osaka team this month", "relevant": ["mcp-jp-calendar"]}
+{"input": "improve my midjourney prompt", "relevant": ["prompt-refiner"]}
+{"input": "we expect a traffic spike, run more copies of the web service in the cluster", "relevant": ["clusterport"]}
+{"input": "delete events macos calendar", "relevant": ["calendarmcp"]}
+{"input": "I don't trust your memory on this one, check online: who won the latest turing award?", "relevant": ["miapi", "gannet-mcp"]}
+{"input": "create mind map for product launch", "relevant": ["mindmeister"]}
+{"input": "reviews for the ritz paris", "relevant": ["google-maps-reviews"]}
+{"input": "correct captions apply style", "relevant": ["justcaptions"]}
+{"input": "best crypto wallet?", "relevant": ["vaultrubric"]}
+{"input": "is there a page in our team wiki about expense reimbursement?", "relevant": ["tiro", "notion", "wikijs-mcp"]}
+{"input": "create a neon brach from main", "relevant": ["pgcloud"]}
+{"input": "which hardware wallet is the safest according to independent reviews?", "relevant": ["vaultrubric"]}
+{"input": "play daily word game", "relevant": ["words"]}
+{"input": "arxiv papers on mixture of experts 2026", "relevant": ["arxiv-mcp-server", "semanticscholar"]}
+{"input": "local csv parse", "relevant": ["csv-mcp"]}
+{"input": "can you run git log and gh pr list and give me structured output?", "relevant": ["bash-mcp"]}
+{"input": "serch the web who is the ceo of nvidia now", "relevant": ["miapi", "gannet-mcp"]}
+{"input": "give me the status of all our team's initiatives in the work management tool", "relevant": ["asana"]}
+{"input": "The city council news page has no RSS; create a feed from it using CSS selectors so I can follow updates.", "relevant": ["feed-forge"]}
+{"input": "debug failed background job run trace", "relevant": ["trigger-dev"]}
+{"input": "make a mindmap for my essay", "relevant": ["mindmeister"]}
+{"input": "make my description for the art bot more detailed so the pictures come out better", "relevant": ["prompt-refiner"]}
+{"input": "early repayment savings", "relevant": ["loan-schedule"]}
+{"input": "start from a ready-made bill layout for my cleaning service", "relevant": ["invoice-generator"]}
+{"input": "what tables and columns does our mysql database have?", "relevant": ["mysql-ops-mcp", "database-admin"]}
+{"input": "We invoice German public agencies and need to make sure our invoices comply with the EN 16931 e-invoicing standard.", "relevant": ["invoicepdfs"]}
+{"input": "Go to the city permit website, fill in the parking permit form with my details and take a screenshot before submitting.", "relevant": ["mcp-server-browser-automation"]}
+{"input": "I'm considering buying Adobe shares; run a discounted cash flow analysis to estimate what it's actually worth.", "relevant": ["deepviews"]}
+{"input": "We just recorded episode 57 of our podcast; produce show notes and chapter markers from the recording.", "relevant": ["presentr-analyze"]}
+{"input": "what's off track in asana", "relevant": ["asana"]}
+{"input": "crowdin translation progress by language", "relevant": ["crowdin"]}
+{"input": "post to my telegram channel", "relevant": ["telegram-channel-admin"]}
+{"input": "compress portfolio.pdf under 2mb", "relevant": ["marqpdf"]}
+{"input": "is it gonna rain in lisbon tmrw", "relevant": ["open-meteo-mcp-server", "wttr-mcp"]}
+{"input": "My coding agent keeps forgetting which refactor step we're on; give it local state-centric memory that persists across sessions.", "relevant": ["monet"]}
+{"input": "rss to json pls", "relevant": ["rss-mcp"]}
+{"input": "is 2026-11-03 a holiday in japan", "relevant": ["mcp-jp-calendar"]}
+{"input": "schedule this for fri on socials", "relevant": ["yeetpost"]}
+{"input": "what network calls and clicks are recorded in this test trace file?", "relevant": ["playwright-trace-decoder-mcp"]}
+{"input": "auspicious day lunar vietnam", "relevant": ["vietnamese-calendar"]}
+{"input": "look at which log dumps amazon is holding for us from yesterday, without the ability to change them", "relevant": ["mcp-s3", "b2-mcp"]}
+{"input": "whats our french string for logout", "relevant": ["tolgee", "crowdin"]}
+{"input": "Turn my rough notes about the export button failing on Safari into a well-structured GitHub issue with steps to reproduce.", "relevant": ["github-issue-mcp"]}
+{"input": "mark the jira ticket done", "relevant": ["mcp-jira-stdio"]}
+{"input": "Find Hacker News threads discussing SQLite in production and show the top comments.", "relevant": ["hackernews-mcp"]}
+{"input": "create a circular color sweep for a loading spinner style", "relevant": ["gradient"]}
+{"input": "find public gitlab projects about gitops", "relevant": ["gitlab-mcp"]}
+{"input": "japanese holidays list for golden week 2027", "relevant": ["mcp-jp-calendar"]}
+{"input": "look in my microsoft cloud folder for the contract draft", "relevant": ["ms-onedrive-mcp"]}
+{"input": "shoot an email to bob from my account", "relevant": ["email-mcp", "salamailer"]}
+{"input": "early payoff savings?", "relevant": ["loan-schedule"]}
+{"input": "I'm researching inkscape's development; look up the project on GitLab and show me its public details.", "relevant": ["gitlab-mcp"]}
+{"input": "find b2b emails for prospect list", "relevant": ["trykitt", "kanta"]}
+{"input": "Our self-hosted Telegram bot should send each user a poll-like message with inline buttons \"Yes\" and \"No\" and a photo.", "relevant": ["telegram-bot-mcp-server"]}
+{"input": "make sure \"workspace\" and \"seat\" always use our approved terms in the latin american version", "relevant": ["dialectos"]}
+{"input": "which projects in our asana portfolio are at risk?", "relevant": ["asana"]}
+{"input": "Our marketing team targets Russia, so I need to see what Yandex shows for \"online accounting service\" and the snippets it uses.", "relevant": ["yandex-search"]}
+{"input": "latest stok news for amazon", "relevant": ["market-news"]}
+{"input": "spanish translation glossary enforcement", "relevant": ["dialectos"]}
+{"input": "what share of sales got their money back recently?", "relevant": ["stripe-analytics"]}
+{"input": "We moved backups to Backblaze; create a new B2 bucket for database dumps and an application key limited to it.", "relevant": ["b2-mcp"]}
+{"input": "make sure the server and its containers are copied to my storage every night", "relevant": ["arkame-backup"]}
+{"input": "why is ci so slow, find the bad jobs", "relevant": ["runzumi"]}
+{"input": "what is the dividend yield of the fii hglg11?", "relevant": ["bolsai-mcp"]}
+{"input": "quick weather check for madrid, just text", "relevant": ["wttr-mcp", "open-meteo-mcp-server"]}
+{"input": "look up last week's refunds in our main relational db (it's postgres)", "relevant": ["pgport", "database-admin", "mysql-ops-mcp"]}
+{"input": "from the archived recording of the test, list the requests and actions it made", "relevant": ["playwright-trace-decoder-mcp"]}
+{"input": "We use Neon for Postgres; create a new branch off main for the migration test so we don't touch production.", "relevant": ["pgcloud"]}
+{"input": "search docker hub images", "relevant": ["dockerhub"]}
+{"input": "table dedupe stats", "relevant": ["sheet-shift"]}
+{"input": "We need to pay our supplier $48,000 by ACH; create the payment order in Modern Treasury against their counterparty record.", "relevant": ["modern-treasury"]}
+{"input": "why did the trigger.dev run fail", "relevant": ["trigger-dev"]}
+{"input": "extract text from scaned image png", "relevant": ["ocrspace", "marqpdf"]}
+{"input": "I want each page to show the original english next to the chinese version", "relevant": ["isomor"]}
+{"input": "show notes and chapters for episode 42", "relevant": ["presentr-analyze"]}
+{"input": "rss2json", "relevant": ["rss-mcp"]}
+{"input": "rank the times by who can come", "relevant": ["sync-day"]}
+{"input": "send today's update to my subscribers on the messenger channel I run", "relevant": ["telegram-channel-admin"]}
+{"input": "append row to google sheet expenses", "relevant": ["mcp-google-sheets"]}
+{"input": "For my literature review I need the most cited papers that cite \"BERT\" and their authors.", "relevant": ["semanticscholar", "papernexus"]}
+{"input": "use my graphics card to get the speech out of these screen recordings as text", "relevant": ["local-whisper-mcp"]}
+{"input": "verify the vendor didn't make arithmetic mistakes on this bill", "relevant": ["invoice-reader"]}
+{"input": "double-check that the totals in my workbook are actually computed correctly", "relevant": ["agent-spreadsheet"]}
+{"input": "lifestyle product images", "relevant": ["gency-mcp"]}
+{"input": "look at our kanban lists but don't modify them", "relevant": ["trello-mcp"]}
+{"input": "does my landing page have contrast or aria problems?", "relevant": ["mcp-accessibility-scanner"]}
+{"input": "We're launching a product update and need to send a templated email to our 4,000 contacts as a campaign, using our verified sending domain.", "relevant": ["ahasend"]}
+{"input": "can you send a reply from my fastmail account using smtp?", "relevant": ["email-mcp", "salamailer"]}
+{"input": "bicyle route paris to versailles", "relevant": ["itineraires"]}
+{"input": "trigger forge deploymnet", "relevant": ["laravel-forge"]}
+{"input": "play the daily word puzzle", "relevant": ["words"]}
+{"input": "reel audio transcript original language", "relevant": ["instagram-transcripts"]}
+{"input": "what index funds own a big chunk of nvidia?", "relevant": ["tickerinside-mcp"]}
+{"input": "do you have an invoice template for a photography business?", "relevant": ["invoice-generator"]}
+{"input": "local image generaton mac", "relevant": ["mcp-drawthings"]}
+{"input": "show only recent german articles about the election", "relevant": ["gdelt-mcp"]}
+{"input": "My manager left review comments on my proposal in Google Docs; list all of them so I can address each one.", "relevant": ["google-drive-comments-mcp"]}
+{"input": "set up a private room only the mods can see on our gaming community server", "relevant": ["discord-mcp"]}
+{"input": "the spreadsheet must still calculate correctly after the labels become german", "relevant": ["rosetta-mcp"]}
+{"input": "team wiki search", "relevant": ["tiro", "notion", "wikijs-mcp"]}
+{"input": "serch arxiv for diffusion models", "relevant": ["arxiv-mcp-server", "semanticscholar"]}
+{"input": "fix my captions + make em pop", "relevant": ["justcaptions"]}
+{"input": "why is my postgres query so slow, sugest indexes", "relevant": ["database-admin"]}
+{"input": "generate rss from webiste", "relevant": ["feed-forge"]}
+{"input": "which later works built on this famous 2017 paper?", "relevant": ["semanticscholar", "papernexus"]}
+{"input": "how do I cite this article in apa style?", "relevant": ["onecite"]}
+{"input": "spanish news about ai this week", "relevant": ["gdelt-mcp"]}
+{"input": "conic gradient css", "relevant": ["gradient"]}
+{"input": "I have a spreadsheet of 50 VP of Sales names and their companies, find their business email addresses for outreach.", "relevant": ["trykitt", "kanta"]}
+{"input": "send email via my smtp server to team@corp.com", "relevant": ["email-mcp", "salamailer"]}
+{"input": "write up what each segment of our latest episode covers, with timestamps", "relevant": ["presentr-analyze"]}
+{"input": "our builds feel slow and flaky lately — which steps are the culprits?", "relevant": ["runzumi"]}
+{"input": "query postgres refunds last week", "relevant": ["pgport", "database-admin", "mysql-ops-mcp"]}
+{"input": "make a vertical 60-second piece from this footage with voiceover and post it to my channel", "relevant": ["vidlet"]}
+{"input": "tidy up my mac calendar events", "relevant": ["calendarmcp"]}
+{"input": "kenya crop calender", "relevant": ["kilimo-mcp"]}
+{"input": "can you schedule this tweet and linkedin post for friday 9am?", "relevant": ["yeetpost"]}
+{"input": "bilingual pdf en zh", "relevant": ["isomor"]}
+{"input": "fix the outdated section in our self-hosted company wiki about vpn setup", "relevant": ["wikijs-mcp"]}
+{"input": "rank meeting times by attendance", "relevant": ["sync-day"]}
+{"input": "need google news + organic for like a thousand queries, json pls", "relevant": ["google-serp", "serpapi-mcp"]}
+{"input": "which of these three chip companies grew more since 2021?", "relevant": ["yahoo-finance-mcp-server"]}
+{"input": "refunds last month?", "relevant": ["stripe-analytics"]}
+{"input": "search the orange-fox code platform for open source projects about ci runners", "relevant": ["gitlab-mcp"]}
+{"input": "Post the deployment summary to the #releases channel in our Slack and pin it.", "relevant": ["mcp-server-slack"]}
+{"input": "related papars citation graph", "relevant": ["papernexus"]}
+{"input": "excel formula verification", "relevant": ["agent-spreadsheet"]}
+{"input": "blast the release announcement to our whole customer list using the template we made", "relevant": ["ahasend"]}
+{"input": "how many refunds did we issue on stripe last month and how much money?", "relevant": ["stripe-analytics"]}
+{"input": "read my sidenote notepad", "relevant": ["sidenote"]}
+{"input": "full text of doi 10.1145/3292500", "relevant": ["fulltext-article-downloader"]}
+{"input": "news coverage count", "relevant": ["thinkpattern-news"]}
+{"input": "whats eth at rn", "relevant": ["crypto_prices_mcp", "cryptohopper-data"]}
+{"input": "client engagment memory decisions", "relevant": ["kika"]}
+{"input": "optimize prompt for midjourny", "relevant": ["prompt-refiner"]}
+{"input": "find a ready-made container for running grafana, check pulls and stars", "relevant": ["dockerhub"]}
+{"input": "whats inside this trace file", "relevant": ["playwright-trace-decoder-mcp"]}
+{"input": "invoice template draft", "relevant": ["invoice-generator"]}
+{"input": "write a github issue for this crash log", "relevant": ["github-issue-mcp"]}
+{"input": "can you read my trello boards without being able to change anything?", "relevant": ["trello-mcp"]}
+{"input": "search gitlab public projets for fdroid", "relevant": ["gitlab-mcp"]}
+{"input": "transcribe these reels, keep original language", "relevant": ["instagram-transcripts"]}
+{"input": "explain the architecture of this open source project using its auto-generated documentation pages", "relevant": ["repowiki"]}
+{"input": "markdown knowlege base from notes folder", "relevant": ["iwe", "mcp-obsidian-via-rest"]}
+{"input": "news search language recency filter", "relevant": ["gdelt-mcp"]}
+{"input": "yandex results for \"лучшие ноутбуки 2026\"", "relevant": ["yandex-search"]}
+{"input": "setup email campain for newsletter subscribers", "relevant": ["ahasend"]}
+{"input": "play chess with me", "relevant": ["benchboss"]}
+{"input": "For the competitor deck I need full-page screenshots of three pricing pages, saved as images.", "relevant": ["screenshot-mcp"]}
+{"input": "sanctioned address phishing check", "relevant": ["crypto-safety"]}
+{"input": "Release is next week; check in Crowdin how far each language is translated and which files are behind.", "relevant": ["crowdin"]}
+{"input": "Our lorry carries ADR class 3 goods from Rotterdam to Munich; plan a route that respects tunnel restrictions for hazardous materials.", "relevant": ["mapmap"]}
+{"input": "close the ticket and leave a note that the fix is deployed", "relevant": ["mcp-jira-stdio"]}
+{"input": "For the Acme engagement, record that we chose Postgres over Mongo and why, so the whole consulting team knows.", "relevant": ["kika"]}
+{"input": "use my sd webui for this pic", "relevant": ["image-generation-mcp"]}
+{"input": "can you convert this fbx model to gltf?", "relevant": ["blender-mcp"]}
+{"input": "what feedback did people leave in the margins of my shared doc?", "relevant": ["google-drive-comments-mcp"]}
+{"input": "make this pdf bilingual en/zh pls", "relevant": ["isomor"]}
+{"input": "what's the going rate for the original digital coin at the moment?", "relevant": ["crypto_prices_mcp", "cryptohopper-data"]}
+{"input": "what language is this sentence written in?", "relevant": ["langbly"]}
+{"input": "are these two queries equivalent?", "relevant": ["sqlike-mcp"]}
+{"input": "search hn for \"show hn rust\"", "relevant": ["hackernews-mcp"]}
+{"input": "what's the record high temperature ever measured in phoenix and the normal for july?", "relevant": ["weathersight"]}
+{"input": "remember this in long-term memory", "relevant": ["memento", "yantrikdb-mcp"]}
+{"input": "was this story big news or did only a couple of sites pick it up?", "relevant": ["thinkpattern-news"]}
+{"input": "jira as markdwon local", "relevant": ["mdpipeline"]}
+{"input": "list the mysql tables real quick", "relevant": ["mysql-ops-mcp", "database-admin"]}
+{"input": "keep this in mind for future sessions and relate it to what you know about the project", "relevant": ["memento", "yantrikdb-mcp"]}
+{"input": "This report query on Postgres takes 40 seconds; look at the schema and indexes and suggest how to optimize it.", "relevant": ["database-admin"]}
+{"input": "where in my drive is the spreadsheet with the 2025 budget?", "relevant": ["google-drive-mcp", "ms-onedrive-mcp", "dropbox"]}
+{"input": "was there an earthquake in hualien today and how strong was it?", "relevant": ["cwa-mcp-server"]}
+{"input": "when to plant maize in kenya", "relevant": ["kilimo-mcp"]}
+{"input": "find that message with the wifi password someone sent me ages ago in the blue messenger app", "relevant": ["telegram-archive-mcp"]}
+{"input": "find an open slot and lock in a call with the recruiter", "relevant": ["meet-bot"]}
+{"input": "can you translate this to spanish while keeping our product glossary terms fixed?", "relevant": ["dialectos"]}
+{"input": "compare stock history nvda amd", "relevant": ["yahoo-finance-mcp-server"]}
+{"input": "where should I keep my coins long-term, and how do the options score?", "relevant": ["vaultrubric"]}
+{"input": "what pharmacies are open near union square right now?", "relevant": ["google-maps", "google-maps-places-mcp"]}
+{"input": "solana tx intent check", "relevant": ["solana-pulse-gateway", "crypto-safety"]}
+{"input": "coffee shops near alexanderplatz", "relevant": ["google-maps", "google-maps-places-mcp"]}
+{"input": "make a short outta this and post it", "relevant": ["vidlet"]}
+{"input": "how do I solve 3(x - 4) = 2x + 5?", "relevant": ["equation-steps"]}
+{"input": "I farm near Nakuru; when should I plant beans this season and which variety suits our rainfall?", "relevant": ["kilimo-mcp"]}
+{"input": "download full paper by doi", "relevant": ["fulltext-article-downloader"]}
+{"input": "update google sheets range a1:c10", "relevant": ["mcp-google-sheets"]}
+{"input": "find recent preprints in the physics-and-cs repository about speculative decoding", "relevant": ["arxiv-mcp-server", "semanticscholar"]}
+{"input": "add a note to obsidian", "relevant": ["mcp-obsidian-via-rest"]}
+{"input": "get me serp resutls from bing for electric bike laws in california", "relevant": ["serpapi-mcp", "google-serp"]}
+{"input": "I need to check which log files exist in our S3 bucket for yesterday, without any permission to modify anything.", "relevant": ["mcp-s3", "b2-mcp"]}
+{"input": "earthquake in taiwan just now?", "relevant": ["cwa-mcp-server"]}
+{"input": "can you create a new role and private channel for moderators on our discord?", "relevant": ["discord-mcp"]}
+{"input": "check whether the thing I'm about to sign does what the dapp claims", "relevant": ["solana-pulse-gateway", "crypto-safety"]}
+{"input": "any good docker image for minio?", "relevant": ["dockerhub"]}
+{"input": "hottest day ever recorded in vegas?", "relevant": ["weathersight"]}

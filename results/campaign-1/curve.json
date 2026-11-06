@@ -1,0 +1,292 @@
+{
+  "comparison": {
+    "split": "train",
+    "dataset_id": "ar04a-skill-select-v1",
+    "subset_id": "37f62d06aad1d4255526dfeecdc7ad60a56d13b2449c10f48d9dee1193af61ab",
+    "conditions_id": "ar04a-metric-v1-runner-d4e3f8799ccc"
+  },
+  "direction": "maximize",
+  "baseline": 0.488,
+  "integration": "left_step",
+  "horizon": 30,
+  "actual_proposals": 27,
+  "running": [],
+  "points": [
+    {
+      "proposals": 0,
+      "quality": 0.488,
+      "source": "baseline"
+    },
+    {
+      "proposals": 2,
+      "quality": 0.61125,
+      "candidate_id": "r1-01",
+      "measurement_id": "r1-01-curve",
+      "completion_order": 2,
+      "finished_at": "2026-11-05T18:06:16.988870+00:00",
+      "score": 0.61125,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 4,
+      "quality": 0.622,
+      "candidate_id": "r1-02",
+      "measurement_id": "r1-02-curve",
+      "completion_order": 3,
+      "finished_at": "2026-11-05T18:12:29.216359+00:00",
+      "score": 0.622,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 4,
+      "quality": 0.7345,
+      "candidate_id": "r2-01",
+      "measurement_id": "r2-01-curve",
+      "completion_order": 4,
+      "finished_at": "2026-11-05T18:15:36.558163+00:00",
+      "score": 0.7345,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 5,
+      "quality": 0.7345,
+      "candidate_id": "r1-03",
+      "measurement_id": "r1-03-curve",
+      "completion_order": 5,
+      "finished_at": "2026-11-05T18:17:54.032221+00:00",
+      "score": 0.6415,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 7,
+      "quality": 0.7395,
+      "candidate_id": "r2-02",
+      "measurement_id": "r2-02-curve",
+      "completion_order": 7,
+      "finished_at": "2026-11-05T18:26:09.840210+00:00",
+      "score": 0.7395,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 8,
+      "quality": 0.7395,
+      "candidate_id": "r2-03",
+      "measurement_id": "r2-03-curve",
+      "completion_order": 9,
+      "finished_at": "2026-11-05T18:39:02.369306+00:00",
+      "score": 0.694,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 9,
+      "quality": 0.7395,
+      "candidate_id": "r3-02",
+      "measurement_id": "r3-02-curve",
+      "completion_order": 10,
+      "finished_at": "2026-11-05T19:18:47.942805+00:00",
+      "score": 0.67275,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 9,
+      "quality": 0.7395,
+      "candidate_id": "r3-01",
+      "measurement_id": "r3-01-curve",
+      "completion_order": 11,
+      "finished_at": "2026-11-05T19:20:57.594756+00:00",
+      "score": 0.6545,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 10,
+      "quality": 0.7425,
+      "candidate_id": "r2-04",
+      "measurement_id": "r2-04-curve",
+      "completion_order": 13,
+      "finished_at": "2026-11-05T19:36:08.381706+00:00",
+      "score": 0.7425,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 11,
+      "quality": 0.7425,
+      "candidate_id": "r2-05",
+      "measurement_id": "r2-05-curve",
+      "completion_order": 14,
+      "finished_at": "2026-11-05T20:01:51.450377+00:00",
+      "score": 0.725,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 11,
+      "quality": 0.7425,
+      "candidate_id": "r3-03",
+      "measurement_id": "r3-03-curve",
+      "completion_order": 15,
+      "finished_at": "2026-11-05T20:04:21.119747+00:00",
+      "score": 0.67,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 13,
+      "quality": 0.7825,
+      "candidate_id": "r4-01",
+      "measurement_id": "r4-01-curve",
+      "completion_order": 18,
+      "finished_at": "2026-11-05T20:29:50.868163+00:00",
+      "score": 0.7825,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 14,
+      "quality": 0.78275,
+      "candidate_id": "r5-01",
+      "measurement_id": "r5-01-curve",
+      "completion_order": 19,
+      "finished_at": "2026-11-05T20:36:31.655854+00:00",
+      "score": 0.78275,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 15,
+      "quality": 0.78275,
+      "candidate_id": "r5-02",
+      "measurement_id": "r5-02-curve",
+      "completion_order": 22,
+      "finished_at": "2026-11-05T21:00:29.352349+00:00",
+      "score": 0.77275,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 16,
+      "quality": 0.78275,
+      "candidate_id": "r4-02",
+      "measurement_id": "r4-02-curve",
+      "completion_order": 23,
+      "finished_at": "2026-11-05T21:02:45.914783+00:00",
+      "score": 0.77475,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 17,
+      "quality": 0.78575,
+      "candidate_id": "r4-03",
+      "measurement_id": "r4-03-curve",
+      "completion_order": 25,
+      "finished_at": "2026-11-05T21:22:56.468619+00:00",
+      "score": 0.78575,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 19,
+      "quality": 0.79725,
+      "candidate_id": "r6-01",
+      "measurement_id": "r6-01-curve",
+      "completion_order": 28,
+      "finished_at": "2026-11-05T21:48:00.791457+00:00",
+      "score": 0.79725,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 20,
+      "quality": 0.79725,
+      "candidate_id": "r6-02",
+      "measurement_id": "r6-02-curve",
+      "completion_order": 32,
+      "finished_at": "2026-11-05T22:46:06.432787+00:00",
+      "score": 0.79725,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 22,
+      "quality": 0.8,
+      "candidate_id": "r8-01",
+      "measurement_id": "r8-01-curve",
+      "completion_order": 36,
+      "finished_at": "2026-11-05T23:21:43.380751+00:00",
+      "score": 0.8,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 24,
+      "quality": 0.80225,
+      "candidate_id": "r9-01",
+      "measurement_id": "r9-01-curve",
+      "completion_order": 40,
+      "finished_at": "2026-11-05T23:59:12.923104+00:00",
+      "score": 0.80225,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 24,
+      "quality": 0.80225,
+      "candidate_id": "r7-01",
+      "measurement_id": "r7-01-curve",
+      "completion_order": 41,
+      "finished_at": "2026-11-06T07:02:00.147273+00:00",
+      "score": 0.7865,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 24,
+      "quality": 0.80225,
+      "candidate_id": "r9-02",
+      "measurement_id": "r9-02-curve",
+      "completion_order": 44,
+      "finished_at": "2026-11-06T07:03:08.591395+00:00",
+      "score": null,
+      "state": "failed"
+    },
+    {
+      "proposals": 24,
+      "quality": 0.80225,
+      "candidate_id": "r9-02",
+      "measurement_id": "r9-02-curve-b",
+      "completion_order": 45,
+      "finished_at": "2026-11-06T07:03:21.632801+00:00",
+      "score": null,
+      "state": "failed"
+    },
+    {
+      "proposals": 27,
+      "quality": 0.81325,
+      "candidate_id": "r10-01",
+      "measurement_id": "r10-01-curve",
+      "completion_order": 52,
+      "finished_at": "2026-11-06T08:23:46.173735+00:00",
+      "score": 0.81325,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 27,
+      "quality": 0.81325,
+      "candidate_id": "r10-02",
+      "measurement_id": "r10-02-curve",
+      "completion_order": 54,
+      "finished_at": "2026-11-06T08:36:04.262684+00:00",
+      "score": 0.7965,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 27,
+      "quality": 0.81325,
+      "candidate_id": "r10-03",
+      "measurement_id": "r10-03-curve",
+      "completion_order": 56,
+      "finished_at": "2026-11-06T08:47:24.935166+00:00",
+      "score": 0.778,
+      "state": "succeeded"
+    },
+    {
+      "proposals": 30,
+      "quality": 0.81325,
+      "source": "horizon"
+    }
+  ],
+  "final_quality": 0.81325,
+  "auc": 22.3885,
+  "mean_quality": 0.7462833333333333,
+  "observed_auc": 22.3885,
+  "observed_from": 0,
+  "covered_proposals": 30
+}

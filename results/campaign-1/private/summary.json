@@ -1,0 +1,111 @@
+{
+  "status": "complete",
+  "release_id": "ar04a-c1-metric-bc8760a07ae5",
+  "batch_digest": "ac3c62d47efce5ff076de19db152d62feff07af92e6e9284991d19a4de21589a",
+  "dataset_digest": "4be1600aa957a7fa845029828ecb96906a376e1b32fed503b8c267d049817e06",
+  "ranking_policy": "score-direction-known-tokens-asc-seconds-asc-id-asc-v2",
+  "finalists": 5,
+  "output_count": 2,
+  "runner_image": "ar04a-runner:local",
+  "runner_timeout": 600.0,
+  "search_admission": {
+    "max_solutions": 30,
+    "proposed": 27,
+    "remaining_proposals": 3,
+    "stopped_at": "2026-11-06T09:33:47.136871+00:00",
+    "stop_reason": "Явная команда оператора (человека) в чате запуска поиска 2026-11-06 ~09:30Z: остановить поиск, причина — плато (public r10-01 0.8267 vs r8-01 0.8230 в шуме; условие refit r9-02 не выполнено); осталось 3 места из 30",
+    "finalization": {
+      "batch_digest": "ac3c62d47efce5ff076de19db152d62feff07af92e6e9284991d19a4de21589a",
+      "finalized_at": "2026-11-06T09:34:36.221717+00:00"
+    },
+    "human_stop": {
+      "batch_digest": "ac3c62d47efce5ff076de19db152d62feff07af92e6e9284991d19a4de21589a",
+      "stopped_at": "2026-11-06T09:33:47.136871+00:00",
+      "reason": "Явная команда оператора (человека) в чате запуска поиска 2026-11-06 ~09:30Z: остановить поиск, причина — плато (public r10-01 0.8267 vs r8-01 0.8230 в шуме; условие refit r9-02 не выполнено); осталось 3 места из 30",
+      "source_ref": "Human operator message 489b29b5-3e35-473c-9df3-ee7d17ea0555 (2026-11-06T09:33:01Z) in search session 470ba880-0352-4d14-9e79-3730abab859d, researcher-home transcript"
+    }
+  },
+  "candidates": [
+    {
+      "id": "r10-01",
+      "digest": "42563799a784af6f84f465889686e6887f73ebf4736fe37861b01a345931371f"
+    },
+    {
+      "id": "r9-02",
+      "digest": "03a89a7ef47bac8dde597914204ba6081673e7959184623df1a19f357649683a"
+    },
+    {
+      "id": "r6-01",
+      "digest": "57fed5f2c89daaf05abc9b19d01a7a6d67a603b3a03c7446f53aa40d055fa412"
+    },
+    {
+      "id": "r4-01",
+      "digest": "4d396ea6ef335fc09007a74d57f1c5bace140ec34874cdae03f3c8472bab4896"
+    },
+    {
+      "id": "r5-02",
+      "digest": "1b264ff3685931a63187ffcc6eb17fcd3ce87c3999ec7473b0127316b54c3ce8"
+    }
+  ],
+  "scores": [
+    {
+      "candidate_id": "r10-01",
+      "digest": "42563799a784af6f84f465889686e6887f73ebf4736fe37861b01a345931371f",
+      "score": 0.8534574468085107,
+      "solver_tokens": 0,
+      "solver_unreported_attempts": 0,
+      "judge_tokens": 0,
+      "judge_unreported_attempts": 0,
+      "solver_seconds": 1048.202640647004,
+      "judge_seconds": 70.1215665129821
+    },
+    {
+      "candidate_id": "r9-02",
+      "digest": "03a89a7ef47bac8dde597914204ba6081673e7959184623df1a19f357649683a",
+      "score": 0.8561170212765957,
+      "solver_tokens": 0,
+      "solver_unreported_attempts": 0,
+      "judge_tokens": 0,
+      "judge_unreported_attempts": 0,
+      "solver_seconds": 1065.6698855650102,
+      "judge_seconds": 67.88944680501845
+    },
+    {
+      "candidate_id": "r6-01",
+      "digest": "57fed5f2c89daaf05abc9b19d01a7a6d67a603b3a03c7446f53aa40d055fa412",
+      "score": 0.839627659574468,
+      "solver_tokens": 0,
+      "solver_unreported_attempts": 0,
+      "judge_tokens": 0,
+      "judge_unreported_attempts": 0,
+      "solver_seconds": 1054.2563480519766,
+      "judge_seconds": 73.02169020299152
+    },
+    {
+      "candidate_id": "r4-01",
+      "digest": "4d396ea6ef335fc09007a74d57f1c5bace140ec34874cdae03f3c8472bab4896",
+      "score": 0.8428191489361702,
+      "solver_tokens": 0,
+      "solver_unreported_attempts": 0,
+      "judge_tokens": 0,
+      "judge_unreported_attempts": 0,
+      "solver_seconds": 858.9781722979878,
+      "judge_seconds": 71.46448334499473
+    },
+    {
+      "candidate_id": "r5-02",
+      "digest": "1b264ff3685931a63187ffcc6eb17fcd3ce87c3999ec7473b0127316b54c3ce8",
+      "score": 0.8098404255319149,
+      "solver_tokens": 0,
+      "solver_unreported_attempts": 0,
+      "judge_tokens": 0,
+      "judge_unreported_attempts": 0,
+      "solver_seconds": 916.6451189779946,
+      "judge_seconds": 70.31901069598462
+    }
+  ],
+  "winners": [
+    "r9-02",
+    "r10-01"
+  ]
+}
