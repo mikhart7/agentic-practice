@@ -1,4 +1,10 @@
 {
-  "status": "running",
-  "evaluation_id": "94c051749cced531ae02535e8d28a22cf75990036e1b44b936708ae3af70759f"
+  "status": "complete",
+  "evaluation_id": "94c051749cced531ae02535e8d28a22cf75990036e1b44b936708ae3af70759f",
+  "scores": [
+    {
+      "candidate_id": "r9-02",
+      "score": 0.8225
+    }
+  ]
 }

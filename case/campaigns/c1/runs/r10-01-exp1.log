@@ -1,0 +1,4 @@
+build submitted: RUNNING
+build: FINISHED null
+submitted 1603308c02a51cf1cd2f5ca6f79de741f8dc184db10067eeccf0c437ba33b095 total_wait_start 08:14:17
+{"candidate": "r10-01", "measurement": "r10-01-exp1", "subset": "train", "evaluation_id": "1603308c02a51cf1cd2f5ca6f79de741f8dc184db10067eeccf0c437ba33b095", "status": "FINISHED", "wall_seconds": 199.7, "metrics": {"solver_tokens": 0, "solver_seconds": 142.70867209799962, "solver_unreported_attempts": 0, "solver_resources_complete": true, "judge_tokens": 0, "judge_seconds": 0.55504858, "judge_unreported_attempts": 0, "judge_resources_complete": true, "wall_seconds": 8.005736742, "score": 0.6666666666666666}}

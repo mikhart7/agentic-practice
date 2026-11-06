@@ -1,0 +1,5 @@
+build submitted: FINISHED
+build: FINISHED null
+submitted 2faaf5e8b0478f84f0203e38ce3971ec05a82f470b003dc5b39c6fb2b0fd7c66 total_wait_start 08:15:09
+{"candidate": "r10-01", "measurement": "r10-01-curve", "subset": "curve", "evaluation_id": "2faaf5e8b0478f84f0203e38ce3971ec05a82f470b003dc5b39c6fb2b0fd7c66", "status": "FINISHED", "wall_seconds": 519.6, "metrics": {"solver_tokens": 0, "solver_seconds": 592.7420431450046, "solver_unreported_attempts": 0, "solver_resources_complete": true, "judge_tokens": 0, "judge_seconds": 54.459244055, "judge_unreported_attempts": 0, "judge_resources_complete": true, "wall_seconds": 507.040314888, "score": 0.81325}}
+done
