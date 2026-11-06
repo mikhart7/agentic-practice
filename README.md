@@ -14,7 +14,7 @@
 
 Лимит предложенных решений: 30 ([ADR-0005](docs/adr/0005-campaign-limit.md)). Предложено 27, поиск остановлен командой оператора на плато (кампания `c1`, 2026-11-06). AUC кривой до горизонта 30 — 22.39, `mean_quality` 0.746.
 
-¹ Замер на `train_curve` сорван инфраструктурным сбоем, повторить его train-сервис не дал.
+¹ Замер на `train_curve` сорван инфраструктурным сбоем, повторить его train-сервис не дал. Локальный пересчёт тем же кодом ([skill/](skill/SKILL.md)) даёт 0.832, в журнал арены он не входит.
 ² Запросы `train_curve` входили в обучение r10-01, поэтому это не независимая проверка.
 
 ## Структура
@@ -50,7 +50,18 @@ uv run --no-project --with pytest==8.4.2 python -m pytest case/metric/tests
 python case/eval_local.py --way case/ways/baseline --split case/dataset/train.jsonl
 
 # развёртывание, подготовка и поиск — case/deploy/README.md (prompts/prepare.md и prompts/start.md арены)
-# <построить кривую и родословную: после кампании>
+
+# кривая и AUC штатной командой арены по журналу кампании (выгрузка уже лежит в results/campaign-1)
+J=$PWD/results/campaign-1/search.sqlite3; (cd ~/arena && uv run --frozen python -m evaluator.search --journal $J curve \
+  --split train --dataset ar04a-skill-select-v1 --subset 37f62d06aad1d4255526dfeecdc7ad60a56d13b2449c10f48d9dee1193af61ab \
+  --conditions ar04a-metric-v1-runner-d4e3f8799ccc --direction maximize --baseline 0.488 --horizon 30)
+# графики: кривая, родословная, private по срезам
+uv run --no-project --with matplotlib==3.9.2 python results/plot.py results/campaign-1
+
+# навык (победитель r9-02): тесты CLI и запрос
+uv run --no-project --with-requirements skill/scripts/requirements.txt --with pytest==8.4.2 python -m pytest skill/tests
+uv run --no-project --with-requirements skill/scripts/requirements.txt python skill/scripts/select_skill.py \
+  --catalog case/assets/catalog.jsonl --models-dir case/assets/models --query "check my excel for errors"
 ```
 
 ## Модели

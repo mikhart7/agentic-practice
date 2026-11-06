@@ -1,0 +1,18 @@
+[
+  {
+    "id": "t1",
+    "request": "is anyone testing new treatments for my condition I could join?",
+    "prompt": "A user wrote: \"is anyone testing new treatments for my condition I could join?\". Which skill from the catalog case/assets/catalog.jsonl should handle this request? Write only the chosen skill id to answer-t1.txt.",
+    "answer_file": "answer-t1.txt",
+    "expected": "aria-mcp-server",
+    "note": "train query, style indirect: shares no words with the skill's description"
+  },
+  {
+    "id": "t2",
+    "request": "double-check that the totals in my workbook are actually computed correctly",
+    "prompt": "A user wrote: \"double-check that the totals in my workbook are actually computed correctly\". Which skill from the catalog case/assets/catalog.jsonl should handle this request? Write only the chosen skill id to answer-t2.txt.",
+    "answer_file": "answer-t2.txt",
+    "expected": "agent-spreadsheet",
+    "note": "train query, style indirect: the catalog has several spreadsheet and CSV tools"
+  }
+]

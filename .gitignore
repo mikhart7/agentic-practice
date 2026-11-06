@@ -14,3 +14,4 @@ pool/
 # веса моделей скачиваются fetch_models.py по закреплённым ревизиям
 case/assets/models/
 case/campaigns/c1/review_tmp/
+skill/models/
