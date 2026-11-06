@@ -3,6 +3,8 @@
   sudo cat ~/arena-private/{public,private}.jsonl | python3 scripts/leak_check.py [origin/main..main]
   sudo cat ~/arena-private/{public,private}.jsonl | sudo python3 scripts/leak_check.py --paths <каталог или файл>...
 Совпадением считается любая общая 6-словная n-грамма. case/dataset/train* пропускается: это train.
+N-граммы held-out, которые есть и в train, не считаются утечкой: они уже опубликованы вместе с train
+(иначе срабатывают копии train в пакетах кандидатов). Исключённые n-граммы печатаются.
 Режим --paths проверяет файлы вне git: транскрипты агентов, выгрузки перед публикацией.
 """
 import json
@@ -30,6 +32,15 @@ for line in sys.stdin:
         held |= ngrams(json.loads(line)["input"])
 if not held:
     sys.exit("на stdin нет запросов public/private — проверка не выполнена")
+
+# n-граммы, которые есть и в train, уже опубликованы вместе с train и утечкой не являются:
+# без этого срабатывают копии train в пакетах кандидатов (fit.jsonl и т. п.) и журнал со снимками
+from pathlib import Path
+TRAIN = Path(__file__).resolve().parents[1] / "case/dataset/train.jsonl"
+shared = held & {g for line in TRAIN.open(encoding="utf-8") if line.strip() for g in ngrams(json.loads(line)["input"])}
+held -= shared
+if shared:
+    print(f"исключены n-граммы, которые есть в опубликованном train ({len(shared)}): {sorted(shared)}")
 
 if len(sys.argv) > 1 and sys.argv[1] == "--paths":
     from pathlib import Path
